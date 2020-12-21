@@ -1,0 +1,23 @@
+.logoHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20em;
+  background-color: #F58124;
+}
+
+.logoHeader p {
+  text-align: center;
+  max-width: 500px;
+  color: #949494;
+}
+
+.logoHeader img {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  max-width: 745px;
+  object-fit: cover;
+  margin-top: 40px;
+}

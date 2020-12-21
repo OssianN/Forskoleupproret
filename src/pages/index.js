@@ -1,12 +1,16 @@
-import React from "react";
-import NavBar from "../components/NavBar";
+import React from 'react';
+import '../styles/global.css';
+import NavBar from '../components/nav-bar/NavBar';
+import Logo from '../components/logo-header/Logo'
+import HomeImages from '../components/home-images/HomeImages';
 
 export default function Home() {
 
   return (
     <div className="app">
       <NavBar />
-      Hem
+      <Logo />
+      <HomeImages />
     </div>
   )
 }

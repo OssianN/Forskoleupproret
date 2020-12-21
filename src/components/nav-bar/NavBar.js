@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import './nav-bar.css';
+import pinIcon from '../../images/pinIcon.png';
 
 const NavBar = () => {
   return (
-    <nav>
-      <ul className="mainNavUl">
+    <nav className='mainNav'>
+      <ul>
         <Link to='/'>
-          <li>Hem</li>
+          <li>
+            <img src={pinIcon} alt='home' id='hemknapp' />
+          </li>
         </Link>
         <Link to='/om-oss'>
           <li>Om Oss</li>
