@@ -22,10 +22,11 @@
 
 .mainNav a {
   list-style: none;
-  padding: 0;
+  padding: 0 10px;
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
+  word-wrap: wrap;
 }
 
 .mainNav a:hover {

@@ -22,13 +22,13 @@ const HomeImages = () => {
           </Link>
         </div>
       <div className="imageDiv" id="image1">
-        <Link to='/pressatLage'>
+        <Link to='/pressat-lage'>
           <img  src={img1} alt='one' />
           <h2>#pressatläge</h2>
         </Link>
       </div>
       <div className="imageDiv" id="image1">
-        <Link to='/vivagrarbrytalagen'>
+        <Link to='/vi-vagrar-bryta-lagen'>
           <img  src={img1} alt='one' />
           <h2>#vivägrarbrytalagen</h2>
         </Link>

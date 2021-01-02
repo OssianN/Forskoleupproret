@@ -21,8 +21,11 @@ const NavBar = () => {
         <Link to='/accomplishments'>
           <li>Det här har vi gjort</li>
         </Link>
-        <Link to='/hashtags'>
-          <li>Våra hashtags</li>
+        <Link to='/pressat-lage'>
+          <li>#pressatläge</li>
+        </Link>
+        <Link to='/vi-vagrar-bryta-lagen'>
+          <li>#vivägrarbrytalagen</li>
         </Link>
         <Link to='/press'>
           <li>Press</li>
