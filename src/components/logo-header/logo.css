@@ -15,6 +15,7 @@
 }
 
 .logoHeader img {
+  width: 100%;
   max-width: 745px;
   object-fit: cover;
 }

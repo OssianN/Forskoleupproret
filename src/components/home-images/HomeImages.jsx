@@ -10,7 +10,7 @@ const HomeImages = () => {
       <div className="imageDiv" id="image1">
         <Link to='/om-oss'>
           <img src={img1} alt='one' />
-          <h2>Om Oss</h2>
+          <h2>Om oss</h2>
           <p>Läs om vilka vi är och vad vi gör...</p>
         </Link>
       </div>
