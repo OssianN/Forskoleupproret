@@ -1,19 +1,18 @@
 import React from 'react'
 import NavBar from '../components/nav-bar/NavBar';
-import Logo from '../components/logo-header/Logo';
 
-export const Artiklar = () => {
+export const HashTags = () => {
   return (
-    <div className='articles'>
+    <div>
       <NavBar />
-      <Logo />
       <div className='tabContent'>
         <h1 className='tabHeader'>
-          Artiklar
+          #pressatläge
         </h1>
+        <h2>Vittnesmål</h2>
       </div>
     </div>
   )
 }
 
-export default Artiklar;
+export default HashTags;

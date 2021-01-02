@@ -15,11 +15,17 @@ const NavBar = () => {
         <Link to='/om-oss'>
           <li>Om Oss</li>
         </Link>
-        <Link to='/artiklar'>
-          <li>Artiklar</li>
+        <Link to='/how-it-started'>
+          <li>Såhär började det</li>
         </Link>
-        <Link to='/kontakt'>
-          <li>Kontakt</li>
+        <Link to='/accomplishments'>
+          <li>Det här har vi gjort</li>
+        </Link>
+        <Link to='/hashtags'>
+          <li>Våra hashtags</li>
+        </Link>
+        <Link to='/press'>
+          <li>Press</li>
         </Link>
       </ul>
     </nav>

@@ -8,7 +8,6 @@ export default function Home() {
 
   return (
     <div className="app">
-      <NavBar />
       <Logo />
       <HomeImages />
     </div>

@@ -3,7 +3,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 20em;
+  max-height: 11em;
+  height: 11em;
   background-color: #F58124;
 }
 
@@ -14,10 +15,6 @@
 }
 
 .logoHeader img {
-  z-index: 0;
-  position: absolute;
-  width: 100%;
   max-width: 745px;
   object-fit: cover;
-  margin-top: 40px;
 }
