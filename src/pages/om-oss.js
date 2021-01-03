@@ -8,7 +8,7 @@ import at from '../images/at.png';
 
 import anki from '../images/anki.jpg';
 import katrin from '../images/katrin.jpg';
-import diana from '../images/diana.jpg';
+import dianaH from '../images/diana.jpg';
 import annette from '../images/annette.jpg';
 import monica from '../images/monica.jpg';
 import annika from '../images/annika.jpg';
@@ -78,7 +78,7 @@ export const OmOss = () => {
                 Mångårig erfarenhet av att arbeta inom förskolan och som fackligt förtroendevald.
               </p>
               </div>
-            <img src={diana} alt='Diana Hall'></img>
+            <img src={dianaH} alt='Diana Hall'></img>
           </div>
           <div className=" presentingPerson presentingPersonEven">
             <img src={annette} alt='Annette Nord'></img>
