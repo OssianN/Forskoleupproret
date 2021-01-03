@@ -15,11 +15,11 @@ export const OmOss = () => {
           Om Oss
         </h1>
         <h2>
-          Förskoleupproret - det här arbetar vi för
+          Vilka är vi bakom Förskoleupproret?
         </h2>
-        <h2>
-          Ledningsgruppen: vilka är vi?
-        </h2>
+        <p>
+          Förskoleupproret drivs ideellt av sex engagerade pedagoger i förskolan. Allt arbete med Förskoleupproret sker under kvällar, helger och efter arbetstid. Ledningsgruppen har nästan daglig kontakt och diskuterar kontinuerligt Förskoleupprorets utvecklingsområden, nästa steg och eventuella kampanj.
+        </p>
         <h2>
           Kontakt:
         </h2>
