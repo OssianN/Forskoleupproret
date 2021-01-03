@@ -44,6 +44,12 @@
   border: 1px solid #F58124;
 }
 
+@media (max-width: 600px) {
+  .mainNav {
+    display: none;
+  }
+}
+
 @media (max-width: 700px) {
   .mainNav a {
     font-size: 14px;
