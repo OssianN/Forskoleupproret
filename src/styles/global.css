@@ -9,7 +9,18 @@ html, body, .app {
 .tabContent {
   display: flex;
   flex-direction: column;
-  padding: 70px 0 0 0;
+}
+
+@media (max-width: 600px) {
+  .tabContent {
+    padding: 0;
+  }
+}
+
+@media (min-width: 601px) {
+  .tabContent {
+    padding: 70px 0 0 0;
+  }
 }
 
 .tabContent h1 {
@@ -27,16 +38,14 @@ html, body, .app {
   align-self: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 709px) {
   .tabContentIntro {
     flex-direction: column;
-    height: 70%;
-    background-size: 100% 80%;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
   }
 
   .tabContentIntroText {
-    margin: 0 50px;
+    margin: 0 15%;
     order: 0;
     text-align: center;
   }
@@ -59,29 +68,33 @@ html, body, .app {
   }
 
   .presentingPerson img {
-    width: 100%;
+    width: 94%;
     order: 2;
+    padding: 3%;
     margin: 50px 0 0 0;
   }
 
   .personText {
-    margin: 5% 5% 0 5%;
+    margin: 5% 15% 0 15%;
     order: 1;
+  }
+
+  .personText p {
+    font-size: 20px;
   }
 }
 
-@media (min-width: 601px) and (max-width: 915px) {
+@media (min-width: 710px) and (max-width: 999px) {
   .tabContentIntro {
     flex-direction: row;
   }
 
   .tabContentIntro img {
-    width: 100%;
     max-height: 100vh;
   }
 
   .tabContentIntroText {
-    margin: 0 20px;
+    margin: 0 5%;
   }
 
   .tabContentIntroText h2 {
@@ -91,6 +104,7 @@ html, body, .app {
 
   .tabContentIntroText p {
     font-size: 16px;
+    word-break: break-word;
   }
 
   .tabContentIntro img {
@@ -102,32 +116,37 @@ html, body, .app {
   }
 
   .presentingPerson img {
-    height: 280px;
-    margin: 0 0 0 5%;
+    height: 300px;
     top: 100px;
     position: -webkit-sticky;
     position: sticky;
+    margin: 5px 5% 0 5%;
   }
 
-  .personText {
-    margin: 0 5%;
+  .presentingPersonOdd .personText {
+    margin-left: 5%;
+  }
+
+  .presentingPersonEven .personText {
+    margin-right: 5%;
   }
 }
 
-@media (min-width: 916px) {
+@media (min-width: 1000px) {
   .tabContentIntro {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .tabContentIntro img {
     width: 50%;
     max-height: 100vh;
-    justify-self: left;
   }
 
   .tabContentIntroText {
-    margin: 0 2%;
-    min-width: 430px;
+    margin: 0 1%;
+    padding: 0 5%;
+    min-width: 400px;
     max-width: 430px;
   }
 
@@ -161,7 +180,6 @@ html, body, .app {
 .tabContentIntro {
   display: flex;
   height: auto;
-  max-height: 100vh;
   width: 100%;
   background-color: #F58124;
 }
@@ -175,7 +193,6 @@ html, body, .app {
   display: flex;
   flex-direction: column;
   align-self: center;
-  word-break: break-word;
 }
 
 .howItStartedVideo {
@@ -187,18 +204,17 @@ html, body, .app {
   display: flex;
   justify-content: space-between;
   padding: 5%;
-  height: 100vh;
+  height: 10vh;
   background-color: #F58124;
 }
 
 .contactInfo span {
-  margin: 0 20px 0 0;
+  margin: 0 1% 0 0;
 }
 
 .presentingPerson {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   height: auto;
   text-align: justify;
 }
@@ -224,4 +240,81 @@ html, body, .app {
 .presentingPersonEven {
   background-color: black;
   color: white;
+}
+
+@media (max-width: 400px) {
+  .demandWrapper ul {
+    padding: 0 10%;
+  }
+
+  .forskoleupproretsKrav h1 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  .demandWrapper ul {
+    padding: 0 10%;
+  }
+}
+
+@media (min-width: 651px) {
+  .demandWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .demandWrapper ul {
+    padding: 10%;
+  }
+}
+
+.forskoleupproretsKrav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.demandWrapper {
+  margin-top: 20px;
+  display: grid;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.demandWrapper ul {
+  list-style: none;
+}
+
+.demandWrapper ul li::before {
+  content: "\2022";
+  color: #F58124;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.demandWrapper b {
+  font-size: 25px;
+  color: #F58124;
+}
+
+.demandWrapper li {
+  margin: 25px 0;
+  padding: 0;
+  font-size: 25px;
+  max-width: 100%;
+}
+
+.forskoleupproretsKrav h2 {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+  width: 80%;
 }
