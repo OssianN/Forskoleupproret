@@ -8,8 +8,8 @@ import at from '../images/at.png';
 
 import anki from '../images/anki.jpg';
 import katrin from '../images/katrin.jpg';
-import diana from '../images/diana.jpg';
 import annette from '../images/annette.jpg';
+import diana from '../images/hdiana.jpg';
 import monica from '../images/monica.jpg';
 import annika from '../images/annika.jpg';
 import gruppbild from '../images/gruppbild.jpg';
