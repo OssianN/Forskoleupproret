@@ -15,9 +15,11 @@
     "sendit": "git add . && git commit -m'update' && git push"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.2",
     "gatsby": "^2.26.1",
     "gatsby-plugin-netlify-cms-paths": "^1.3.0",
     "gatsby-plugin-sass": "^2.8.0",
+    "gatsby-source-contentful": "^4.3.1",
     "node-sass": "4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

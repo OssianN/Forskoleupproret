@@ -3,12 +3,107 @@ html, body, .app {
   margin: 0;
   padding: 0;
   font-family: arial;
-  background-color: #f8f8f8;
+  background-color: #e9e9e9;
 }
 
 .tabContent {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  align-self: center;
+}
+
+.goalDemand {
+  display: flex;
+  flex-direction: column;
+}
+
+.om-oss {
+  display: flex;
+  flex-direction: column;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+}
+
+.articleTemplate {
+  display: flex;
+  flex-direction: column;
+}
+
+.articleTemplate .tabContent {
+  margin-top: 10%;
+  padding: 0 25%;
+  text-align: justify;
+}
+
+.contentImage {
+  width: 100%;
+}
+
+.authorImage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 3% 0;
+}
+
+.authorImage h4 {
+  background-color: black;
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+  width: 100%;
+  text-align: right;
+  border-radius: 5px;
+  padding: 20px;
+  padding-right: 40px;
+  margin-right: -20px;
+}
+
+.authorImage img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.articleUl {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.articleUl li {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  list-style: none;
+  color: black;
+  margin: 20px 0;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.articleUl li a {
+  color: black;
+  text-decoration: none;
+}
+
+.articleUl li img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 @media (max-width: 600px) {
@@ -21,12 +116,10 @@ html, body, .app {
   .tabContent {
     padding: 70px 0 0 0;
   }
-}
 
-.tabContent h1 {
-  font-weight: 100;
-  font-size: 50px;
-  margin-bottom: 0;
+  .tabHeader {
+    font-size: 3rem;
+  }
 }
 
 .tabContent a img {
@@ -38,9 +131,11 @@ html, body, .app {
   align-self: center;
 }
 
-@media (max-width: 709px) {
+@media (max-width: 600px) {
   .tabContentIntro {
+    display: flex;
     flex-direction: column;
+    height: 90vh;
     padding: 50px 0 0 0;
   }
 
@@ -84,13 +179,14 @@ html, body, .app {
   }
 }
 
-@media (min-width: 710px) and (max-width: 999px) {
+@media (min-width: 600px) and (max-width: 999px) {
   .tabContentIntro {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .tabContentIntro img {
-    max-height: 100vh;
+    width: 100%;
   }
 
   .tabContentIntroText {
@@ -105,10 +201,6 @@ html, body, .app {
   .tabContentIntroText p {
     font-size: 16px;
     word-break: break-word;
-  }
-
-  .tabContentIntro img {
-    width: 50%;
   }
 
   .presentingPerson {
@@ -134,20 +226,18 @@ html, body, .app {
 
 @media (min-width: 1000px) {
   .tabContentIntro {
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
   }
 
   .tabContentIntro img {
-    width: 50%;
-    max-height: 100vh;
+    height: 100%;
   }
 
   .tabContentIntroText {
-    margin: 0 1%;
-    padding: 0 5%;
+    padding: 0 10%;
     min-width: 400px;
-    max-width: 430px;
   }
 
   .tabContentIntroText h2 {
@@ -178,8 +268,6 @@ html, body, .app {
 }
 
 .tabContentIntro {
-  display: flex;
-  height: auto;
   width: 100%;
   background-color: #F58124;
 }
@@ -193,6 +281,7 @@ html, body, .app {
   display: flex;
   flex-direction: column;
   align-self: center;
+  justify-content: center;
 }
 
 .howItStartedVideo {
@@ -242,12 +331,55 @@ html, body, .app {
   color: white;
 }
 
+.forskoleupproretGoal {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 0 20%;
+  text-align: center;
+  background-color: #F58124;
+}
+
+.forskoleupproretGoal h1 {
+  margin: 0;
+  margin-top: 10%;
+  font-size: 3rem;
+}
+
+.goalParagraph {
+  width: 60%;
+  text-align: center;
+  margin: 10%;
+  font-size: 25px;
+}
+
+.orangeText {
+  padding: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.forskoleupproretGoal h2 {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 30px;
+  margin: 0;
+  font-weight: 100;
+  font-size: 30px;
+  width: 160%;
+}
+
 @media (max-width: 400px) {
   .demandWrapper ul {
     padding: 0 10%;
   }
 
-  .forskoleupproretsKrav h1 {
+  .forskoleupproretDemand h1 {
     font-size: 35px;
   }
 }
@@ -256,9 +388,21 @@ html, body, .app {
   .demandWrapper ul {
     padding: 0 10%;
   }
+
+  .forskoleupproretDemand h1 {
+    margin-top: 5%;
+    font-size: 3rem;
+  }
 }
 
 @media (min-width: 651px) {
+  
+  .forskoleupproretDemand h1 {
+    padding-top: 7%;
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+
   .demandWrapper {
     grid-template-columns: 1fr 1fr;
   }
@@ -268,16 +412,24 @@ html, body, .app {
   }
 }
 
-.forskoleupproretsKrav {
+@media (min-width: 1200px) {
+  .tabContent {
+    margin-top: 5%;
+  }
+}
+
+.forskoleupproretDemand {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2%;
   padding: 0 5%;
 }
 
 .demandWrapper {
-  margin-top: 20px;
+  margin-top: 0;
+  padding-top: 0;
   display: grid;
   max-width: 100%;
   overflow: hidden;
@@ -296,7 +448,7 @@ html, body, .app {
   margin-left: -1em;
 }
 
-.demandWrapper b {
+.demandWrapper span {
   font-size: 25px;
   color: #F58124;
 }
@@ -306,15 +458,4 @@ html, body, .app {
   padding: 0;
   font-size: 25px;
   max-width: 100%;
-}
-
-.forskoleupproretsKrav h2 {
-  background-color: black;
-  border-radius: 5px;
-  color: white;
-  padding: 30px;
-  text-align: center;
-  font-weight: 100;
-  font-size: 40px;
-  width: 80%;
 }

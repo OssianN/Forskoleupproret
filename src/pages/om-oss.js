@@ -16,20 +16,20 @@ import gruppbild from '../images/gruppbild.jpg';
 
 export const OmOss = () => {
   return (
-  <div>
-    <NavBar />
-    <div className='tabContent'>
-      <div className='tabContentIntro'>
-        <img src={gruppbild}></img>
-        <div className='tabContentIntroText'>
-          <h2>
-            Vilka är vi bakom Förskoleupproret?
-          </h2>
-          <p>
-            Förskoleupproret drivs ideellt av sex engagerade pedagoger i förskolan. Allt arbete med Förskoleupproret sker under kvällar, helger och efter arbetstid. Ledningsgruppen har nästan daglig kontakt och diskuterar kontinuerligt Förskoleupprorets utvecklingsområden, nästa steg och eventuella kampanj.
-          </p>
+    <div className='om-oss'>
+      <NavBar />
+      <div className='tabContent'>
+        <div className='tabContentIntro'>
+          <img src={gruppbild} alt='gruppbild'></img>
+          <div className='tabContentIntroText'>
+            <h2>
+              Vilka är vi bakom Förskoleupproret?
+            </h2>
+            <p>
+              Förskoleupproret drivs ideellt av sex engagerade pedagoger i förskolan. Allt arbete med Förskoleupproret sker under kvällar, helger och efter arbetstid. Ledningsgruppen har nästan daglig kontakt och diskuterar kontinuerligt Förskoleupprorets utvecklingsområden, nästa steg och eventuella kampanj.
+            </p>
+          </div>
         </div>
-      </div>
         <div className=" presentingPerson presentingPersonOdd">
           <div className="personText">
             <h2>Anki Jansson</h2>
@@ -64,7 +64,7 @@ export const OmOss = () => {
           <div className="personText">
             <h2>Diana Hall</h2>
             <p>
-            Jag är utbildad barnskötare, Montessorilärare samt leg. förskollärare och har arbetat inom den kommunala förskolan sedan 1980.
+              Jag är utbildad barnskötare, Montessorilärare samt leg. förskollärare och har arbetat inom den kommunala förskolan sedan 1980.
             </p>
             <p>
               Mitt fackliga engagemang  har genomsyrat hela mitt yrkesliv och arbetar 20% som huvudskyddsombud i sin kommun.
@@ -82,7 +82,7 @@ export const OmOss = () => {
               Min spetskompetens i Förskoleupproret:
               Mångårig erfarenhet av att arbeta inom förskolan och som fackligt förtroendevald.
             </p>
-            </div>
+          </div>
           <img src={diana} alt='Diana Hall'></img>
         </div>
         <div className=" presentingPerson presentingPersonEven">
@@ -131,9 +131,9 @@ export const OmOss = () => {
               Min spetskompetens i Förskoleupproret
               Är positiv, lösningsinriktad och har lätt att se verksamheten organisatoriskt i helhetsperspektiv, sammanhang, risker och konsekvenser
             </p>
+            </div>
+            <img src={monica} alt='Monica Lindström'></img>
           </div>
-          <img src={monica} alt='Monica Lindström'></img>
-        </div>
         <div className=" presentingPerson presentingPersonEven">
           <img src={annika} alt='Annica Järking'></img>
           <div className="personText">
@@ -169,28 +169,6 @@ export const OmOss = () => {
               Tillsammans blir vi starka(re)!
             </p>
           </div>
-        </div>
-        <div className="forskoleupproretsKrav">
-          <h1>Förskoleupproret vill se...</h1>
-          <div className="demandWrapper">
-            <ul className='demandlistOne'>
-              <b>Att anpassa barngruppsstorleken efter lokalens storlek</b>
-              <li>max 12 barn i småbarnsgrupp, 1-3 år</li>
-              <li>max 15 barn i storbarnsgrupp, 3-5 år</li>
-              <li>max 4-5 barn per pedagog i varje barngrupp</li>
-              <li>beslut om likvärdig, reglerad planeringstid för förskollärare i hela landet</li>
-            </ul>
-            <ul className='demandlistTwo'>
-              <b>Samt att arbetsgivaren ges förutsättningar:</b>
-              <li>att kringuppgifter tas bort för förskollärare och barnskötare</li>
-              <li>Att ge fortbildning och kurser på arbetstid</li>
-              <li>Att ge alla förskolor tillgång till specialpedagog</li>
-              <li>Att barn i behov av särskilt stöd får de resurser som krävs</li>
-              <li>Att det sätts in vikarier när verksamheten kräver det samt att det kan sättas in från första dagen</li>
-              <li>Att höja löner så vi får behålla våra förskollärare och barnskötare</li>
-            </ul>
-          </div>
-          <h2>Framtiden börjar i förskolan!</h2>
         </div>
         <div className="contactInfo">
           <span>

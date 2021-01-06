@@ -8,6 +8,13 @@ const HomeImages = () => {
   return (
     <div className="homeImgContainer">
       <div className="imageDiv" id="image1">
+        <Link to='/goalDemand'>
+          <img  src={img1} alt='one' />
+          <h2>Mål & Krav</h2>
+          <p>Hur Förskoleupproret började...</p>
+        </Link>
+      </div>
+      <div className="imageDiv" id="image1">
         <Link to='/om-oss'>
           <img src={img1} alt='one' />
           <h2>Om oss</h2>
@@ -15,28 +22,21 @@ const HomeImages = () => {
         </Link>
       </div>
       <div className="imageDiv" id="image1">
-        <Link to='/how-it-started'>
+        <Link to='/history'>
           <img  src={img1} alt='one' />
-          <h2>Såhär började det</h2>
-          <p>Hur Förskoleupproret började...</p>
-          </Link>
-        </div>
-      <div className="imageDiv" id="image1">
-        <Link to='/pressat-lage'>
-          <img  src={img1} alt='one' />
-          <h2>#pressatläge</h2>
+          <h2>Historik</h2>
         </Link>
       </div>
       <div className="imageDiv" id="image1">
-        <Link to='/vi-vagrar-bryta-lagen'>
+        <Link to='/hashtags'>
           <img  src={img1} alt='one' />
-          <h2>#vivägrarbrytalagen</h2>
+          <h2>Hashtags</h2>
         </Link>
       </div>
       <div className="imageDiv" id="image1">
-        <Link to='/accomplishments'>
+        <Link to='/news'>
           <img src={img1} alt='one' />
-          <h2>Det här har vi gjort</h2>
+          <h2>Nyheter</h2>
           <p>Vad vi har gjort och åstakommit hittills...</p>
         </Link>
       </div>
