@@ -38,7 +38,7 @@ const PostTemplate = ({ data }) => {
         <div>{ documentToReactComponents(JSON.parse(post.mainText.raw)) }</div>
         <div className='authorImage' >
           <h4>{ post.authorImage.title }</h4>
-          <img src={ post.authorImage.file.url } alt='article'></img>
+          <img src={ post.authorImage.file.url } alt={post.authorImage.title}></img>
         </div>
       </div>
     </div>

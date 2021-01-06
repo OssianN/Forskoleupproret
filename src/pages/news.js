@@ -11,27 +11,26 @@ const Press = () => {
         allContentfulBlogPost(sort: { fields: publishDate, order: DESC }) {
           edges {
             node {
-              title
               id
               slug
-              description {
-                internal {
-                  content
-                }
-              }
+              title
+              publishDate
               authorImage {
                 file {
                   url
                 }
-                description
+                title
               }
+              mainText {
+                raw
+              }
+              description
               contentImage {
                 file {
                   url
                 }
-                description
+                title
               }
-              publishDate(formatString: "Do MMMM, YYYY")
             }
           }
         }
@@ -55,9 +54,9 @@ const Press = () => {
               <li key={post.node.id}>
                 <Link to={`/${post.node.slug}`}>
                   <h3>{ post.node.title }</h3>
-                  <p>{ post.node.description.internal.content }</p>
+                  <p>{ post.node.description }</p>
                 </Link>
-                <img src={post.node.contentImage.file.url }></img>
+                <img src={post.node.contentImage.file.url } alt={post.node.contentImage.title}></img>
               </li>
             );
           })}
