@@ -8,7 +8,7 @@ const Press = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allContentfulBlogPost(sort: { fields: publishDate, order: DESC }) {
+        allContentfulBlogPost {
           edges {
             node {
               id
