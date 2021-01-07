@@ -44,23 +44,24 @@ const Press = () => {
     <div className='news'>
       <NavBar />
       <div className='tabContent'>
-        <h1 className='tabHeader'>
-          Nyheter från Förskoleupproret
-        </h1>
-        <ul className='articleUl'>
-          <h2>Artiklar</h2>
-          {data.allContentfulBlogPost.edges.map(post => {
-            return (
-              <li key={post.node.id}>
-                <Link to={`/${post.node.slug}`}>
-                  <h3>{ post.node.title }</h3>
-                  <p>{ post.node.description }</p>
-                </Link>
-                <img src={post.node.contentImage.file.url } alt={post.node.contentImage.title}></img>
-              </li>
-            );
-          })}
-        </ul>
+        <div className='articleListContainer'>
+          <h1 className='tabHeader'>
+            Nyheter från Förskoleupproret
+          </h1>
+          <ul className='articleUl'>
+            {data.allContentfulBlogPost.edges.map(post => {
+              return (
+                <li key={post.node.id}>
+                  <Link to={`/${post.node.slug}`}>
+                    <h3>{ post.node.title }</h3>
+                    <p>{ post.node.description }</p>
+                  </Link>
+                  <img src={post.node.contentImage.file.url } alt={post.node.contentImage.title}></img>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   )

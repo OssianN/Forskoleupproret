@@ -9,30 +9,17 @@ html, body, .app {
 .tabContent {
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 1200px;
   align-self: center;
 }
 
-.goalDemand {
-  display: flex;
-  flex-direction: column;
-}
-
-.om-oss {
-  display: flex;
-  flex-direction: column;
-}
-
-.history {
-  display: flex;
-  flex-direction: column;
-}
-
-.news {
-  display: flex;
-  flex-direction: column;
-}
-
+.goalDemand,
+.om-oss,
+.history,
+.hashtags,
+.news,
+.press,
 .articleTemplate {
   display: flex;
   flex-direction: column;
@@ -43,6 +30,15 @@ html, body, .app {
   padding: 5%;
   text-align: justify;
   background-color: white;
+}
+
+.articleListContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 90vh;
+  background-color: #F58124;
+  border-radius: 5px;
 }
 
 .contentImage {
@@ -79,9 +75,8 @@ html, body, .app {
 }
 
 .articleUl {
-  margin: 0;
+  margin: 0 20%;
   padding: 0;
-  width: 100%;
 }
 
 .articleUl li {
@@ -120,6 +115,7 @@ html, body, .app {
 
   .tabHeader {
     font-size: 3rem;
+    margin-top: 10%;
   }
 }
 
@@ -288,9 +284,19 @@ html, body, .app {
   justify-content: center;
 }
 
-.howItStartedVideo {
+.thisIsHowItStarted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
+  padding-bottom: 5%;
+  background-color: #F58124;
+  border-radius: 5px;
+}
+
+.howItStartedVideo {
+  align-self: center;
 }
 
 .contactInfo {

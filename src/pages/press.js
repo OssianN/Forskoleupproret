@@ -3,7 +3,7 @@ import NavBar from '../components/nav-bar/NavBar';
 
 export const Press = () => {
   return (
-    <div>
+    <div className='press'>
       <NavBar />
       <div className='tabContent'>
         <h1 className='tabHeader'>
