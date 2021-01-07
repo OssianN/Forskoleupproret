@@ -17,8 +17,8 @@ html, body, .app {
 .goalDemand,
 .om-oss,
 .history,
-.hashtags,
-.news,
+.pressatLage,
+.viVagrarBrytaLagen,
 .press,
 .articleTemplate {
   display: flex;
@@ -36,8 +36,22 @@ html, body, .app {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 90vh;
+  min-height: 80vh;
   background-color: #F58124;
+  border-radius: 5px;
+}
+
+.press h2 {
+  margin: 0 0 2% 20%;
+  font-size: 30px;
+}
+
+.articleListContainer2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 90vh;
+  margin-top: 5%;
   border-radius: 5px;
 }
 
@@ -77,6 +91,7 @@ html, body, .app {
 .articleUl {
   margin: 0 20%;
   padding: 0;
+  height: 150px;
 }
 
 .articleUl li {
@@ -95,9 +110,12 @@ html, body, .app {
   text-decoration: none;
 }
 
+.articleUl li a h3 {
+  font-size: 25px;
+}
+
 .articleUl li img {
-  width: 200px;
-  height: 100px;
+  height: 130px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -115,7 +133,7 @@ html, body, .app {
 
   .tabHeader {
     font-size: 3rem;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 
@@ -297,6 +315,10 @@ html, body, .app {
 
 .howItStartedVideo {
   align-self: center;
+  width: 80vw;
+  height: 45vw;
+  max-width: 1000px;
+  max-height: 562px;
 }
 
 .contactInfo {
@@ -347,21 +369,16 @@ html, body, .app {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 80vh;
   text-align: center;
   background-color: #F58124;
   border-radius: 5px;
 }
 
-.forskoleupproretGoal h1 {
-  margin: 0;
-  margin-top: 10%;
-  font-size: 3rem;
-}
-
 .goalParagraph {
   width: 60%;
   text-align: center;
-  margin: 10%;
+  margin: 5% 10%;
   font-size: 25px;
 }
 
@@ -373,14 +390,14 @@ html, body, .app {
   text-align: center;
 }
 
-.forskoleupproretGoal h2 {
+.forskoleupproretGoal h3 {
   background-color: black;
   border-radius: 5px;
   color: white;
   padding: 30px 0;
   margin: 0;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 25px;
   width: 100%;
 }
 
@@ -398,21 +415,9 @@ html, body, .app {
   .demandWrapper ul {
     padding: 0 10%;
   }
-
-  .forskoleupproretDemand h1 {
-    margin-top: 5%;
-    font-size: 3rem;
-  }
 }
 
 @media (min-width: 651px) {
-  
-  .forskoleupproretDemand h1 {
-    padding-top: 7%;
-    margin-bottom: 0;
-    font-size: 3rem;
-  }
-
   .demandWrapper {
     grid-template-columns: 1fr 1fr;
   }

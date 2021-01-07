@@ -22,11 +22,11 @@ const NavBar = () => {
         <Link to='/history'>
           <li>Historik</li>
         </Link>
-        <Link to='/hashtags'>
-          <li>Hashtags</li>
+        <Link to='/pressatLage'>
+          <li>#pressatläge</li>
         </Link>
-        <Link to='/news'>
-          <li>Nyheter</li>
+        <Link to='/viVagrarBrytaLagen'>
+          <li>#viVägrarBrytaLagen</li>
         </Link>
         <Link to='/press'>
           <li>Press</li>

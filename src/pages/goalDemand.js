@@ -3,26 +3,30 @@ import NavBar from '../components/nav-bar/NavBar';
 
 export const OmOss = () => {
   return (
-  <div className="goalDemand">
-    <NavBar />
-    <div className='tabContent'>
-      <div className="forskoleupproretGoal">
-        <h1> Förskoleupprorets mål</h1>
-        <p className='goalParagraph' >
-          En blocköverskidande, rikstäckande, överenskommelse för en demokratiskt, socialt, miljömässigt och ekonomiskt
-          <br/>
-          <br/>
-          <span className="orangeText"> hållbar förskola </span>
-            med
-          <span className="orangeText"> likvärdig kvalité </span>
-          <br/>
-          <br/>
-          där det ges förutsättningar för att nå målen enligt styrdokumenten.
-        </p>
-      <h2>Framtiden börjar i förskolan!</h2>
-      </div>
-      <div className="forskoleupproretDemand">
-          <h1>Förskoleupprorets krav</h1>
+    <div className="goalDemand">
+      <NavBar />
+      <div className='tabContent'>
+        <div className="forskoleupproretGoal">
+          <h1 className='tabHeader'>
+            Förskoleupprorets mål
+          </h1>
+          <p className='goalParagraph' >
+            En blocköverskidande, rikstäckande, överenskommelse för en demokratiskt, socialt, miljömässigt och ekonomiskt
+            <br/>
+            <br/>
+            <span className="orangeText"> hållbar förskola </span>
+              med
+            <span className="orangeText"> likvärdig kvalité </span>
+            <br/>
+            <br/>
+            där det ges förutsättningar för att nå målen enligt styrdokumenten.
+          </p>
+        <h3>Framtiden börjar i förskolan!</h3>
+        </div>
+        <div className="forskoleupproretDemand">
+          <h1 className='tabHeader'>
+            Förskoleupprorets krav
+          </h1>
           <div className="demandWrapper">
             <ul className='demandlistOne'>
               <span>Att anpassa barngruppsstorleken efter lokalens storlek</span>
