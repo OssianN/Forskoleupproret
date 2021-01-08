@@ -6,6 +6,9 @@ export const HashTags = () => {
     <div className='viVagrarBrytaLagen'>
       <NavBar />
       <div className='tabContent'>
+      <h3 className='tabHeader'>
+          (Denna sida är under arbete)
+          </h3>
         <h1>
           #vivägrarbrytalagen
         </h1>

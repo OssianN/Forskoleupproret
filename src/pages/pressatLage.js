@@ -6,6 +6,9 @@ export const PressatLage = () => {
     <div className='pressatLage'>
       <NavBar />
       <div className='tabContent'>
+      <h3 className='tabHeader'>
+          (Denna sida är under arbete)
+          </h3>
         <h1>
           #pressatläge
         </h1>

@@ -43,6 +43,9 @@ const Press = () => {
       <NavBar />
       <div className='tabContent'>
         <div className='articleListContainer'>
+        <h3 className='tabHeader'>
+          (Denna sida är under arbete)
+        </h3>
         <h1 className='tabHeader'>
           Press
         </h1>
