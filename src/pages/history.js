@@ -7,9 +7,6 @@ export const History = () => {
       <NavBar />
       <div className='tabContent'>
         <div className='thisIsHowItStarted'>
-          <h3 className='tabHeader'>
-          (Denna sida är under arbete)
-          </h3>
           <h1 className='tabHeader'>
             Såhär började det
           </h1>

@@ -35,14 +35,16 @@ html, body, .app {
 .articleListContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  min-height: 80vh;
   background-color: #F58124;
+  min-height: 80vh;
   border-radius: 5px;
 }
 
-.press h2 {
-  margin: 0 0 2% 20%;
+.articleListContainer h2 {
+  color: black;
+  margin: 40px 0;
   font-size: 30px;
 }
 
@@ -89,35 +91,50 @@ html, body, .app {
 }
 
 .articleUl {
-  margin: 0 20%;
-  padding: 0;
-  height: 150px;
+  min-height: 50vh;
+}
+
+.articleLinkText {
+  display: flex;
+  flex-direction: column;
 }
 
 .articleUl li {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
   list-style: none;
-  color: black;
+  background-color: white;
+  box-shadow: 0 0 3px #0000003b;
   margin: 20px 0;
-  padding: 2%;
+  padding-left: 2%;
   border-radius: 5px;
+  max-height: 130px;
+  min-height: 130px;
+  max-width: 600px;
 }
 
 .articleUl li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: black;
   text-decoration: none;
 }
 
 .articleUl li a h3 {
   font-size: 25px;
+  margin: 10px 10px 5px 10px;
+}
+
+.articleUl li a p {
+  margin: 5px 10px 10px 10px;
+  word-break: break-word;
 }
 
 .articleUl li img {
-  height: 130px;
+  width: 100px;
+  height: 100px;
+  margin: 15px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 @media (max-width: 600px) {
@@ -137,7 +154,8 @@ html, body, .app {
   }
 }
 
-.tabContent a img {
+.mainNav li a img,
+.contactInfo a img {
   height: 50px;
   object-fit: contain;
 }
@@ -284,14 +302,14 @@ html, body, .app {
 
 .tabContentIntro {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   background-color: #F58124;
 }
 
 .tabContentIntro img {
   object-fit: contain;
   align-self: center;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 0;
 
 }
 
@@ -392,7 +410,6 @@ html, body, .app {
 
 .forskoleupproretGoal h3 {
   background-color: black;
-  border-radius: 5px;
   color: white;
   padding: 30px 0;
   margin: 0;

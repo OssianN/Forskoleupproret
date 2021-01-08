@@ -22,14 +22,14 @@ const NavBar = () => {
         <Link to='/history'>
           <li>Historik</li>
         </Link>
+        <Link to='/press'>
+          <li>Press</li>
+        </Link>
         <Link to='/pressatLage'>
           <li>#pressatläge</li>
         </Link>
         <Link to='/viVagrarBrytaLagen'>
-          <li>#viVägrarBrytaLagen</li>
-        </Link>
-        <Link to='/press'>
-          <li>Press</li>
+          <li>#vivägrarbrytalagen</li>
         </Link>
       </ul>
     </nav>
