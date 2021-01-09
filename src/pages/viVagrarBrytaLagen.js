@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import NavBar from '../components/nav-bar/NavBar';
 import forskoleupproretBanner from '../images/img1.jpeg';
 import tystnad from '../images/tystnad.png';
@@ -36,9 +37,10 @@ export const HashTags = () => {
             <p>
               Det ligger på oss att tala om för arbetsgivaren vad som inte fungerar så vi och de får en chans att förbättra. Det som inte sägs, det finns inte. Så fram med dokumenten och skriv tillbud!
               <p>
-                <h2 marginTop='0'>Besök vårt dokument</h2>
-                Förskoleupprorets ledningsgrupp har sammanställt <a style={{color: '#F58124'}} href='https://drive.google.com/file/d/1ML2yMr_fDGloLYkRdr9IV8GHtJKSUpNV/view?usp=drivesdk'>ett dokument</a> som ska hjälpa dig att skriva tillbud, när och varför.
+                <h2>Besök vårt dokument</h2>
+                Förskoleupprorets ledningsgrupp har sammanställt ett dokument som ska hjälpa dig att skriva tillbud, när och varför.
               </p>
+              <a style={{color: '#F58124'}} href='https://drive.google.com/file/d/1ML2yMr_fDGloLYkRdr9IV8GHtJKSUpNV/view?usp=drivesdk'>Se dokumentet &#x203A;</a>
             </p>
           </div>
           </div>
@@ -48,9 +50,9 @@ export const HashTags = () => {
               <h3>
                 1000 berättelser från rektorer, förskollärare och barnskötare som avslöjar lagbrott i svensk förskola för att klara budget och upprätthålla ett yttre.
               </h3>
-              <button onClick='https://drive.google.com/file/d/1ueOYTIpeA1dU3s8e7GXlmzQfh5pFlL6B/view?usp=drivesdk'>
-                Gå till berättelserna
-              </button>
+              <Link to='https://drive.google.com/file/d/1ueOYTIpeA1dU3s8e7GXlmzQfh5pFlL6B/view?usp=drivesdk'>
+                Gå till berättelserna &#x203A;
+              </Link>
             </div>
             <img src={thousand} alt='1000'></img>
           </div>
@@ -72,7 +74,7 @@ export const HashTags = () => {
               Vilket avtal som gäller för dig finns på ditt anställningsavtal.
               <br/>
               <br/>
-              <a style={{color: '#F58124'}} href='https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/arbetstidslagen/'>ATL i sin helhet</a>
+              <a style={{color: '#F58124'}} href='https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/arbetstidslagen/'>ATL i sin helhet &#x203A;</a>
             </p>
           </div>
           <div className='gridView toTheRight'>
@@ -84,7 +86,7 @@ export const HashTags = () => {
               Utbildningen syftar också till att i samarbete med hemmen främja barns och elevers allsidiga personliga utveckling till aktiva, kreativa, kompetenta och ansvarskännande individer och medborgare.”
               <br/>
               <br/>
-              <a style={{color: '#F58124'}} href='https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/skollag-2010800_sfs-2010-800'>Skollagen i sin helhet</a>
+              <a style={{color: '#F58124'}} href='https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/skollag-2010800_sfs-2010-800'>Skollagen i sin helhet &#x203A;</a>
             </p>
             <div className='orangeBox'>
               <div className='blackBox'>
@@ -119,7 +121,7 @@ export const HashTags = () => {
               ”I arbetsmiljölagen finns regler om skyldigheter för arbetsgivare och andra skyddsansvariga om att förebygga ohälsa och olycksfall i arbetet. Det finns också regler om samverkan mellan arbetsgivare och arbetstagare, till exempel regler om skyddsombudens verksamhet.”
               <br/>
               <br/>
-              <a style={{color: '#F58124'}} href='https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/arbetsmiljolagen/'>Arbetsmiljölagen i sin helhet</a>
+              <a style={{color: '#F58124'}} href='https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/arbetsmiljolagen/'>Arbetsmiljölagen i sin helhet &#x203A;</a>
             </p>
           </div>
           <div className='gridView toTheRight'>
@@ -142,7 +144,7 @@ export const HashTags = () => {
               <br/>
               <br/>
               <h2>Tillsammans blir vi starkare!</h2>
-              <a style={{color: '#F58124'}} href='https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/offentlighets--och-sekretesslag-2009400_sfs-2009-400'>Offentlighets- och sekretesslagen i sin helhet</a>
+              <a style={{color: '#F58124'}} href='https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/offentlighets--och-sekretesslag-2009400_sfs-2009-400'>Offentlighets- och sekretesslagen i sin helhet &#x203A;</a>
             </p>
             <div className='orangeBox'>
               <div className='blackBox'>
@@ -172,15 +174,15 @@ export const HashTags = () => {
               Vilka är våra rättigheter och skyldigheter?
               Vilka är våra arbetsgivares rättigheter och skyldigheter?<br/>
               <br/>
-              <a style={{color: '#F58124'}} href='https://www.lararforbundet.se/artikelsidor/allt-om-skolavtalet-hok-18'>Länk till Hök18</a>
+              <a style={{color: '#F58124'}} href='https://www.lararforbundet.se/artikelsidor/allt-om-skolavtalet-hok-18'>Länk till Hök18 &#x203A;</a>
               <br/>
-              <a style={{color: '#F58124'}} href='https://www.lararforbundet.se/artiklar/almega-tjansteforetagen-friskoleavtalet-kollektivavtal-for-anstallda-inom-almega-tjansteforetagen'>Länk till Amega</a>
+              <a style={{color: '#F58124'}} href='https://www.lararforbundet.se/artiklar/almega-tjansteforetagen-friskoleavtalet-kollektivavtal-for-anstallda-inom-almega-tjansteforetagen'>Länk till Amega &#x203A;</a>
               <br/>
-              <a style={{color: '#F58124'}} href='https://www.lararforbundet.se/artiklar/arbetsgivarforeningen-kfo-sammanfattning-av-kollektivavtalet'>Länk till Kfo</a>
+              <a style={{color: '#F58124'}} href='https://www.lararforbundet.se/artiklar/arbetsgivarforeningen-kfo-sammanfattning-av-kollektivavtalet'>Länk till Kfo &#x203A;</a>
               <br/>
-              <a style={{color: '#F58124'}} href='https://skr.se/download/18.485e5900175b8e9831716a4f/1605166705948/HOK-20-Kommunal.pdf'>Länk till HÖK Kommunal</a>
+              <a style={{color: '#F58124'}} href='https://skr.se/download/18.485e5900175b8e9831716a4f/1605166705948/HOK-20-Kommunal.pdf'>Länk till HÖK Kommunal &#x203A;</a>
               <br/>
-              <a style={{color: '#F58124'}} href='https://skr.se/arbetsgivarekollektivavtal/kollektivavtal/allmannabestammelserab.145.html'>Länk till Allmänna bestämmelser</a>
+              <a style={{color: '#F58124'}} href='https://skr.se/arbetsgivarekollektivavtal/kollektivavtal/allmannabestammelserab.145.html'>Länk till Allmänna bestämmelser &#x203A;</a>
               <br/>
             </p>
           </div>

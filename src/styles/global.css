@@ -20,6 +20,10 @@ html, body, .app {
   align-self: center;
 }
 
+.tabContent a {
+  text-decoration: none;
+}
+
 .goalDemand,
 .om-oss,
 .history,
@@ -618,13 +622,9 @@ html, body, .app {
   font-size: 40px;
 }
 
-.viVagrarBrytaLagen .vittnesmal button {
-  height: 60px;
-  background-color: #F58124;
-  color: white;
+.viVagrarBrytaLagen .vittnesmal a {
+  color: #F58124;
   font-size: 20px;
-  border: none;
-  border-radius: 8px;
 }
 
 .history .firstSection {
