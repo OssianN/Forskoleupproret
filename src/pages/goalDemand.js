@@ -13,14 +13,13 @@ export const OmOss = () => {
           <p className='goalParagraph' >
             En blocköverskidande, rikstäckande, överenskommelse för en demokratiskt, socialt, miljömässigt och ekonomiskt
             <br/>
-            <br/>
             <span className="orangeText"> hållbar förskola </span>
               med
             <span className="orangeText"> likvärdig kvalité </span>
             <br/>
-            <br/>
             där det ges förutsättningar för att nå målen enligt styrdokumenten.
           </p>
+          <h4>Hitta vårt måldokument <a style={{color: '#ffffff'}} href='https://drive.google.com/file/d/1ao46aacCtTx2C2NfqoV9eoNas2fOYb1e/view?usp=drivesdk'>här</a></h4>
         <h3>Framtiden börjar i förskolan!</h3>
         </div>
         <div className="forskoleupproretDemand">
@@ -45,6 +44,7 @@ export const OmOss = () => {
               <li>Att höja löner så vi får behålla våra förskollärare och barnskötare</li>
             </ul>
           </div>
+          <h4>Hitta vårt kravdokument <a style={{color: '#F58124', paddingBottom: '100px'}} href='https://drive.google.com/file/d/15hH8CIBp8xywhOIQXxw8oc4GBeFtKNUP/view?usp=drivesdk'>här</a></h4>
         </div>
       </div>
     </div>

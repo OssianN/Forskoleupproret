@@ -15,7 +15,7 @@ const HomeImages = () => {
           <img  src={powerful} alt='one' />
           <div className='textbox'>
             <h2>Mål & Krav</h2>
-            <p>Hur Förskoleupproret började...</p>
+            <p>Läs om vårt mål och vilka krav vi har...</p>
           </div>
         </Link>
       </div>
@@ -33,6 +33,7 @@ const HomeImages = () => {
           <img  src={history} alt='one' />
           <div className='textbox'>
             <h2>Historik</h2>
+            <p>Hur Förskoleupproret började...</p>
           </div>
         </Link>
       </div>
@@ -41,18 +42,19 @@ const HomeImages = () => {
           <img src={press} alt='one' />
           <div className='textbox'>
             <h2>Press</h2>
+            <p>Våra artiklar, publicerade artiklar och omnämnda...</p>
           </div>
           <p></p>
         </Link>
       </div>
       <div className="imageDiv hashtagCard">
         <Link to='/viVagrarBrytaLagen'>
-          <h2 className='smallerFont'>#vivägrarbrytalagen</h2>
+          <h2 className='smallerFont' id='hashtagText'>#vivägrarbrytalagen</h2>
         </Link>
       </div>
       <div className="imageDiv hashtagCard">
         <Link to='/pressatLage'>
-          <h2>#pressatläge</h2>
+          <h2 id='hashtagText'>#pressatläge</h2>
         </Link>
       </div>
     </div>

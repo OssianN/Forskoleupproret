@@ -52,12 +52,9 @@ const Press = () => {
     <div className='press'>
       <NavBar />
       <div className='tabContent'>
-        <h1 className='tabHeader'>
-          Press
-        </h1>
         <div className='articleListContainer'>
           <ul className='articleUl'>
-          <h2>Artiklar av Förskoleupproret</h2>
+          <h1 className='tabHeader'>Våra artiklar</h1>
             {data.allContentfulBlogPost.edges.map(post => {
               return (
                 <li key={post.node.id}>
