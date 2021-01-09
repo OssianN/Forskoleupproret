@@ -54,7 +54,7 @@ export const HashTags = () => {
                 Gå till berättelserna &#x203A;
               </Link>
             </div>
-            <img src={thousand} alt='1000'></img>
+          <img src={thousand} alt='1000'></img>
           </div>
           <div className='gridView toTheLeft'>
             <div className='orangeBox'>

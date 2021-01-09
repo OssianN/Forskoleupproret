@@ -18,6 +18,7 @@ html, body, .app {
   width: 100%;
   max-width: 1200px;
   align-self: center;
+  overflow-x: hidden;
 }
 
 .tabContent a {
@@ -527,15 +528,11 @@ html, body, .app {
   justify-self: center;
   background-color: #f58124;
   width: 65%;
-  height: 300px;
+  min-width: 250px;
+  height: 250px;
   margin-top: 5%;
   padding: 5%;
   color: white;
-}
-
-.toTheLeft .orangeBox {
-  margin-left: 0;
-  margin-right: 10%;
 }
 
 .toTheCenter {
@@ -546,11 +543,6 @@ html, body, .app {
 
 .toTheCenter .blackBox {
   padding-bottom: 2%;
-}
-
-.toTheRight .orangeBox {
-  margin-left: 10%;
-  margin-right: 0;
 }
 
 .blackBox {
@@ -591,11 +583,64 @@ html, body, .app {
 }
 
 .viVagrarBrytaLagen .gridView {
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   margin: 5% 0;
+  text-align: justify;
+}
+
+@media (max-width: 850px) {
+  .viVagrarBrytaLagen .gridView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toTheRight .orangeBox {
+    order: 1;
+  }
+
+  .viVagrarBrytaLagen .gridView p {
+    order: 2;
+  }
+
+  .viVagrarBrytaLagen .storiesText {
+    order: 1;
+  }
+
+  .viVagrarBrytaLagen .vittnesmal img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 851px) {
+  .viVagrarBrytaLagen .gridView {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .toTheLeft .orangeBox {
+    margin-left: 0;
+    margin-right: 10%;
+  }
+
+  .toTheRight .orangeBox {
+    margin-left: 10%;
+    margin-right: 0;
+  }
+
+  .viVagrarBrytaLagen .vittnesmal {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .viVagrarBrytaLagen .vittnesmal img {
+    width: 120%;
+    margin-top: -25%;
+    min-width: 600px;
+  }
 }
 
 .viVagrarBrytaLagen p {
@@ -603,9 +648,6 @@ html, body, .app {
 }
 
 .viVagrarBrytaLagen .vittnesmal {
-  display: grid;
-  grid-gap: 5%;
-  grid-template-columns: 1fr 2fr;
   background-color: black;
   padding: 7%;
   margin: 5% 0;
@@ -613,9 +655,8 @@ html, body, .app {
   border-radius: 5px;
 }
 
-.viVagrarBrytaLagen .vittnesmal img {
-  margin-top: -10%;
-  height: 120%;
+.viVagrarBrytaLagen .storiesText {
+  margin: 10%;
 }
 
 .viVagrarBrytaLagen .vittnesmal h1 {
