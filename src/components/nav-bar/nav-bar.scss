@@ -85,6 +85,17 @@ $forange: #F58124;
 }
 
 @media (min-width: 801px) {
+  .navBarContainer {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    position: fixed;
+    height: 130px;
+    padding: 0;
+  }
+
   .mobileNavButton {
     display: none;
   }
@@ -97,6 +108,7 @@ $forange: #F58124;
     background-color: #e9e9e9;
     align-self: center;
     padding: 40px 0;
+    margin: 0 !important;
   }
   
   .mainNav ul {

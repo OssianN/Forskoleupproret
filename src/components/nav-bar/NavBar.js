@@ -10,10 +10,10 @@ const NavBar = () => {
   const handleMobileNavToggle = () => {
     if (showMobileNav === '0') {
       setShowMobileNav('-400px');
-      setNavToogleClass('open')
+      setNavToogleClass('')
     } else {
       setShowMobileNav('0');
-      setNavToogleClass('')
+      setNavToogleClass('open')
     };
   };
 
