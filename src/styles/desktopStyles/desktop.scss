@@ -1,1 +1,19 @@
 @import 'om-oss.scss', 'goalDemand.scss', 'press.scss', 'viVagrarBrytaLagen.scss';
+
+@media (min-width: 601px) {
+  %main-header {
+    font-size: 3em;
+    margin: 5%;
+    align-self: center;
+  }
+  
+  .tabHeader {
+    @extend %main-header
+  }
+}
+
+@media (min-width: 801px) {
+  .tabContent {
+    margin-top: 130px;
+  }
+}

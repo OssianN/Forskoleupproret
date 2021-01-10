@@ -13,7 +13,7 @@
   align-self: center;
   width: 100%;
   background-color: $forange;
-  min-height: 90vh;
+  min-height: 90%;
   border-radius: 5px;
 }
 
@@ -102,6 +102,8 @@
 
 .articleUl li a h3 {
   margin: 10px 10px 5px 10px;
+  font-size: 25px;
+
 }
 
 .articleUl li a p {

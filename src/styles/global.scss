@@ -16,26 +16,6 @@ html, body, .app {
   flex-direction: column;
 }
 
-@media (min-width: 601px) {
-  %main-header {
-    font-size: 3em;
-    margin: 5%;
-    align-self: center;
-  }
-
-  .tabContent {
-    margin-top: 130px;
-  }
-
-  .tabHeader {
-    @extend %main-header
-  }
-
-  .articleUl li a h3 {
-    font-size: 25px;
-  }
-}
-
 .tabContent {
   display: flex;
   flex-direction: column;
@@ -79,16 +59,6 @@ html, body, .app {
   transform: scale(1.2)
 }
 
-@media (min-width: 651px) {
-  .demandWrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .demandWrapper ul {
-    padding: 10%;
-  }
-}
-
 .history .tabContent {
   width: 80%;
 }
@@ -103,7 +73,7 @@ html, body, .app {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80vh;
+  height: 80%;
   background-color: $forange;
   border-radius: 5px;
 }

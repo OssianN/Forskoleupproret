@@ -1,0 +1,9 @@
+@media (min-width: 651px) {
+  .demandWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .demandWrapper ul {
+    padding: 10%;
+  }
+}

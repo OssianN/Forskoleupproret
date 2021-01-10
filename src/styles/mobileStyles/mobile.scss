@@ -1,1 +1,19 @@
 @import 'om-oss.scss', 'goalDemand.scss', 'press.scss', 'viVagrarBrytaLagen.scss';
+
+@media (max-width: 600px) {
+  %main-header-mobile {
+    font-size: 2em;
+    margin: 5%;
+    align-self: center;
+  }
+
+  .tabHeader {
+    @extend %main-header-mobile;
+  }
+}
+
+@media (max-width: 800px) {
+  .tabContent .forskoleupproretGoal {
+    padding-top: 100px;
+  }
+}
