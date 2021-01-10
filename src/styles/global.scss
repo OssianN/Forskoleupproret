@@ -1,0 +1,109 @@
+@import 'desktopStyles/desktop.scss', 'mobileStyles/mobile.scss', 'generalStyles/general.scss';
+
+$forange: #F58124;
+
+html, body, .app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'montserrat';
+  font-weight: 100;
+  background-color: #e9e9e9;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 601px) {
+  %main-header {
+    font-size: 3em;
+    margin: 5%;
+    align-self: center;
+  }
+
+  .tabContent {
+    margin-top: 130px;
+  }
+
+  .tabHeader {
+    @extend %main-header
+  }
+
+  .articleUl li a h3 {
+    font-size: 25px;
+  }
+}
+
+.tabContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  align-self: center;
+  overflow-x: hidden;
+}
+
+.tabContent a {
+  text-decoration: none;
+}
+
+.goalDemand,
+.om-oss,
+.history,
+.pressatLage,
+.hashtags,
+.press,
+.articleTemplate {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainNav li a img,
+.contactInfo a img {
+  height: 50px;
+  object-fit: contain;
+}
+
+.howItStartedVideo {
+  align-self: center;
+  width: 64vw;
+  height: 36vw;
+  max-width: 1000px;
+  max-height: 562px;
+  margin: 4.8% 0 20px 0;
+  border: 10px solid $forange;
+  border-radius: 5px;
+  transform: scale(1.2)
+}
+
+@media (min-width: 651px) {
+  .demandWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .demandWrapper ul {
+    padding: 10%;
+  }
+}
+
+.history .tabContent {
+  width: 80%;
+}
+
+.history .firstSection {
+  margin-top: 100px;
+}
+
+.thisIsHowItStarted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-color: $forange;
+  border-radius: 5px;
+}

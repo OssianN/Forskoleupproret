@@ -1,0 +1,50 @@
+$forange: #F58124;
+
+@media (min-width: 1000px) {
+
+  .tabContentIntro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tabContentIntro img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .tabContentIntroText {
+    padding: 10%;
+  }
+
+  .tabContentIntroText p {
+    font-size: 16px;
+    word-break: break-word;
+  }
+
+  .presentingPerson {
+    display: grid;
+    grid-template-areas: "1fr 1fr";
+    grid-gap: 5%;
+    padding: 5%;
+    overflow-y: hidden;
+  }
+
+  .presentingPerson img {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .personText {
+    text-align: justify;
+  }
+
+  .presentingPerson h2 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  .presentingPerson p {
+    font-size: 16px;
+  }
+}

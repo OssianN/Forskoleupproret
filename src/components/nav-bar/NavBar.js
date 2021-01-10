@@ -8,29 +8,41 @@ const NavBar = () => {
     <nav className='mainNav'>
       <div className='mobileNav'></div>
       <ul>
-        <Link to='/'>
-          <li>
-            <img src={pinIcon} alt='home' id='hemknapp' />
-          </li>
-        </Link>
-        <Link to='/goalDemand'>
-          <li>Mål & Krav</li>
-        </Link>
-        <Link to='/om-oss'>
-          <li>Om Oss</li>
-        </Link>
-        <Link to='/history'>
-          <li>Historik</li>
-        </Link>
-        <Link to='/press'>
-          <li>Press</li>
-        </Link>
-        <Link to='/pressatLage'>
-          <li>#pressatläge</li>
-        </Link>
-        <Link to='/viVagrarBrytaLagen'>
-          <li>#vivägrarbrytalagen</li>
-        </Link>
+        <li>
+          <Link to='/'>
+              <img src={pinIcon} alt='home' id='hemknapp' />
+          </Link>
+        </li>
+        <li>
+          <Link to='/goalDemand'>
+            Mål & Krav
+          </Link>
+        </li>
+        <li>
+          <Link to='/om-oss'>
+            Om Oss
+          </Link>
+        </li>
+        <li>
+          <Link to='/history'>
+            Historik
+          </Link>
+        </li>
+        <li>
+          <Link to='/press'>
+            Press
+          </Link>
+        </li>
+        <li>
+          <Link to='/pressatLage'>
+            #pressatläge
+          </Link>
+        </li>
+        <li>
+          <Link to='/viVagrarBrytaLagen'>
+            #vivägrarbrytalagen
+          </Link>
+        </li>
       </ul>
     </nav>
   );

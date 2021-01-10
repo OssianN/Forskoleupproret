@@ -22,15 +22,16 @@ export const OmOss = () => {
         <div className='tabContentIntro'>
           <img src={gruppbild} alt='gruppbild'></img>
           <div className='tabContentIntroText'>
-            <h2>
+            <h1 className='tabHeader'>
               Vilka är vi bakom Förskoleupproret?
-            </h2>
+            </h1>
             <p>
               Förskoleupproret drivs ideellt av sex engagerade pedagoger i förskolan. Allt arbete med Förskoleupproret sker under kvällar, helger och efter arbetstid. Ledningsgruppen har nästan daglig kontakt och diskuterar kontinuerligt Förskoleupprorets utvecklingsområden, nästa steg och eventuella kampanj.
             </p>
           </div>
         </div>
         <div className=" presentingPerson presentingPersonOdd">
+          <img src={anki} alt='Anki Jansson'></img>
           <div className="personText">
             <h2>Anki Jansson</h2>
             <p><b>Kontakt: mailadress under arbete</b></p>
@@ -40,7 +41,6 @@ export const OmOss = () => {
               Administrerar vår Facebookgrupp samt vår Facebook-sida.</p>
             <p>Tillsammans med Malin Hörlin startade jag detta uppror för att visa att nu får det vara nog! Med en ökad arbetsbelastning, som tar tid från barnen och ger stressad personal, blir det svårare och svårare att utföra vårt uppdrag på bästa sätt. När vi åläggs att göra mer så krävs det också mer resurser. Som förskollärare vill jag bl.a. se minskade barngrupper, mer reflektionstid och att jag får utföra det yrke som jag är utbildad till. Som mamma vill jag kunna lämna det käraste jag har på Fsk och veta att det finns utbildad personal som tröstar, utmanar och ser mitt barn varje dag. Jag vill få politiker att inse att de måste satsa på förskolan och det NU!</p>
           </div>
-          <img src={anki} alt='Anki Jansson'></img>
         </div>
         <div className=" presentingPerson presentingPersonEven">
           <img src={katrin} alt='Katrin Nörthen'></img>

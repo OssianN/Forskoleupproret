@@ -1,0 +1,25 @@
+@media (max-width: 850px) {
+  .viVagrarBrytaLagen .gridView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 7%;
+  }
+
+  .toTheRight .orangeBox {
+    order: 1;
+  }
+
+  .viVagrarBrytaLagen .gridView p {
+    order: 2;
+  }
+
+  .viVagrarBrytaLagen .storiesText {
+    order: 1;
+  }
+
+  .viVagrarBrytaLagen .vittnesmal img {
+    width: 100%;
+  }
+}

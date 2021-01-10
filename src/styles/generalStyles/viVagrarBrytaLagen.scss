@@ -1,0 +1,109 @@
+
+.viVagrarBrytaLagen {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.orangeBox {
+  border-radius: 3px;
+  justify-self: center;
+  align-self: center;
+  background-color: #f58124;
+  width: 65%;
+  min-width: 300px;
+  height: 300px;
+  padding: 5%;
+  margin-bottom: 5%;
+  color: white;
+}
+
+.toTheCenter {
+  align-self: center;
+  padding: 2%;
+  height: auto;
+}
+
+.toTheCenter .blackBox {
+  padding-bottom: 2%;
+}
+
+.blackBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 3px;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.blackBox img {
+  width: 60%;
+  object-fit: cover;
+  margin: 15px 0;
+}
+
+.blackBox h2 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.blackBox h4 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.blackBox h5 {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.blackBox p {
+  margin: 10px 40px;
+  padding-top: 5px;
+  border-top: 1px solid $forange;
+  color: $forange
+}
+
+.viVagrarBrytaLagen .gridView {
+  justify-content: space-between;
+  margin: 2% 0;
+  text-align: justify;
+}
+
+.viVagrarBrytaLagen .gridView h2 {
+  text-align: left;
+}
+
+.viVagrarBrytaLagen p {
+  font-size: 20px;
+}
+
+.viVagrarBrytaLagen .vittnesmal {
+  background-color: black;
+  padding: 7%;
+  margin: 5% 0;
+  color: white;
+  border-radius: 5px;
+}
+
+.viVagrarBrytaLagen .storiesText {
+  margin: 10%;
+}
+
+.viVagrarBrytaLagen .vittnesmal h1 {
+  font-size: 40px;
+}
+
+.viVagrarBrytaLagen .vittnesmal a {
+  color: $forange;
+  font-size: 20px;
+}

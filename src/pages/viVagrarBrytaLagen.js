@@ -17,12 +17,10 @@ export const HashTags = () => {
           <div className='orangeBox toTheCenter'>
             <div className='blackBox'>
               <img src={forskoleupproretBanner} alt='banner'></img>
-              <div className='textBox'>
-                <h2>VI</h2>
-                <h4>vägrar bryta</h4>
-                <h2>LAGEN</h2>
-                <p>#vivägrarbrytalagen</p>
-              </div>
+              <h2>VI</h2>
+              <h4>vägrar bryta</h4>
+              <h2>LAGEN</h2>
+              <p>#vivägrarbrytalagen</p>
             </div>
           </div>
           <div>
@@ -60,11 +58,9 @@ export const HashTags = () => {
             <div className='orangeBox'>
               <div className='blackBox'>
                 <img src={forskoleupproretBanner} alt='banner'></img>
-                <div className='textBox'>
-                  <h2>ATL</h2>
-                  <h4>arbetstidslagen</h4>
-                  <p>#vivägrarbrytalagen</p>
-                </div>
+                <h2>ATL</h2>
+                <h4>arbetstidslagen</h4>
+                <p>#vivägrarbrytalagen</p>
               </div>
             </div>
             <p>
@@ -91,24 +87,20 @@ export const HashTags = () => {
             <div className='orangeBox'>
               <div className='blackBox'>
                 <img src={forskoleupproretBanner} alt='banner'></img>
-                <div className='textBox'>
-                  <h2>Skollagen</h2>
-                  <h5>(2010:800)</h5>
-                  <h4>arbetstidslagen</h4>
-                  <p>#vivägrarbrytalagen</p>
-                </div>
+                <h2>Skollagen</h2>
+                <h5>(2010:800)</h5>
+                <h4>arbetstidslagen</h4>
+                <p>#vivägrarbrytalagen</p>
               </div>
             </div>
           </div>
           <div className='gridView toTheLeft'>
             <div className='orangeBox'>
               <div className='blackBox'>
-                <img src={forskoleupproretBanner} alt='banner'></img>
-                <div className='textBox'>
-                  <h2>AML</h2>
-                  <h4>arbetsmiljölagen</h4>
-                  <p>#vivägrarbrytalagen</p>
-                </div>
+              <img src={forskoleupproretBanner} alt='banner'></img>
+              <h2>AML</h2>
+              <h4>arbetsmiljölagen</h4>
+              <p>#vivägrarbrytalagen</p>
               </div>
             </div>
             <p>
@@ -143,17 +135,15 @@ export const HashTags = () => {
               Många frågor...
               <br/>
               <br/>
-              <h2>Tillsammans blir vi starkare!</h2>
               <a style={{color: '#F58124'}} href='https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/offentlighets--och-sekretesslag-2009400_sfs-2009-400'>Offentlighets- och sekretesslagen i sin helhet &#x203A;</a>
+              <h2>Tillsammans blir vi starkare!</h2>
             </p>
             <div className='orangeBox'>
               <div className='blackBox'>
                 <img src={forskoleupproretBanner} alt='banner'></img>
-                <div className='textBox'>
-                  <h4>Offentlighets- och sekretesslagen</h4>
-                  <img src={tystnad} alt='tystnadsplikt'></img>
-                  <p>#vivägrarbrytalagen</p>
-                </div>
+                <h4>Offentlighets- och sekretesslagen</h4>
+                <img src={tystnad} alt='tystnadsplikt'></img>
+                <p>#vivägrarbrytalagen</p>
               </div>
             </div>
           </div>
@@ -161,11 +151,9 @@ export const HashTags = () => {
             <div className='orangeBox'>
               <div className='blackBox'>
                 <img src={forskoleupproretBanner} alt='banner'></img>
-                <div className='textBox'>
-                  <h2>AVTAL</h2>
-                  <h4>Hök18-ALMEGA-KFO</h4>
-                  <p>#vivägrarbrytalagen</p>
-                </div>
+                <h2>AVTAL</h2>
+                <h4>Hök18-ALMEGA-KFO</h4>
+                <p>#vivägrarbrytalagen</p>
               </div>
             </div>
             <p>

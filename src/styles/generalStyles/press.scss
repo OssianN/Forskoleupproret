@@ -1,0 +1,117 @@
+
+.articleTemplate .tabContent {
+  margin-top: 7%;
+  padding: 5%;
+  text-align: justify;
+  background-color: white;
+}
+
+.articleListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  background-color: $forange;
+  min-height: 90vh;
+  border-radius: 5px;
+}
+
+.articleListContainer h2 {
+  color: black;
+  margin: 40px 0;
+  font-size: 30px;
+}
+
+.articleListContainer2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5%;
+  padding: 0 5%;
+  padding-bottom: 5%;
+  border-radius: 5px;
+}
+
+.contentImage {
+  width: 100%;
+}
+
+.authorImage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 3% 0;
+}
+
+.authorImage h4 {
+  background-color: black;
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+  width: 100%;
+  text-align: right;
+  border-radius: 5px;
+  padding: 20px;
+  padding-right: 40px;
+  margin-right: -20px;
+}
+
+.authorImage img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.articleUl {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2%;
+}
+
+.articleLinkText {
+  display: flex;
+  min-height: 150px;
+  padding: 5%;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 0 3px #0000003b;
+}
+
+.articleUl li {
+  list-style: none;
+  margin: 20px 0;
+  padding-left: 2%;
+  border-radius: 5px;
+  max-height: 130px;
+  min-height: 130px;
+  max-width: 600px;
+}
+
+.articleUl li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.articleUl li a h3 {
+  margin: 10px 10px 5px 10px;
+}
+
+.articleUl li a p {
+  margin: 5px 10px 10px 10px;
+  word-break: break-word;
+}
+
+.articleUl li img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 2px;
+}

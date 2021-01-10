@@ -1,0 +1,42 @@
+$forange: #F58124;
+
+.tabContentIntro {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background-color: $forange;
+}
+
+.tabContentIntro img {
+  object-fit: contain;
+  align-self: center;
+  border-radius: 5px 0 0 0;
+
+}
+
+.tabContentIntroText {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.presentingPersonOdd {
+  background-color: #f8f8f8;
+}
+
+.presentingPersonEven {
+  background-color: black;
+  color: white;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  height: 10vh;
+  background-color: $forange;
+}
+
+.contactInfo span {
+  margin: 0 1% 0 0;
+}

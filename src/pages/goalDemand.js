@@ -44,7 +44,7 @@ export const OmOss = () => {
               <li>Att höja löner så vi får behålla våra förskollärare och barnskötare</li>
             </ul>
           </div>
-          <h4>Hitta vårt kravdokument <a style={{color: '#F58124', paddingBottom: '100px'}} href='https://drive.google.com/file/d/15hH8CIBp8xywhOIQXxw8oc4GBeFtKNUP/view?usp=drivesdk'>här</a></h4>
+          <h4>Hitta vårt kravdokument <a style={{color: '#F58124'}} href='https://drive.google.com/file/d/15hH8CIBp8xywhOIQXxw8oc4GBeFtKNUP/view?usp=drivesdk'>här</a></h4>
         </div>
       </div>
     </div>

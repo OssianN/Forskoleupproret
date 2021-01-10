@@ -53,17 +53,17 @@ const Press = () => {
       <NavBar />
       <div className='tabContent'>
         <div className='articleListContainer'>
-          <ul className='articleUl'>
           <h1 className='tabHeader'>Våra artiklar</h1>
+          <ul className='articleUl'>
             {data.allContentfulBlogPost.edges.map(post => {
               return (
                 <li key={post.node.id}>
                   <Link to={`/${post.node.slug}`}>
+                    <img src={post.node.contentImage.file.url } alt={post.node.contentImage.title}></img>
                     <div className='articleLinkText'>
                       <h3>{ limitTitle(post.node.title) }</h3>
                       <p>{ post.node.description }</p>
                     </div>
-                    <img src={post.node.contentImage.file.url } alt={post.node.contentImage.title}></img>
                   </Link>
                 </li>
               );
