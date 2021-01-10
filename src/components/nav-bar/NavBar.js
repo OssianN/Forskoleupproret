@@ -4,7 +4,7 @@ import './nav-bar.scss';
 import pinIcon from '../../images/pinIcon.png';
 
 const NavBar = () => {
-  const [showMobileNav, setShowMobileNav] = useState('0');
+  const [showMobileNav, setShowMobileNav] = useState('-400px');
   const [navToogleClass, setNavToogleClass] = useState('');
 
   const handleMobileNavToggle = () => {
