@@ -55,21 +55,31 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .homeImgContainer {
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .imageDiv {
     width: 90%;
   }
 }
 
-@media (max-width: 1100px) and (min-width: 601px) {
+@media (max-width: 1001px) and (min-width: 601px) {
   .imageDiv {
     width: 45%;
   }
 }
 
-@media (min-width: 1101px) {
+@media (min-width: 1001px) {
   .imageDiv {
     width: 30%;
+  }
+
+  .homeImgContainer {
+    width: 90%;
   }
 }
 

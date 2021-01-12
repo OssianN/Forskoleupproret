@@ -7,13 +7,13 @@ export const History = () => {
       <NavBar />
       <div className='tabContent'>
         <div className='firstSection'>
-        <iframe 
-          className='howItStartedVideo'
-          title='Såhär började det'
-          frameborder="0" 
-          allow="fullscreen"
-          src='https://mittmedia.solidtango.com/widgets/embed/z7eq5691?articleId=854b20ca-d448-3f4a-9357-6f4c41426265&as=0&auto_play=true&domain=na.se&s_referrer=https%253A%252F%252Fresource-service.mmcloud.se%252F&seek=&siteurl=https%3A%2F%2Fwww.na.se%2Fartikel%2Fna-tv-har-forsoker-politikern-stoppa-dagisupproret&tags=%C3%96rebro+l%C3%A4n%2C%C3%96rebro%2CAllm%C3%A4nt&unitId=%2F34405621%2Fmm%2Fna'>
-        </iframe>
+          <iframe 
+            className='howItStartedVideo'
+            title='Såhär började det'
+            frameborder="0" 
+            allow="fullscreen"
+            src='https://mittmedia.solidtango.com/widgets/embed/z7eq5691?articleId=854b20ca-d448-3f4a-9357-6f4c41426265&as=0&auto_play=true&domain=na.se&s_referrer=https%253A%252F%252Fresource-service.mmcloud.se%252F&seek=&siteurl=https%3A%2F%2Fwww.na.se%2Fartikel%2Fna-tv-har-forsoker-politikern-stoppa-dagisupproret&tags=%C3%96rebro+l%C3%A4n%2C%C3%96rebro%2CAllm%C3%A4nt&unitId=%2F34405621%2Fmm%2Fna'>
+          </iframe>
           <h1>
             Ankis egna berättelse
           </h1>

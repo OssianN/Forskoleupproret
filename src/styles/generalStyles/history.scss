@@ -3,19 +3,18 @@
   display: flex;
   align-self: center;
   flex-direction: column;
-  min-height: 95%;
-  padding: 0 5%;
+  align-items: center;
+  width: 100%;
+  min-height: 85%;
+  text-align: center;
   background-color: #F58124;
 }
 
 .howItStartedVideo {
   align-self: center;
-  width: 64vw;
-  height: 36vw;
+  margin-top: 5%;
+  width: 88vw;
+  height: 50vw;
   max-width: 1000px;
   max-height: 562px;
-  margin: 5% 0 20px 0;
-  border: 10px solid $forange;
-  border-radius: 2px;
-  transform: scale(1.2)
 }
