@@ -58,6 +58,7 @@
 @media (max-width: 1000px) {
   .homeImgContainer {
     width: 100%;
+    margin-bottom: 5%;
   }
 }
 

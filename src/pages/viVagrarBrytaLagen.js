@@ -139,7 +139,7 @@ export const HashTags = () => {
             <div className='orangeBox'>
               <div className='blackBox'>
                 <img src={forskoleupproretBanner} alt='banner'></img>
-                <h4>Offentlighets- och sekretesslagen</h4>
+                <h5>Offentlighets- och sekretesslagen</h5>
                 <img src={tystnad} alt='tystnadsplikt'></img>
                 <p>#vivägrarbrytalagen</p>
               </div>

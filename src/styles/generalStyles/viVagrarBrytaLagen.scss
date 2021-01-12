@@ -1,12 +1,12 @@
 
 .omHashtagen {
   display: flex;
-  align-self: center;
   flex-direction: column;
   min-height: 85%;
   text-align: center;
   background-color: white;
-  padding: 0 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .orangeBox {
@@ -15,8 +15,6 @@
   align-self: center;
   background-color: #f58124;
   width: 65%;
-  min-width: 300px;
-  height: 300px;
   padding: 5%;
   margin-bottom: 5%;
   color: white;
@@ -52,19 +50,16 @@
 
 .blackBox h2 {
   margin: 0;
-  font-size: 3em;
   font-weight: lighter;
   text-align: center;
 }
 
 .blackBox h4 {
   margin: 0;
-  font-size: 2em;
   font-weight: lighter;
 }
 
 .blackBox h5 {
-  font-size: 1em;
   margin: 5px 0;
 }
 
@@ -83,10 +78,6 @@
 
 .viVagrarBrytaLagen .gridView h2 {
   text-align: left;
-}
-
-.viVagrarBrytaLagen p {
-  font-size: 20px;
 }
 
 .viVagrarBrytaLagen .vittnesmal {

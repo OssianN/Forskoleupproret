@@ -1,5 +1,7 @@
 @import 'om-oss.scss', 'goalDemand.scss', 'history.scss', 'press.scss', 'viVagrarBrytaLagen.scss';
 
+$mobilePSize: 16px;
+
 @media (max-width: 600px) {
   %main-header-mobile {
     font-size: 2em;
@@ -19,5 +21,9 @@
   .press .articleListContainer,
   .omHashtagen {
     padding-top: 70px;
+  }
+
+  .tabContent p {
+    font-size: $mobilePSize;
   }
 }

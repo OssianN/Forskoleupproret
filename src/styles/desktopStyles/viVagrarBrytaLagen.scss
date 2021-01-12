@@ -17,4 +17,28 @@
     margin-top: -25%;
     min-width: 600px;
   }
+
+  .viVagrarBrytaLagen p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 401px) {
+  .orangeBox {
+    min-width: 300px;
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .blackBox h2 {
+    font-size: 3em;
+  }
+
+  .blackBox h4 {
+    font-size: 2em;
+  }
+
+  .blackBox h5 {
+    font-size: 2em;
+  }
 }
