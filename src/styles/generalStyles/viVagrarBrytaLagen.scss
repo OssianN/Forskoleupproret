@@ -1,14 +1,16 @@
 
-.viVagrarBrytaLagen {
+.omHashtagen {
   display: flex;
+  align-self: center;
   flex-direction: column;
-  padding: 5%;
-  background-color: #fff;
-  border-radius: 5px;
+  min-height: 85%;
+  text-align: center;
+  background-color: white;
+  padding: 0 5%;
 }
 
 .orangeBox {
-  border-radius: 3px;
+  border-radius: 2px;
   justify-self: center;
   align-self: center;
   background-color: #f58124;
@@ -92,7 +94,7 @@
   padding: 7%;
   margin: 5% 0;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .viVagrarBrytaLagen .storiesText {

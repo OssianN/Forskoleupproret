@@ -12,8 +12,14 @@
   }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 1001px) {
   .tabContent {
     margin-top: 130px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .tabContent:nth-child(2) {
+    border-radius: 8px;
   }
 }

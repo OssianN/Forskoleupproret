@@ -34,7 +34,7 @@ html, body, .app {
 .om-oss,
 .history,
 .pressatLage,
-.hashtags,
+.viVagrarBrytaLagen,
 .press,
 .articleTemplate {
   display: flex;
@@ -45,35 +45,4 @@ html, body, .app {
 .contactInfo a img {
   height: 50px;
   object-fit: contain;
-}
-
-.howItStartedVideo {
-  align-self: center;
-  width: 64vw;
-  height: 36vw;
-  max-width: 1000px;
-  max-height: 562px;
-  margin: 4.8% 0 20px 0;
-  border: 10px solid $forange;
-  border-radius: 5px;
-  transform: scale(1.2)
-}
-
-.history .tabContent {
-  width: 80%;
-}
-
-.history .firstSection {
-  margin-top: 100px;
-}
-
-.thisIsHowItStarted {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80%;
-  background-color: $forange;
-  border-radius: 5px;
 }

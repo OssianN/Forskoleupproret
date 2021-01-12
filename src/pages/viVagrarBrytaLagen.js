@@ -7,13 +7,11 @@ import thousand from '../images/1000.svg';
 
 export const HashTags = () => {
   return (
-    <div className='hashtags'>
+    <div className='viVagrarBrytaLagen'>
       <NavBar />
       <div className='tabContent'>
-        <h1 className='tabHeader'>
-          #vivägrarbrytalagen
-        </h1>
-        <div className='viVagrarBrytaLagen'>
+        <div className='omHashtagen'>
+        <h1 className='tabHeader'>#vivägrarbrytalagen</h1>
           <div className='orangeBox toTheCenter'>
             <div className='blackBox'>
               <img src={forskoleupproretBanner} alt='banner'></img>

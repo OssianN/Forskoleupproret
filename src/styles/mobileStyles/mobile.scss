@@ -1,4 +1,4 @@
-@import 'om-oss.scss', 'goalDemand.scss', 'press.scss', 'viVagrarBrytaLagen.scss';
+@import 'om-oss.scss', 'goalDemand.scss', 'history.scss', 'press.scss', 'viVagrarBrytaLagen.scss';
 
 @media (max-width: 600px) {
   %main-header-mobile {
@@ -12,8 +12,8 @@
   }
 }
 
-@media (max-width: 800px) {
-  .tabContent .forskoleupproretGoal {
-    padding-top: 100px;
+@media (max-width: 1000px) {
+  .tabContent:nth-child(2) {
+    padding-top: 700px;
   }
 }

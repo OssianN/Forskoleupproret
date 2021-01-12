@@ -1,0 +1,21 @@
+
+.history .firstSection {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  min-height: 95%;
+  padding: 0 5%;
+  background-color: #F58124;
+}
+
+.howItStartedVideo {
+  align-self: center;
+  width: 64vw;
+  height: 36vw;
+  max-width: 1000px;
+  max-height: 562px;
+  margin: 5% 0 20px 0;
+  border: 10px solid $forange;
+  border-radius: 2px;
+  transform: scale(1.2)
+}
