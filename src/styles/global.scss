@@ -42,9 +42,3 @@ html, body, .app {
   display: flex;
   flex-direction: column;
 }
-
-.mainNav li a img,
-.contactInfo a img {
-  height: 50px;
-  object-fit: contain;
-}
