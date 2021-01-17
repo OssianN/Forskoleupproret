@@ -13,7 +13,7 @@ export const OmOss = () => {
             Förskoleupprorets mål
           </h1>
           <img className='goalDemandImage' src={goalImage} alt='demand'></img>
-          <p className='goalParagraph' >
+          <p className='introParagraph'>
             En blocköverskidande, rikstäckande, överenskommelse för en demokratiskt, socialt, miljömässigt och ekonomiskt
             <span className="orangeText"> hållbar förskola </span>
             med

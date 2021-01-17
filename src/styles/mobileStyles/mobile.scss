@@ -1,6 +1,6 @@
 @import 'om-oss.scss', 'goalDemand.scss', 'history.scss', 'press.scss', 'viVagrarBrytaLagen.scss';
 
-$mobilePSize: 1.3em;
+$pSize: 1em;
 
 @media (max-width: 600px) {
   %main-header-mobile {
@@ -28,6 +28,6 @@ $mobilePSize: 1.3em;
   }
 
   .tabContent p {
-    font-size: $mobilePSize;
+    font-size: $pSize;
   }
 }

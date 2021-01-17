@@ -13,9 +13,8 @@
   height: 30vh;
   min-height: 230px;
   margin: 1%;
-  border: solid #cccccc 1px;
   border-radius: 8px;
-  box-shadow: 0 1px 3px #cccccc;
+  box-shadow: 0 1px 3px #dadada;
   background-color: white;
   overflow: hidden;
   animation-name: imageDiv;

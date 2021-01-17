@@ -23,7 +23,7 @@ export const OmOss = () => {
           <h1 className='tabHeader'>
             Vilka är vi bakom Förskoleupproret?
           </h1>
-          <p>
+          <p className='introParagraph'>
             Förskoleupproret drivs ideellt av sex engagerade pedagoger i förskolan. Allt arbete med Förskoleupproret sker under kvällar, helger och efter arbetstid. Ledningsgruppen har nästan daglig kontakt och diskuterar kontinuerligt Förskoleupprorets utvecklingsområden, nästa steg och eventuella kampanj.
           </p>
           <img src={gruppbild} alt='gruppbild'></img>
