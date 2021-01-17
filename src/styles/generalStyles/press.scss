@@ -34,35 +34,6 @@
   width: 100%;
 }
 
-.authorImage {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 3% 0;
-}
-
-.authorImage h4 {
-  background-color: black;
-  color: white;
-  font-weight: 200;
-  font-size: 20px;
-  width: 100%;
-  text-align: right;
-  border-radius: 5px;
-  padding: 20px;
-  padding-right: 40px;
-  margin-right: -20px;
-}
-
-.authorImage img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
 .articleUl {
   display: flex;
   flex-direction: column;

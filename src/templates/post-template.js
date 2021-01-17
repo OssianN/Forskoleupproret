@@ -33,12 +33,14 @@ const PostTemplate = ({ data }) => {
     <div className="articleTemplate">
       <NavBar />
       <div className='tabContent'>
-        <h1>{ post.title }</h1>
-        <img className='contentImage' src={ post.contentImage.file.url } alt='content'></img>
-        <div>{ documentToReactComponents(JSON.parse(post.mainText.raw)) }</div>
-        <div className='authorImage' >
-          <h4>{ post.authorImage.title }</h4>
-          <img src={ post.authorImage.file.url } alt={post.authorImage.title}></img>
+        <div className='firstSection'>
+          <h1>{ post.title }</h1>
+          <img className='contentImage' src={ post.contentImage.file.url } alt='content'></img>
+          <div>{ documentToReactComponents(JSON.parse(post.mainText.raw)) }</div>
+          <div className='authorImage' >
+            <img src={ post.authorImage.file.url } alt={post.authorImage.title}></img>
+            <h4>{ post.authorImage.title }</h4>
+          </div>
         </div>
       </div>
     </div>

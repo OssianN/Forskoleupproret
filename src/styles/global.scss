@@ -1,6 +1,7 @@
 @import 'desktopStyles/desktop.scss', 'mobileStyles/mobile.scss', 'generalStyles/general.scss';
 
 $forange: #F58124;
+$tabContentBackground: #f8f8f8;
 
 html, body, .app {
   width: 100%;
@@ -8,7 +9,7 @@ html, body, .app {
   padding: 0;
   font-family: 'montserrat';
   font-weight: 100;
-  background-color: #e9e9e9;
+  background-color: #f8f8f8;
 }
 
 .app {

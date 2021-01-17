@@ -1,6 +1,6 @@
 @import 'om-oss.scss', 'goalDemand.scss', 'history.scss', 'press.scss', 'viVagrarBrytaLagen.scss';
 
-$mobilePSize: 16px;
+$mobilePSize: 1.3em;
 
 @media (max-width: 600px) {
   %main-header-mobile {
@@ -15,6 +15,10 @@ $mobilePSize: 16px;
 }
 
 @media (max-width: 1000px) {
+  .firstSection {
+    padding-top: 20% !important;
+  }
+
   .forskoleupproretGoal,
   .history .firstSection,
   .om-oss .tabContentIntro,

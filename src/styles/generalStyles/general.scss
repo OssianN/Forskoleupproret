@@ -1,1 +1,14 @@
-@import 'om-oss.scss', 'goalDemand.scss', 'press.scss', 'history.scss', 'viVagrarBrytaLagen.scss';
+@import 'om-oss.scss', 'goalDemand.scss', 'press.scss', 'history.scss', 'viVagrarBrytaLagen.scss', 
+'articelTemplate.scss';
+
+.firstSection {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 85%;
+  width: 90%;
+  background-color: #fff;
+  text-align: center;
+  padding: 5%;
+}

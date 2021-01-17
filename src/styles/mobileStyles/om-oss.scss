@@ -1,28 +1,4 @@
 @media (max-width: 1000px) {
-
-  .tabContentIntro {
-    display: flex;
-    flex-direction: column;
-    min-height: 95%;
-  }
-
-  .tabContentIntroText {
-    margin: 0 15%;
-    order: 0;
-    text-align: center;
-  }
-
-  .tabContentIntroText h2 {
-    margin-top: 0;
-    font-size: 30px;
-  }
-
-  .tabContentIntro img {
-    width: 60%;
-    margin: 5% 0;
-    order: 2;
-  }
-
   .presentingPerson {
     display: flex;
     justify-content: center;

@@ -11,7 +11,7 @@ export const HashTags = () => {
       <NavBar />
       <div className='tabContent'>
         <div className='omHashtagen'>
-        <h1 className='tabHeader'>#vivägrarbrytalagen</h1>
+          <h1 className='tabHeader'>#vivägrarbrytalagen</h1>
           <div className='orangeBox toTheCenter'>
             <div className='blackBox'>
               <img src={forskoleupproretBanner} alt='banner'></img>

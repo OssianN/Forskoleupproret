@@ -1,20 +1,10 @@
 $forange: #F58124;
 
-.tabContentIntro {
-  width: 100%;
-  background-color: $forange;
-}
-
-.tabContentIntro img {
+.om-oss .firstSection img {
   object-fit: contain;
   align-self: center;
-}
-
-.tabContentIntroText {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
+  margin: 5% 0;
+  width: 100%;
 }
 
 .presentingPersonOdd {
