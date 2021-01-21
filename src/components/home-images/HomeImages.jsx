@@ -48,13 +48,13 @@ const HomeImages = () => {
         </Link>
       </div>
       <div className="imageDiv hashtagCard">
-        <Link to='/viVagrarBrytaLagen'>
-          <h2 className='smallerFont' id='hashtagText'>#vivägrarbrytalagen</h2>
+        <Link to='/pressatLage'>
+          <h2 id='hashtagText'>#pressatläge</h2>
         </Link>
       </div>
       <div className="imageDiv hashtagCard">
-        <Link to='/pressatLage'>
-          <h2 id='hashtagText'>#pressatläge</h2>
+        <Link to='/viVagrarBrytaLagen'>
+          <h2 className='smallerFont' id='hashtagText'>#vivägrarbrytalagen</h2>
         </Link>
       </div>
     </div>
