@@ -34,6 +34,7 @@ $forange: #F58124;
 @media (max-width: 1000px) {
   .mainNav {
     position: fixed;
+    right: 0;
     height: 100%;
     background-color: #f0f0f0;
     transition: .5s;
@@ -46,7 +47,7 @@ $forange: #F58124;
     height: 45px;
     border: none;
     background-color: transparent;
-    align-self: center;
+    right: 0;
     z-index: 100;
     margin-top: 10px;
   }

@@ -30,7 +30,7 @@ const NavBar = () => {
           <span></span>
         </div>
       </button>
-      <nav className='mainNav' style={{marginLeft: showMobileNav}}>
+      <nav className='mainNav' style={{marginRight: showMobileNav}}>
         <ul>
           <li id='homeLinkMobile'>
             <Link to='/'>
