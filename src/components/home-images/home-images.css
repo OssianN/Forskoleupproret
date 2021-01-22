@@ -33,11 +33,6 @@
   text-decoration: none;
 }
 
-.imageDiv:hover {
-  transform: scale(1.1);
-  z-index: 1;
-}
-
 @media (hover: hover) and (pointer: fine) {
   .imageDiv:hover {
     transform: scale(1.1);
