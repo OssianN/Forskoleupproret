@@ -1,0 +1,71 @@
+.pressatLage .gridView img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  max-height: 350px;
+}
+
+.mediaContainer {
+  background-color: black;
+  border-radius: 8px;
+  padding: 40px;
+  margin: 5% 0;
+}
+
+.mediaLinksContainer {
+  color: white;
+  text-align: left;
+}
+
+.mediaLinksContainer span {
+  text-align: center;
+}
+
+.mediaLinksContainer a {
+  padding-bottom: 20px;
+}
+
+.cafeContainer {
+  width: 100%;
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: 1fr 2fr;
+  align-self: center;
+  text-align: justify;
+  margin: 5% 0;
+}
+
+.cafeImgContainer {
+  height: 370px;
+  margin-bottom: 5%;
+  align-self: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+                      "a b c"
+                      "a d d";
+}
+
+.cafeImgContainer img {
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+#doubleWidthImg {
+  grid-area: d;
+  width: 100%;
+}
+
+#doubleHeightImg {
+  grid-area: a;
+  height: 100%;
+}
+
+.manifestationenContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}

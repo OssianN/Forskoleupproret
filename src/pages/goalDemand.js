@@ -30,15 +30,16 @@ export const OmOss = () => {
           <img className='goalDemandImage' src={demandImage} alt='demand'></img>
           <div className="demandWrapper">
             <ul className='demandlistOne'>
-              <span>Att anpassa barngruppsstorleken efter lokalens storlek</span>
+              <span>Förskoleupproret vill se...</span>
               <li>max 12 barn i småbarnsgrupp, 1-3 år</li>
               <li>max 15 barn i storbarnsgrupp, 3-5 år</li>
               <li>max 4-5 barn per pedagog i varje barngrupp</li>
               <li>beslut om likvärdig, reglerad planeringstid för förskollärare i hela landet</li>
+              <li>att kringuppgifter tas bort för förskollärare och barnskötare</li>
             </ul>
             <ul className='demandlistTwo'>
-              <span>Samt att arbetsgivaren ges förutsättningar:</span>
-              <li>att kringuppgifter tas bort för förskollärare och barnskötare</li>
+              <span>Samt att arbetsgivaren ges förutsättningar...</span>
+              <li>Att anpassa barngruppsstorleken efter lokalens storlek</li>
               <li>Att ge fortbildning och kurser på arbetstid</li>
               <li>Att ge alla förskolor tillgång till specialpedagog</li>
               <li>Att barn i behov av särskilt stöd får de resurser som krävs</li>

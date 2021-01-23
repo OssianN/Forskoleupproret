@@ -1,9 +1,13 @@
 
 @media (min-width: 851px) {
-  .viVagrarBrytaLagen .gridView {
+  .omHashtagen .gridView {
     display: grid;
     grid-gap: 5%;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .omHashtagen a {
+    color: $forange;
   }
 
   .viVagrarBrytaLagen .vittnesmal {
