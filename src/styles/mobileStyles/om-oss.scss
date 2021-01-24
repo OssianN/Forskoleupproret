@@ -6,7 +6,7 @@
     text-align: justify;
     flex-direction: column;
     align-self: center;
-    padding: 0;
+    padding: 0 5%;
   }
 
   .presentingPerson img {
@@ -19,5 +19,10 @@
   .personText {
     margin: 5%;
     order: 1;
+  }
+
+  .contactInfo a img {
+    height: 45px;
+    object-fit: contain;
   }
 }
