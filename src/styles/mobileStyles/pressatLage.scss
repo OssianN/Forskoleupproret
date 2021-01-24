@@ -1,0 +1,36 @@
+@media (max-width: 850px) {
+  @media (max-width: 700px) {
+    .bookCover {
+      width: 70%
+    }
+  }
+  @media (min-width: 701px) {
+    .bookCover {
+      width: 50%
+    }
+  }
+
+  .mediaContainer {
+    padding: 10%;
+  }
+
+  .mediaContainer span h2 {
+    margin-bottom: 20%;
+    text-align: center;
+  }
+
+  .mediaContainer img {
+    margin-top: 10%;
+  }
+
+  // .cafeContainer img {
+  //   object-fit: contain;
+  //   width: 50%;
+  // }
+
+  @media (max-width: 450px) {
+    .mediaContainer h2 {
+      font-size: 1.1em;
+    }
+  }
+}

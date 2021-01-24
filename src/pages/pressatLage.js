@@ -17,6 +17,8 @@ import newspaper from '../images/newspaper.svg';
 import lararforbundet from '../images/lararforbundet.png';
 import kommunal from '../images/kommunal.jpeg';
 import bookCover from '../images/bookCover.jpeg';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 export const PressatLage = () => {
   return (
@@ -93,10 +95,12 @@ export const PressatLage = () => {
               </p>
             </div>
           <div className='cafeImgContainer'>
-            <img src={cafe5} id='doubleHeightImg'></img>
-            <img src={cafe1}></img>
-            <img src={cafe3}></img>
-            <img src={cafe4} id='doubleWidthImg'></img>
+            <Carousel>
+              <img src={cafe5} id='doubleHeightImg'></img>
+              <img src={cafe1}></img>
+              <img src={cafe3}></img>
+              <img src={cafe4} id='doubleWidthImg'></img>
+            </Carousel>
           </div>
           </div>
           <div className='gridView'>

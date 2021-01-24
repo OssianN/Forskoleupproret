@@ -1,145 +1,74 @@
-.pressatLage .gridView img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 3px;
-}
-
-.bookCover {
-  width: 30%;
-  align-self: center;
-  object-fit: contain;
-}
-
-.pressatLage h2 {
-  text-align: left;
-}
-
-.fackforbundet {
-  display: grid;
-  grid-gap: 5%;
-  grid-template-rows: 150px 250px;
-}
-
-.fackforbundet img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.mediaContainer {
-  display: grid;
-  grid-gap: 5%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "a a" "b c";
-  background-color: black;
-  border-radius: 8px;
-  padding: 40px;
-  padding-bottom: 80px;
-  margin: 5% 0;
-}
-
-.mediaLinksContainer {
-  color: white;
-  text-align: left;
-  order: 1;
-}
-
-.mediaContainer span {
-  text-align: center;
-  color: white;
-  display: block;
-  margin: 0 0 3% 0;
-  grid-area: a;
-}
-
-.mediaContainer span h2 {
-  font-size: 2em;
-  text-align: center;
-}
-
-.mediaContainer img {
-  width: 100%;
-  align-self: center;
-}
-
-#sharingArticle {
-  transform: rotate3d(0, 1, 0, 180deg);
-  margin-top: -10%;
-  order: 0;
-}
-
-#newspaper {
-  order: 2;
-}
-
-.cafeContainer {
-  width: 100%;
-  display: grid;
-  grid-gap: 5%;
-  grid-template-columns: 1fr 2fr;
-  align-self: center;
-  text-align: justify;
-  margin: 5% 0;
-}
-
-.cafeImgContainer {
-  height: 370px;
-  min-width: 625px;
-  margin-bottom: 5%;
-  align-self: center;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
-  grid-template-areas:
-                      "a b c"
-                      "a d d";
-}
-
-.cafeImgContainer img {
-  object-fit: cover;
-  height: 100%;
-  max-width: 100%;
-  border-radius: 3px;
-}
-
-#doubleWidthImg {
-  grid-area: d;
-  width: 100%;
-}
-
-#doubleHeightImg {
-  grid-area: a;
-  height: 100%;
-}
-
-.manifestationenContainer {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 2fr 1fr;
-}
-
-.manifestationenContainer img {
-  object-fit: cover;
-  height: 100%;
-}
-
-#shirt {
-  align-self: center;
-}
-
-.fackforbundFooterImages {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  padding-top: 5%;
-  padding-bottom: 10%;
-}
-
-.fackforbundFooter img {
-  object-fit: cover;
-  height: 60px;
-}
-
-.fackforbundFooterImages div {
-  width: 50%;
+@media (min-width: 851px) {
+  .bookCover {
+    width: 30%;
+  }
+  
+  .fackforbundet {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-rows: 150px 250px;
+  }
+  
+  .fackforbundet img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .mediaContainer {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a a" "b c";
+    padding: 40px;
+    padding-bottom: 80px;
+  }
+  
+  .mediaContainer span {
+    grid-area: a;
+  }
+  
+  .mediaContainer span h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  #sharingArticle {
+    transform: rotate3d(0, 1, 0, 180deg);
+    margin-top: -10%;
+    order: 0;
+  }
+  
+  #newspaper {
+    order: 2;
+  }
+  
+  .cafeContainer {
+    width: 100%;
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 2fr;
+    align-self: center;
+    text-align: justify;
+  }
+  
+  #doubleWidthImg {
+    grid-area: d;
+    width: 100%;
+  }
+  
+  #doubleHeightImg {
+    grid-area: a;
+    height: 100%;
+  }
+  
+  .manifestationenContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .manifestationenContainer img {
+    object-fit: cover;
+    height: 100%;
+  }
 }
