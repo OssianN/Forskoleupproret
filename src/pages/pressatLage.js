@@ -3,6 +3,7 @@ import React from 'react'
 import NavBar from '../components/nav-bar/NavBar';
 import fridolin from '../images/fridolin.jpeg';
 import fackforbundet from '../images/fackforbundet.jpg';
+import fackforbundet2 from '../images/fackforbundet2.png';
 import cafe1 from '../images/cafe1.jpeg';
 import cafe3 from '../images/cafe3.jpg';
 import cafe4 from '../images/cafe4.jpg';
@@ -11,6 +12,10 @@ import lokalaPolitiker from '../images/lokalaPolitiker.jpg';
 import manifestation1 from '../images/manifestation1.jpg';
 import manifestation2 from '../images/manifestation2.jpg';
 import shirt from '../images/shirt.jpg';
+import sharingArticle from '../images/sharingArticle.svg';
+import newspaper from '../images/newspaper.svg';
+import lararforbundet from '../images/lararforbundet.png';
+import kommunal from '../images/kommunal.jpeg';
 
 export const PressatLage = () => {
   return (
@@ -36,7 +41,10 @@ export const PressatLage = () => {
             </p>
           </div>
           <div className='gridView'>
-            <img src={fackforbundet}></img>
+            <div className='fackforbundet'>
+              <img src={fackforbundet2}></img>
+              <img src={fackforbundet}></img>
+            </div>
             <p>
               Den 19 mars 2018 överräcktes dokumentet #pressatläge till fackförbunden. 
               Ordförande Tobias Baudin, Kommunal, och Ordförande Johanna Jaara Åstrand Lärarförbundet, tog emot vittnesmålen under en ceremoni i Stockholm.
@@ -58,13 +66,12 @@ export const PressatLage = () => {
             <img src={fridolin}></img>
           </div>
           <div className='mediaContainer'>
+            <span>
+              <h2>
+                Media runt ”Släppet” av #pressatläge
+              </h2>
+            </span>
             <div className='mediaLinksContainer'>
-          <span>
-            <h2>
-              Media runt ”Släppet” av #pressatläge
-            </h2>
-            <p>19 mars 2019</p>
-          </span>
               <h3>Expressen</h3>
               <Link to='https://www.expressen.se/tv/politik/gustav-fridolin-det-de-beskriver-ar-helt-uselt/'>Gustav Fridolin: Det de beskriver är helt uselt &#x203A;</Link>
               <h3>SVT nyheter</h3>
@@ -74,13 +81,16 @@ export const PressatLage = () => {
               <h3>Dagens Nyheter</h3>
               <Link to='https://www.dn.se/sthlm/forskolepersonal-i-stort-upprop-forskolan-ar-i-kris/'>1500 anställda slår larm: Vi har en förskola i kris &#x203A;</Link>
             </div>
+            <img src={sharingArticle} alt='sharing article' id='sharingArticle'></img>
           </div>
-          <h2>Caféträff i Riksdagskaféet 2018 om #pressatläge</h2>
           <div className='cafeContainer'>
-            <p>
-              Efter manifestationen ville vi träffa så många riksdagspartier som möjligt. Så vi bjöd in till ett snack över en kopp kaffe i Riksdagskaféet i maj 2018.
-              Socialdemokraterna, Miljöpartiet och Moderaterna visade sitt intresse och tog sig tid att sitta ner en stund. Vänsterpartiet kunde just denna dag inte närvara men tog igen det genom att Jonas Sjöstedt träffade medlemmar ur Förskoleupproret senare. 
-            </p>
+            <div>
+              <h2>Caféträff i Riksdagskaféet 2018 om #pressatläge</h2>
+              <p>
+                Efter manifestationen ville vi träffa så många riksdagspartier som möjligt. Så vi bjöd in till ett snack över en kopp kaffe i Riksdagskaféet i maj 2018.
+                Socialdemokraterna, Miljöpartiet och Moderaterna visade sitt intresse och tog sig tid att sitta ner en stund. Vänsterpartiet kunde just denna dag inte närvara men tog igen det genom att Jonas Sjöstedt träffade medlemmar ur Förskoleupproret senare. 
+              </p>
+            </div>
           <div className='cafeImgContainer'>
             <img src={cafe5} id='doubleHeightImg'></img>
             <img src={cafe1}></img>
@@ -89,46 +99,51 @@ export const PressatLage = () => {
           </div>
           </div>
           <div className='gridView'>
-          <img src={lokalaPolitiker}></img>
+            <img src={lokalaPolitiker}></img>
+            <span>
               <h2>Träff med lokala politiker om #pressatläge</h2>
-            <p>
-              Möten med lokala partier och politiker är ett återkommande tema bland medlemmarna och Förskoleupproret.
-            </p>
+              <p>
+                Möten med lokala partier och politiker är ett återkommande tema bland medlemmarna och Förskoleupproret.
+              </p>
+            </span>
           </div>
-          <h2>Manifestationen: #pressatläge</h2>
-          <p>Den 18 maj 2018</p>
           <div className='gridView'>
-            <p>
-              Ca 10 000 personer samlades i en rikstäckande oranget hav för att manifestera och demonstrera mot den ohållbara situationen som förskolans personal och barn befinner sig i. 
-              Manifestationen fick medial uppmärksamhet och blev vida känd med talare från
-              Lärarförbundet
-              Kommunal
-              Barnpsykologer
-              Representanter från Förskoleupprorets ledningsgrupp och medlemmar; barnskötare och förskollärare samt vårdnadshavare
-              Talen var i första hand riktade till regering och riksdag då vi anser att problemet är långt mycket vidare än att hålla enbart arbetsgivare ansvariga för situationen som har uppstått. Det är ett gemensamt ansvar som ingen kan svära sig fri från. 
-            </p>
+            <div>
+              <h2>Manifestationen: #pressatläge</h2>
+              <p>Den 18 maj 2018</p>
+              <p>
+                Ca 10 000 personer samlades i en rikstäckande oranget hav för att manifestera och demonstrera mot den ohållbara situationen som förskolans personal och barn befinner sig i. 
+                Manifestationen fick medial uppmärksamhet och blev vida känd med talare från
+                Lärarförbundet
+                Kommunal
+                Barnpsykologer
+                Representanter från Förskoleupprorets ledningsgrupp och medlemmar; barnskötare och förskollärare samt vårdnadshavare
+                Talen var i första hand riktade till regering och riksdag då vi anser att problemet är långt mycket vidare än att hålla enbart arbetsgivare ansvariga för situationen som har uppstått. Det är ett gemensamt ansvar som ingen kan svära sig fri från. 
+              </p>
+            </div>
             <div className='manifestationenContainer'>
               <img src={manifestation1}></img>
               <img src={manifestation2}></img>
             </div>
           </div>
-          <h2>Exempel på Medieuppmärksamheten i samband med manifestationen</h2>
-          <div className='gridView'>
+          <div className='mediaContainer'>
+            <span>
+              <h2>Exempel på Medieuppmärksamheten <br/> i samband med manifestationen</h2>
+            </span>
             <div className='mediaLinksContainer'>
-              <h4>Sveriges regering</h4>
+              <h2>Sveriges regering</h2>
               <Link to='https://www.regeringen.se/pressmeddelanden/2018/05/gustav-fridolin-talar-pa-forskoleupproret-i-eskilstuna/'>Gustav Fridolin talar på Förskoleupproret i Eskilstuna &#x203A;</Link>
-              <h4>HammaröNytt</h4>
-              <Link to='http://www.hammaronytt.se/pressatlage/'>Det landsomfattande upproret har nått Hammarö Kommuns förskolor &#x203A;</Link>  
-            </div>
-            <div className='mediaLinksContainer'>
-              <h4>Kommunalarbetaren</h4>
+              <h2>HammaröNytt</h2>
+              <Link to='http://www.hammaronytt.se/pressatlage/'>Det landsomfattande upproret har nått Hammarö Kommuns förskolor &#x203A;</Link>
+              <h2>Kommunalarbetaren</h2>
               <Link to='https://ka.se/2018/05/29/pressat-lage-i-sveriges-forskolor/'>Pressat läge i Sveriges förskolor &#x203A;</Link>
-              <h4>Dagens Nyheter</h4>
+              <h2>Dagens Nyheter</h2>
               <Link to='https://www.dn.se/asikt/forskoleupproret-maste-tas-pa-allvar/'>Förskoleupproret måste tas på allvar &#x203A;</Link>
             </div>
+            <img src={newspaper} alt='newspaper' id='newspaper'></img>
           </div>
           <div className='gridView'>
-            <img src={shirt}></img>
+            <img src={shirt} id='shirt'></img>
             <p>
               I takt med att #pressatläge växte sig större och vidden av läget i Sveriges förskolor stå klar och få medial uppmärksamhet togs en tröja fram för att uppmärksamma den alarmerande situationen än mer. Tröjan blev vida diskuterad och en symbol för den olagliga tystnadskulturen. 
               I Göteborg med flera kommuner blev Tröjan förbjuden att bära då den ansågs som opinionsbildande på arbetstid. Lärarförbundet Göteborg tog strid och JO-anmälde kommunen. Tröjan kom segrande ur och Göteborg fick backa. 
@@ -144,8 +159,24 @@ export const PressatLage = () => {
               Mot denna bakgrund kommer JO fram till att Göteborgs stad inte haft fog för sina restriktioner när det gäller personalens klädsel. Stadens agerande har därmed utgjort en kränkning av personalens grundlagsfästa yttrandefrihet. Staden får kritik.”
               <br />
               <br />
-              <Link to='www.ystadsallehanda.se/nyheter/goteborg-betalar-skadestand-efter-trojforbud/'>Göteborg betalar skadestånd efter tröjförbud</Link>
+              <Link to='www.ystadsallehanda.se/nyheter/goteborg-betalar-skadestand-efter-trojforbud/'>Göteborg betalar skadestånd efter tröjförbud &#x203A;</Link>
             </p>
+          </div>
+          <div className='fackforbundFooter'>
+            <p>Situationen med tröjan och pandemin har visat hur viktigt det är att ha ett fackförbund i ryggen som kan de juridiska greppen. 
+              Förskoleupproret kan ge stöd och råd, men inte längre än så. Vi rekommenderar alla våra medlemmar och följare att bli medlemmar i facket. 
+              Tillsammans med dem blir vi starka(re).
+            </p>
+            <div className='fackforbundFooterImages'>
+              <div>
+                <img src={lararforbundet} alt='lararforbundet'></img>
+                <p>Förskollärare och Rektor i förskola: Bli medlem <Link to='https://www.lararforbundet.se/artikelsidor/bli-medlem-i-lararforbundet'>här</Link></p>
+              </div>
+              <div>
+                <img src={kommunal} alt='kommunal'></img>
+                <p>Barnskötare: Bli medlem <Link to='https://www.kommunal.se/bli-medlem'>här &#x203A;</Link></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

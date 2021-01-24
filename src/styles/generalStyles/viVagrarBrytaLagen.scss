@@ -5,8 +5,12 @@
   min-height: 85%;
   text-align: center;
   background-color: white;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.omHashtagen a {
+  color: $forange;
 }
 
 .orangeBox {
@@ -72,7 +76,7 @@
 
 .omHashtagen .gridView {
   justify-content: space-between;
-  margin: 2% 0;
+  margin: 5% 0;
   text-align: justify;
 }
 
