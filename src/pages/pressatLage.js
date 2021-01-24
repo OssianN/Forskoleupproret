@@ -16,6 +16,7 @@ import sharingArticle from '../images/sharingArticle.svg';
 import newspaper from '../images/newspaper.svg';
 import lararforbundet from '../images/lararforbundet.png';
 import kommunal from '../images/kommunal.jpeg';
+import bookCover from '../images/bookCover.jpeg';
 
 export const PressatLage = () => {
   return (
@@ -24,7 +25,7 @@ export const PressatLage = () => {
       <div className='tabContent'>
         <div className='omHashtagen'>
           <h1 className='tabHeader'>#pressatläge</h1>
-          <img></img>
+          <img src={bookCover} className='bookCover'></img>
           <div className='gridView'>
             <p>
               Den 27 december 2017 lanserade ledningsgruppen i Förskoleupproret en enkät där förskollärare och barnskötare uppmanades att skriva sin berättelse. Vi hade länge velat samla allt vi får läsa i Facebookgruppen till en offentlig handling som vi sedan kunde nå ut med. Det var emellanåt hemska berättelser men vi kunde föga ana att berättelserna skulle vara ännu värre. 
