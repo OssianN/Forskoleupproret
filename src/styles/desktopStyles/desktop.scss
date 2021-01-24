@@ -23,11 +23,6 @@ $pSize: 1em;
   .tabContent p {
     font-size: $pSize;
   }
-
-  .contactInfo a img {
-    height: 50px;
-    object-fit: contain;
-  }
 }
 
 @media (min-width: 1201px) {

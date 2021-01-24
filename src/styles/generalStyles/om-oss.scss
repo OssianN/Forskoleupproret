@@ -17,13 +17,34 @@ $forange: #F58124;
 }
 
 .contactInfo {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
-  padding: 10%;
-  height: 10%;
-  background-color: $forange;
+  height: 100%;
+}
+
+.contactContainer {
+  margin-top: 20%;
+  height: 150px;
+}
+
+.socialMediaImg {
+  z-index: 10;
 }
 
 .contactInfo span {
   margin: 0 1% 0 0;
+}
+
+.socialImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blob {
+  position: absolute;
+  width: 200px;
+  opacity: .4;
+  z-index: 5;
 }

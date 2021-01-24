@@ -13,6 +13,12 @@ import diana from '../images/hdiana.jpg';
 import monica from '../images/monica.jpg';
 import annika from '../images/annika.jpg';
 import gruppbild from '../images/gruppbild.jpg';
+import blob from '../images/blob.svg';
+import blob1 from '../images/blob1.svg';
+import blob2 from '../images/blob2.svg';
+import blob3 from '../images/blob3.svg';
+import blob4 from '../images/blob4.svg';
+import blob5 from '../images/blob5.svg';
 
 export const OmOss = () => {
   return (
@@ -169,30 +175,54 @@ export const OmOss = () => {
           </div>
         </div>
         <div className="contactInfo">
-          <span>
+          <div className='contactContainer'>
             <a href='mailto:forskoleuppror@gmail.com'>
-              <img src={at} alt='Email link' />
+              <div className='socialImgContainer'>
+                <img className='socialMediaImg' src={at} alt='Email link' />
+                <img src={blob2} alt='Email blob' className='blob' />
+              </div>
             </a>
-          </span>
-          <span>
+          </div>
+          <div className='contactContainer'>
             <a href='https://www.facebook.com/groups/forskoleupproret'>
-              <img src={facebook} alt='facebook link' />
-            </a></span>
-          <span>
+              <div className='socialImgContainer'>
+                <img className='socialMediaImg' src={facebook} alt='facebook link' />
+                <img src={blob3} alt='facebook blob' className='blob' />
+              </div>
+            </a>
+          </div>
+          <div className='contactContainer'>
             <a href='https://www.instagram.com/forskoleupproret/?hl=sv'>
-              <img src={insta} alt='instagram link' />
+              <div className='socialImgContainer'>
+                <img className='socialMediaImg' src={insta} alt='instagram link' />
+                <img src={blob} alt='instagram blob' className='blob' />
+              </div>
             </a>
-          </span>
-          <span>
+          </div>
+          <div className='contactContainer'>
             <a href='https://twitter.com/forskoleuppror'>
-              <img src={twitter} alt='twitter link' />
+              <div className='socialImgContainer'>
+                <img className='socialMediaImg' src={twitter} alt='twitter link' />
+                <img src={blob1} alt='twitter blob' className='blob' />
+              </div>
             </a>
-          </span>
-          <span>
+          </div>
+          <div className='contactContainer'>
             <a href='https://www.linkedin.com/in/förskoleupproret-nationell-2839a9168'>
-              <img src={linkedin} alt='linkedin link' />
+              <div className='socialImgContainer'>
+                <img className='socialMediaImg' src={linkedin} alt='linkedin link' />
+                <img src={blob5} alt='linkedin blob' className='blob' />
+              </div>
             </a>
-          </span>
+          </div>
+          <div className='contactContainer'>
+            <a href='https://youtube.com/channel/UCbXox7QE2ShqjRQYp4Pqw3w'>
+              <div className='socialImgContainer'>
+                {/* <img className='socialMediaImg' src={youtube} alt='youtube link' /> */}
+                <img src={blob4} alt='youtube blob' className='blob' />
+              </div>
+            </a>
+          </div>
         </div> 
       </div>
     </div>

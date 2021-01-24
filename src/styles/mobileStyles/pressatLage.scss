@@ -23,14 +23,36 @@
     margin-top: 10%;
   }
 
-  // .cafeContainer img {
-  //   object-fit: contain;
-  //   width: 50%;
-  // }
-
   @media (max-width: 450px) {
     .mediaContainer h2 {
       font-size: 1.1em;
     }
   }
+
+  #utbildningsminister {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #utbildningsminister p {
+    order: 2;
+  }
+  
+  #utbildningsminister img {
+    order: 0;
+  }
+  
+  #lokalaPolitiker {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #lokalaPolitiker span {
+    order: 0
+  }
+  
+  #lokalaPolitiker img {
+    order: 2
+  }
+  
 }

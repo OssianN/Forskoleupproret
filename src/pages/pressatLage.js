@@ -28,6 +28,7 @@ export const PressatLage = () => {
         <div className='omHashtagen'>
           <h1 className='tabHeader'>#pressatläge</h1>
           <img src={bookCover} className='bookCover'></img>
+          <Link to='https://drive.google.com/file/d/0B-Xu_V0Fz9lsTGEwZDU1bDdEZ3JZenpRN3V2NTlpaXRmZ0JZ/view?usp=drivesdk'>Se boken med 1583 vittnesmål &#x203A;</Link>
           <div className='gridView'>
             <p>
               Den 27 december 2017 lanserade ledningsgruppen i Förskoleupproret en enkät där förskollärare och barnskötare uppmanades att skriva sin berättelse. Vi hade länge velat samla allt vi får läsa i Facebookgruppen till en offentlig handling som vi sedan kunde nå ut med. Det var emellanåt hemska berättelser men vi kunde föga ana att berättelserna skulle vara ännu värre. 
@@ -57,7 +58,7 @@ export const PressatLage = () => {
               <Link to='https://www.expressen.se/nyheter/over-1-500-inom-forskolan-gar-ut-i-gemensamt-upprop/'>Expressen TV på plats &#x203A;</Link>
             </p>
           </div>
-          <div className='gridView'>
+          <div className='gridView' id='utbildningsminister'>
             <p>
               Den 20 april 2018 överräcktes dokumentet #pressatläge med samtliga 1583 vittnesmål från dåvarande förskolechefer, förskollärare, barnskötare och vårdnadshavare till Utbildningsminister Gustav Fridolin. 
               Under mötet, som varade i 45 minuter, fördes flitiga anteckningar och frågorna bottnade i kunskap och respekt för både vår situation och vårt yrke. Vi kunde sedan se speglingar av vårt samtal i Miljöpartiets valprogram och vilja på satsning av förskolan.
@@ -103,7 +104,7 @@ export const PressatLage = () => {
             </Carousel>
           </div>
           </div>
-          <div className='gridView'>
+          <div className='gridView' id='lokalaPolitiker'>
             <img src={lokalaPolitiker}></img>
             <span>
               <h2>Träff med lokala politiker om #pressatläge</h2>
