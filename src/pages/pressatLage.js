@@ -111,7 +111,7 @@ export const PressatLage = () => {
           <div className='gridView'>
             <div>
               <h2>Manifestationen: #pressatläge</h2>
-              <p>Den 18 maj 2018</p>
+              <p>Den 26 maj 2018</p>
               <p>
                 Ca 10 000 personer samlades i en rikstäckande oranget hav för att manifestera och demonstrera mot den ohållbara situationen som förskolans personal och barn befinner sig i. 
                 Manifestationen fick medial uppmärksamhet och blev vida känd med talare från
