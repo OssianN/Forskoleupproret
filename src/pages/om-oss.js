@@ -5,6 +5,7 @@ import facebook from '../images/fb.png';
 import twitter from '../images/twitter.png';
 import linkedin from '../images/linkedin.png';
 import at from '../images/at.png';
+import youtube from '../images/youtube.png';
 
 import anki from '../images/anki.jpg';
 import katrin from '../images/katrin.jpg';
@@ -187,7 +188,7 @@ export const OmOss = () => {
             <a href='https://www.facebook.com/groups/forskoleupproret'>
               <div className='socialImgContainer'>
                 <img className='socialMediaImg' src={facebook} alt='facebook link' />
-                <img src={blob3} alt='facebook blob' className='blob' />
+                <img src={blob4} alt='facebook blob' className='blob' />
               </div>
             </a>
           </div>
@@ -218,8 +219,8 @@ export const OmOss = () => {
           <div className='contactContainer'>
             <a href='https://youtube.com/channel/UCbXox7QE2ShqjRQYp4Pqw3w'>
               <div className='socialImgContainer'>
-                {/* <img className='socialMediaImg' src={youtube} alt='youtube link' /> */}
-                <img src={blob4} alt='youtube blob' className='blob' />
+                <img className='socialMediaImg' src={youtube} alt='youtube link' />
+                <img src={blob3} alt='youtube blob' className='blob' />
               </div>
             </a>
           </div>

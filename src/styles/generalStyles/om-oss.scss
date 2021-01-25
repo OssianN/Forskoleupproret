@@ -28,10 +28,6 @@ $forange: #F58124;
   height: 150px;
 }
 
-.socialMediaImg {
-  z-index: 10;
-}
-
 .contactInfo span {
   margin: 0 1% 0 0;
 }
@@ -42,9 +38,20 @@ $forange: #F58124;
   align-items: center;
 }
 
+.socialMediaImg {
+  z-index: 10;
+  pointer-events: none;
+}
+
 .blob {
   position: absolute;
   width: 200px;
   opacity: .4;
   z-index: 5;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .blob:hover {
+    opacity: 1;
+  }
 }
