@@ -20,16 +20,12 @@ $forange: #F58124;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
-  height: 100%;
+  height: 40vh;
 }
 
 .contactContainer {
-  margin-top: 20%;
-  height: 150px;
-}
-
-.contactInfo span {
-  margin: 0 1% 0 0;
+  margin: 3%;
+  height: 30%;
 }
 
 .socialImgContainer {
@@ -44,8 +40,8 @@ $forange: #F58124;
 }
 
 .blob {
+  max-width: 200px;
   position: absolute;
-  width: 200px;
   opacity: .4;
   z-index: 5;
 }
