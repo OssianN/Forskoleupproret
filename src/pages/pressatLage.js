@@ -25,7 +25,7 @@ export const PressatLage = () => {
     <div className='pressatLage'>
       <NavBar />
       <div className='tabContent'>
-        <div className='omHashtagen'>
+        <div className='firstSection omHashtagen'>
           <h1 className='tabHeader'>#pressatläge</h1>
           <img src={bookCover} className='bookCover'></img>
           <Link to='https://drive.google.com/file/d/0B-Xu_V0Fz9lsTGEwZDU1bDdEZ3JZenpRN3V2NTlpaXRmZ0JZ/view?usp=drivesdk'>Se boken med 1583 vittnesmål &#x203A;</Link>

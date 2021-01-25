@@ -10,7 +10,7 @@ export const HashTags = () => {
     <div className='viVagrarBrytaLagen'>
       <NavBar />
       <div className='tabContent'>
-        <div className='omHashtagen'>
+        <div className='firstSection omHashtagen'>
           <h1 className='tabHeader'>#vivägrarbrytalagen</h1>
           <div className='orangeBox toTheCenter'>
             <div className='blackBox'>

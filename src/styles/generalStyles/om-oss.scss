@@ -24,7 +24,8 @@ $forange: #F58124;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
-  height: 40vh;
+  align-items: center;
+  margin: 5% 0;
 }
 
 .contactContainer {

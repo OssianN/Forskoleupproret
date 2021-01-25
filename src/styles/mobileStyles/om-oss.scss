@@ -22,12 +22,16 @@
   }
 
   .contactInfo {
-    margin-top: 15%;
+    height: 50vh;
   }
 
   @media (max-width: 600px) {
     .blob {
       width: 33%;
+    }
+
+    .contactInfo {
+      height: 40vh;
     }
   }
 

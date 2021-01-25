@@ -17,6 +17,7 @@ export const History = () => {
           <h1 className='tabHeader'>
           ”Det finns saker man måste göra, annars är man bara en liten lort.” 
           </h1>
+          <h3>Ankis berättelse</h3>
           <p className='ankisBerättelse'>
             Den första tanken på att göra något för att uppmärksamma förskolans situation offentligt var när jag kom tillbaka en höst efter semestern. Jag var utvecklingsledare på min arbetsplats och vid det första ledningsmötet vi hade med vår rektor efter sommaren fick vi veta att vi stod inför besparingar. Då slank det bara ur mig: ”Jag tror att jag hoppar upp på scenen i Conventum på studiedagen. ” Varje höst så har nämligen Örebro kommun en studiedag för all personal inom förskolan. Veckorna gick och det jag sagt fanns hela tiden kvar som en pyrande tanke i huvudet.
             <br/>
@@ -41,13 +42,13 @@ export const History = () => {
             Den där dagen var vi två stycken på scenen. I skrivandes stund så är vi nästan 35000 medlemmar i vår fb grupp Förskoleupproret. Vi står stadigt tillsammans och vi fortsätter växa. Vi är envisa som åsnor och vi kommer att fortsätta kämpa för barnen och personalen i förskolan. Vi som är starka och orkar, kämpar även för alla dem som inte orkar längre. De vars gnista slocknat och som blivit sjuka av jobbet.  Förskoleupproret ger inte upp! Aldrig!
           </p>
         </div>
-        <div className='accomplishments'>
+        {/* <div className='accomplishments'>
           <h1>Det här har vi gjort</h1>
           <h2>Cafeträff med rikspolitker</h2>
           <h2>2018</h2>
           <h2>2019</h2>
           <h2>Möte med samtliga politiker 6/11 2019</h2>
-        </div>
+        </div> */}
       </div>
     </div>
   )
