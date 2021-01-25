@@ -16,6 +16,10 @@ $forange: #F58124;
   color: white;
 }
 
+.presentingPerson img {
+  object-fit: contain;
+}
+
 .contactInfo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
