@@ -44,7 +44,21 @@ export const OmOss = () => {
               Ansvarar för: <br/>
               Förskoleupprorets talesperson. <br/>
               Administrerar vår Facebookgrupp samt vår Facebook-sida.</p>
-            <p>Tillsammans med Malin Hörlin startade jag detta uppror för att visa att nu får det vara nog! Med en ökad arbetsbelastning, som tar tid från barnen och ger stressad personal, blir det svårare och svårare att utföra vårt uppdrag på bästa sätt. När vi åläggs att göra mer så krävs det också mer resurser. Som förskollärare vill jag bl.a. se minskade barngrupper, mer reflektionstid och att jag får utföra det yrke som jag är utbildad till. Som mamma vill jag kunna lämna det käraste jag har på Fsk och veta att det finns utbildad personal som tröstar, utmanar och ser mitt barn varje dag. Jag vill få politiker att inse att de måste satsa på förskolan och det NU!</p>
+            <p>
+              Jag är grundare av Förskoleupproret, legitimerad förskollärare, har läst specialpedagogik och har arbetat många år som utvecklingsledare. Jag tog klivet in i förskolans värld 1998 då jag blev färdig med min utbildning. Efter starten av Förskoleupproret så har jag även engagerat mig fackligt i min lokalavdelning. Jag tycker det är viktigt att vi påverkar från många håll för att förbättra situationen inom förskolan. Både för personalens skull och för barnens.
+              <br/>
+              <br/>
+              Jag anser att det är av yttersta vikt att lyfta alla tankar och idéer som finns ute på förskolorna och föra dessa uppåt. Jag har under alla år kämpat för att bryta tystnadskulturen som finns ute i verksamheterna, att utbilda om vilka skyldigheter och rättigheter vi har samt vilka lagar och regler vi kan ta hjälp av för att få en hållbar arbetsmiljö. Jag påtalar gång på gång vikten av att anmäla tillbud, rapportera in förskjuten arbetstid och övertid och att alla arbetsuppgifter skall rymmas inom arbetstiden. Jag ser det som en vinst varje gång när jag läser i gruppen att någon lärt sig detta. Det värmer i hjärtat när jag även ser att kollegor utbildar varandra. Det vi lyfter i gruppen ger ringar på vattnet och tillsammans är vi starka. 
+              <br/>
+              <br/>
+              Mitt yrke är inte något kall. Det är något jag VALT att utbilda mig till och barnen i förskolan ligger mig varmt om hjärtat. Jag är stolt förskollärare och vill stå upp för mitt yrke, jag bli lyssnad på, jag vill att min och mina kollegors kunskaper och erfarenheter tas på allvar. Jag vill att alla skall först vilket otroligt viktigt uppdrag vi har. Det ligger i hela samhällets intresse att vi har en väl fungerande förskola med personal som mår bra och som hinner se och bekräfta varje barn, varje dag. 
+              <br/>
+              <br/>
+              Min spetskompetens i Förskoleupproret: Mångårig erfarenhet som förskollärare och utvecklingsledare. Min hjärna funderar ständigt på lösningar när problem uppstår och jag gillar att bolla idéer och tankar för att utvecklas och komma vidare. Jag är envis, seg och är inte rädd för att sticka ut hakan. Jag står kvar när det blåser kallt och jag ger inte upp i första taget!
+              <br/>
+              <br/>
+              Spetskompetens: engagemang och mod.
+            </p>
           </div>
         </div>
         <div className=" presentingPerson presentingPersonEven">
