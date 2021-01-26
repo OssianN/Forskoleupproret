@@ -12,8 +12,12 @@
     min-width: 500px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1001px) {
   .listCategory {
     top: 120px;
-  }  
+  }
+
+  .listHeader {
+    font-size: 1.3em;
+  }
 }

@@ -4,7 +4,8 @@ import { Link } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Press = () => {
-  const [showArticleList, setShowArticleList] = useState(true);
+  const [showArticleList, setShowArticleList] = useState('Nyheter');
+
   const data = useStaticQuery(
     graphql`
       query {
@@ -38,6 +39,9 @@ const Press = () => {
           edges {
             node {
               id
+              publishedDate
+              title
+              url
             }
           }
         }
@@ -55,8 +59,8 @@ const Press = () => {
     `
   );
 
-  const handleArticleListPick = () => {
-    setShowArticleList(!showArticleList);
+  const handleArticleListPick = e => {
+    setShowArticleList(e.target.innerHTML);
   };
 
   const limitTitle = title => {
@@ -68,14 +72,43 @@ const Press = () => {
     };
     return newTitle;
   };
+  
+  const published = data.allContentfulPublicerade?.edges;
+  const omnamnda = data.allContentfulOmnamnda?.edges;
 
   return (
     <div className='press'>
       <NavBar />
       <div className='tabContent'>
+        <div className='listCategory'>
+          <h3 
+            className='listHeader'
+            onClick={handleArticleListPick}
+            style={ showArticleList === 'Nyheter'
+              ? {color: '#F58124', pointerEvents: 'none'}
+              : {color: 'black', cursor: 'pointer'}}>
+            Nyheter
+          </h3>
+          <h3 
+            className='listHeader'
+            onClick={handleArticleListPick}
+            style={ showArticleList === 'Publicerade'
+              ? {color: '#F58124', pointerEvents: 'none'}
+              : {color: 'black', cursor: 'pointer'}}>
+            Publicerade
+          </h3>
+          <h3
+            className='listHeader'
+            onClick={handleArticleListPick}
+            style={showArticleList === 'Omnämnda'
+            ? {color: '#F58124', pointerEvents: 'none'}
+            : {color: 'black', cursor: 'pointer'}}>
+            Omnämnda
+          </h3>
+        </div>
         <div className='firstSection'>
+          <ul className='articleUl' style={showArticleList === 'Nyheter' ? {display: 'block'} : {display: 'none'}}>
           <h1 className='tabHeader'>Nyheter</h1>
-          <ul className='articleUl'>
             {data.allContentfulBlogPost.edges?.map(post => {
               return (
                 <li key={post.node.id}>
@@ -90,30 +123,11 @@ const Press = () => {
               );
             })}
           </ul>
-        </div>
-        <div className='articleListContainer2'>
-          <div className='listCategory'>
-            <h3 
-              className='listHeader'
-              onClick={handleArticleListPick}
-              style={ showArticleList
-                ? {color: '#F58124', pointerEvents: 'none'}
-                : {color: 'black', cursor: 'pointer'}}>
-              Publicerade
-            </h3>
-            <h3
-              className='listHeader'
-              onClick={handleArticleListPick}
-              style={showArticleList
-              ? {color: 'black', cursor: 'pointer'}
-              : {color: '#F58124', pointerEvents: 'none'}}>
-              Omnämnda
-            </h3>
-          </div>
-          <ul className='externalContentfulList' style={showArticleList ? {display: 'block'} : {display: 'none'}}>
-            {data.allContentfulPublicerade.edges?.map(link => {
+          <ul id='published' className='externalContentfulList' style={showArticleList === 'Publicerade' ? {display: 'block'} : {display: 'none'}}>
+            <h1 className='tabHeader'>Publicerade</h1>
+            {published?.map(link => {
               return (
-                <li>
+                <li key={link.node.id}>
                   <Link to={link.node.url}>
                     <h2>{link.node.title}</h2>
                     <p>{link.node.publishedDate}</p>
@@ -122,7 +136,18 @@ const Press = () => {
               )
             })}
           </ul>
-          <ul className='externalContentfulList' style={showArticleList ? {display: 'block'} : {display: 'none'}}>
+          <ul i='omnämnda' className='externalContentfulList' style={showArticleList === 'Omnämnda' ? {display: 'block'} : {display: 'none'}}>
+            <h1 className='tabHeader'>Omnämnda</h1>
+            {omnamnda?.map(link => {
+                return (
+                  <li key={link.node.id}>
+                    <Link to={link.node.url}>
+                      <h2>{link.node.title}</h2>
+                      <p>{link.node.publishedDate}</p>
+                    </Link>
+                  </li>
+                )
+              })}
           </ul>
         </div>
       </div>
