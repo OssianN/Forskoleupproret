@@ -32,6 +32,16 @@ $forange: #F58124;
 }
 
 @media (max-width: 1000px) {
+  .navBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffffff5;
+    height: 70px;
+    position: sticky;
+    top: 0;
+  }
+
   .mainNav {
     position: fixed;
     right: 0;
@@ -73,6 +83,15 @@ $forange: #F58124;
     display: block;
   }
 
+  .mobileNavIcon {
+    width: 40px;
+  }
+
+  .mobileNavIcon img {
+    height: 40px;
+    object-fit: contain;
+  }
+
   #homeLink {
     display: none;
   }
@@ -109,6 +128,10 @@ $forange: #F58124;
   }
 
   #homeLinkMobile {
+    display: none;
+  }
+
+  .mobileNavIcon {
     display: none;
   }
 

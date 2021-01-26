@@ -20,6 +20,9 @@ const NavBar = () => {
 
   return (
     <div className='navBarContainer'>
+      <Link to='/' className='mobileNavIcon'>
+        <img src={pinIcon}></img>
+      </Link>
       <button className='mobileNavButton' onClick={handleMobileNavToggle}>
         <div id='nav-icon2' className={navToogleClass}>
           <span></span>

@@ -34,6 +34,23 @@ const Press = () => {
             }
           }
         }
+        allContentfulOmnamnda {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+        allContentfulPublicerade {
+          edges {
+            node {
+              id
+              publishedDate
+              url
+              title
+            }
+          }
+        }
       }
     `
   );
@@ -53,9 +70,9 @@ const Press = () => {
       <NavBar />
       <div className='tabContent'>
         <div className='firstSection'>
-          <h1 className='tabHeader'>Våra artiklar</h1>
+          <h1 className='tabHeader'>Nyheter</h1>
           <ul className='articleUl'>
-            {data.allContentfulBlogPost.edges.map(post => {
+            {data.allContentfulBlogPost.edges?.map(post => {
               return (
                 <li key={post.node.id}>
                   <Link to={`/${post.node.slug}`}>
@@ -71,8 +88,20 @@ const Press = () => {
           </ul>
         </div>
         <div className='articleListContainer2'>
-          <h2>Egna artiklar (publicerade)</h2>
-          <h2>Omnämnda</h2>
+          <h1 className='tabHeader'>Publicerade artiklar</h1>
+          <ul className='externalContentfulList'>
+            {data.allContentfulPublicerade.edges?.map(link => {
+              return (
+                <li>
+                  <Link to={link.node.url}>
+                    <h2>{link.node.title}</h2>
+                    <p>{link.node.publishedDate}</p>
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+          <h1 className='tabHeader'>Omnämnda</h1>
         </div>
       </div>
     </div>

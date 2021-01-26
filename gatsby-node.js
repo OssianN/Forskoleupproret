@@ -5,7 +5,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             title
-            slug
           }
         }
       }
@@ -13,12 +12,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `);
 
   if (result.errors) {
-    reporter.panic("Error loading posts", JSON.stringify(result.errors))
+    reporter.panic("Error loading Contentful", JSON.stringify(result.errors))
   };
-  
-  const posts = result.data.allContentfulBlogPost.edges;
 
-  posts.forEach(post => {
+  const blogPost = result.data.allContentfulBlogPost.edges;
+
+  blogPost.forEach(post => {
     actions.createPage({
       path: `/${post.node.slug}`,
       component: require.resolve("./src/templates/post-template.js"),
