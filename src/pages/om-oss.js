@@ -1,27 +1,9 @@
 import React from 'react'
 import NavBar from '../components/nav-bar/NavBar';
-import insta from '../images/insta.png';
-import facebook from '../images/fb.png';
-import twitter from '../images/twitter.png';
-import linkedin from '../images/linkedin.png';
-import at from '../images/at.png';
-import youtube from '../images/youtube.png';
+import * as img from '../images/'
 
-import anki from '../images/anki.jpg';
-import katrin from '../images/katrin.jpg';
-import annette from '../images/annette.jpg';
-import diana from '../images/hdiana.jpg';
-import monica from '../images/monica.jpg';
-import annika from '../images/annika.jpg';
-import gruppbild from '../images/gruppbild.jpg';
-import blob from '../images/blob.svg';
-import blob1 from '../images/blob1.svg';
-import blob2 from '../images/blob2.svg';
-import blob3 from '../images/blob3.svg';
-import blob4 from '../images/blob4.svg';
-import blob5 from '../images/blob5.svg';
 
-export const OmOss = () => {
+const OmOss = () => {
   return (
     <div className='om-oss'>
       <NavBar />
@@ -33,10 +15,10 @@ export const OmOss = () => {
           <p className='introParagraph'>
             Förskoleupproret drivs ideellt av sex engagerade pedagoger i förskolan. Allt arbete med Förskoleupproret sker under kvällar, helger och efter arbetstid. Ledningsgruppen har nästan daglig kontakt och diskuterar kontinuerligt Förskoleupprorets utvecklingsområden, nästa steg och eventuella kampanj.
           </p>
-          <img src={gruppbild} alt='gruppbild'></img>
+          <img src={img.gruppbild} alt='gruppbild'></img>
         </div>
         <div className=" presentingPerson presentingPersonOdd">
-          <img src={anki} alt='Anki Jansson'></img>
+          <img src={img.anki} alt='Anki Jansson'></img>
           <div className="personText">
             <h2>Anki Jansson</h2>
             <p><b>Kontakt: mailadress under arbete</b></p>
@@ -62,7 +44,7 @@ export const OmOss = () => {
           </div>
         </div>
         <div className=" presentingPerson presentingPersonEven">
-          <img src={katrin} alt='Katrin Nörthen'></img>
+          <img src={img.katrin} alt='Katrin Nörthen'></img>
           <div className="personText">
             <h2>Katrin Nörthen</h2>
             <p>Sedan jag var ung har jag alltid dragits till barn på ett eller annat sätt. Jag är
@@ -102,10 +84,10 @@ export const OmOss = () => {
               Mångårig erfarenhet av att arbeta inom förskolan och som fackligt förtroendevald.
             </p>
           </div>
-          <img src={diana} alt='Diana Hall'></img>
+          <img src={img.diana} alt='Diana Hall'></img>
         </div>
         <div className=" presentingPerson presentingPersonEven">
-          <img src={annette} alt='Annette Nord'></img>
+          <img src={img.annette} alt='Annette Nord'></img>
           <div className="personText">
             <h2>Annette Nord</h2>
             <p>
@@ -151,10 +133,10 @@ export const OmOss = () => {
               Är positiv, lösningsinriktad och har lätt att se verksamheten organisatoriskt i helhetsperspektiv, sammanhang, risker och konsekvenser
             </p>
             </div>
-            <img src={monica} alt='Monica Lindström'></img>
+            <img src={img.monica} alt='Monica Lindström'></img>
           </div>
         <div className=" presentingPerson presentingPersonEven">
-          <img src={annika} alt='Annica Järking'></img>
+          <img src={img.annika} alt='Annica Järking'></img>
           <div className="personText">
             <h2>Annica Järking</h2>
             <p>
@@ -193,48 +175,48 @@ export const OmOss = () => {
           <div className='contactContainer'>
             <a href='mailto:forskoleuppror@gmail.com'>
               <div className='socialImgContainer'>
-                <img className='socialMediaImg' src={at} alt='Email link' />
-                <img src={blob2} alt='Email blob' className='blob' />
+                <img className='socialMediaImg' src={img.at} alt='Email link' />
+                <img src={img.blob2} alt='Email blob' className='blob' />
               </div>
             </a>
           </div>
           <div className='contactContainer'>
             <a href='https://www.facebook.com/groups/forskoleupproret'>
               <div className='socialImgContainer'>
-                <img className='socialMediaImg' src={facebook} alt='facebook link' />
-                <img src={blob4} alt='facebook blob' className='blob' />
+                <img className='socialMediaImg' src={img.facebook} alt='facebook link' />
+                <img src={img.blob4} alt='facebook blob' className='blob' />
               </div>
             </a>
           </div>
           <div className='contactContainer'>
             <a href='https://www.instagram.com/forskoleupproret/?hl=sv'>
               <div className='socialImgContainer'>
-                <img className='socialMediaImg' src={insta} alt='instagram link' />
-                <img src={blob} alt='instagram blob' className='blob' />
+                <img className='socialMediaImg' src={img.insta} alt='instagram link' />
+                <img src={img.blob} alt='instagram blob' className='blob' />
               </div>
             </a>
           </div>
           <div className='contactContainer'>
             <a href='https://twitter.com/forskoleuppror'>
               <div className='socialImgContainer'>
-                <img className='socialMediaImg' src={twitter} alt='twitter link' />
-                <img src={blob1} alt='twitter blob' className='blob' />
+                <img className='socialMediaImg' src={img.twitter} alt='twitter link' />
+                <img src={img.blob1} alt='twitter blob' className='blob' />
               </div>
             </a>
           </div>
           <div className='contactContainer'>
             <a href='https://www.linkedin.com/in/förskoleupproret-nationell-2839a9168'>
               <div className='socialImgContainer'>
-                <img className='socialMediaImg' src={linkedin} alt='linkedin link' />
-                <img src={blob5} alt='linkedin blob' className='blob' />
+                <img className='socialMediaImg' src={img.linkedin} alt='linkedin link' />
+                <img src={img.blob5} alt='linkedin blob' className='blob' />
               </div>
             </a>
           </div>
           <div className='contactContainer'>
             <a href='https://youtube.com/channel/UCbXox7QE2ShqjRQYp4Pqw3w'>
               <div className='socialImgContainer'>
-                <img className='socialMediaImg' src={youtube} alt='youtube link' />
-                <img src={blob3} alt='youtube blob' className='blob' />
+                <img className='socialMediaImg' src={img.youtube} alt='youtube link' />
+                <img src={img.blob3} alt='youtube blob' className='blob' />
               </div>
             </a>
           </div>

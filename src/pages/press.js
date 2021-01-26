@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Press = () => {
-
   const data = useStaticQuery(
     graphql`
       query {

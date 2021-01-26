@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import NavBar from '../components/nav-bar/NavBar';
-import forskoleupproretBanner from '../images/img1.jpeg';
-import tystnad from '../images/tystnad.png';
-import thousand from '../images/1000.svg';
+import * as img from '../images/';
 
 export const HashTags = () => {
   return (
@@ -14,7 +12,7 @@ export const HashTags = () => {
           <h1 className='tabHeader'>#vivägrarbrytalagen</h1>
           <div className='orangeBox toTheCenter'>
             <div className='blackBox'>
-              <img src={forskoleupproretBanner} alt='banner'></img>
+              <img src={img.forskoleupproretBanner} alt='banner'></img>
               <h2>VI</h2>
               <h4>vägrar bryta</h4>
               <h2>LAGEN</h2>
@@ -50,12 +48,12 @@ export const HashTags = () => {
                 Gå till berättelserna &#x203A;
               </Link>
             </div>
-          <img src={thousand} alt='1000'></img>
+          <img src={img.thousand} alt='1000'></img>
           </div>
           <div className='gridView toTheLeft'>
             <div className='orangeBox'>
               <div className='blackBox'>
-                <img src={forskoleupproretBanner} alt='banner'></img>
+                <img src={img.forskoleupproretBanner} alt='banner'></img>
                 <h2>ATL</h2>
                 <h4>arbetstidslagen</h4>
                 <p>#vivägrarbrytalagen</p>
@@ -84,7 +82,7 @@ export const HashTags = () => {
             </p>
             <div className='orangeBox'>
               <div className='blackBox'>
-                <img src={forskoleupproretBanner} alt='banner'></img>
+                <img src={img.forskoleupproretBanner} alt='banner'></img>
                 <h2>Skollagen</h2>
                 <h5>(2010:800)</h5>
                 <h4>arbetstidslagen</h4>
@@ -95,7 +93,7 @@ export const HashTags = () => {
           <div className='gridView toTheLeft'>
             <div className='orangeBox'>
               <div className='blackBox'>
-              <img src={forskoleupproretBanner} alt='banner'></img>
+              <img src={img.forskoleupproretBanner} alt='banner'></img>
               <h2>AML</h2>
               <h4>arbetsmiljölagen</h4>
               <p>#vivägrarbrytalagen</p>
@@ -138,9 +136,9 @@ export const HashTags = () => {
             </p>
             <div className='orangeBox'>
               <div className='blackBox'>
-                <img src={forskoleupproretBanner} alt='banner'></img>
+                <img src={img.forskoleupproretBanner} alt='banner'></img>
                 <h5>Offentlighets- och sekretesslagen</h5>
-                <img src={tystnad} alt='tystnadsplikt'></img>
+                <img src={img.tystnad} alt='tystnadsplikt'></img>
                 <p>#vivägrarbrytalagen</p>
               </div>
             </div>
@@ -148,7 +146,7 @@ export const HashTags = () => {
           <div className='gridView toTheLeft'>
             <div className='orangeBox'>
               <div className='blackBox'>
-                <img src={forskoleupproretBanner} alt='banner'></img>
+                <img src={img.forskoleupproretBanner} alt='banner'></img>
                 <h2>AVTAL</h2>
                 <h4>Hök18-ALMEGA-KFO</h4>
                 <p>#vivägrarbrytalagen</p>

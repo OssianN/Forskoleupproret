@@ -1,24 +1,9 @@
 import { Link } from 'gatsby';
 import React from 'react'
 import NavBar from '../components/nav-bar/NavBar';
-import fridolin from '../images/fridolin.jpeg';
-import fackforbundet from '../images/fackforbundet.jpg';
-import fackforbundet2 from '../images/fackforbundet2.png';
-import cafe1 from '../images/cafe1.jpeg';
-import cafe3 from '../images/cafe3.jpg';
-import cafe4 from '../images/cafe4.jpg';
-import cafe5 from '../images/cafe5.jpg';
-import lokalaPolitiker from '../images/lokalaPolitiker.jpg';
-import manifestation1 from '../images/manifestation1.jpg';
-import manifestation2 from '../images/manifestation2.jpg';
-import shirt from '../images/shirt.jpg';
-import sharingArticle from '../images/sharingArticle.svg';
-import newspaper from '../images/newspaper.svg';
-import lararforbundet from '../images/lararforbundet.png';
-import kommunal from '../images/kommunal.jpeg';
-import bookCover from '../images/bookCover.jpeg';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import * as img from '../images/';
 
 export const PressatLage = () => {
   return (
@@ -27,7 +12,7 @@ export const PressatLage = () => {
       <div className='tabContent'>
         <div className='firstSection omHashtagen'>
           <h1 className='tabHeader'>#pressatläge</h1>
-          <img src={bookCover} className='bookCover'></img>
+          <img src={img.bookCover} className='bookCover' alt='bookCover'></img>
           <Link to='https://drive.google.com/file/d/0B-Xu_V0Fz9lsTGEwZDU1bDdEZ3JZenpRN3V2NTlpaXRmZ0JZ/view?usp=drivesdk'>Se boken med 1583 vittnesmål &#x203A;</Link>
           <div className='gridView'>
             <p>
@@ -46,8 +31,8 @@ export const PressatLage = () => {
           </div>
           <div className='gridView'>
             <div className='fackforbundet'>
-              <img src={fackforbundet2}></img>
-              <img src={fackforbundet}></img>
+              <img src={img.fackforbundet2}  alt='lararforbundet'></img>
+              <img src={img.fackforbundet}  alt='lararforbundet2'></img>
             </div>
             <p>
               Den 19 mars 2018 överräcktes dokumentet #pressatläge till fackförbunden. 
@@ -67,7 +52,7 @@ export const PressatLage = () => {
               <br />
               <Link to='https://drive.google.com/file/d/1jxYDpMWslbPt947X8B6AlDrrvvPMl-Zw/view?usp=drivesdk'>Protokoll från mötet med utbildningsministern &#x203A;</Link>
             </p>
-            <img src={fridolin}></img>
+            <img src={img.fridolin}  alt='fridolin'></img>
           </div>
           <div className='mediaContainer'>
             <span>
@@ -85,7 +70,7 @@ export const PressatLage = () => {
               <h3>Dagens Nyheter</h3>
               <Link to='https://www.dn.se/sthlm/forskolepersonal-i-stort-upprop-forskolan-ar-i-kris/'>1500 anställda slår larm: Vi har en förskola i kris &#x203A;</Link>
             </div>
-            <img src={sharingArticle} alt='sharing article' id='sharingArticle'></img>
+            <img src={img.sharingArticle} alt='sharing article' id='sharingArticle'></img>
           </div>
           <div className='cafeContainer'>
             <div>
@@ -97,15 +82,15 @@ export const PressatLage = () => {
             </div>
           <div className='cafeImgContainer'>
             <Carousel>
-              <img src={cafe5} id='doubleHeightImg'></img>
-              <img src={cafe1}></img>
-              <img src={cafe3}></img>
-              <img src={cafe4} id='doubleWidthImg'></img>
+              <img src={img.cafe5} id='doubleHeightImg' alt='cafe5'></img>
+              <img src={img.cafe1}  alt='cafe1'></img>
+              <img src={img.cafe3}  alt='cafe3'></img>
+              <img src={img.cafe4} alt='cafe4' id='doubleWidthImg'></img>
             </Carousel>
           </div>
           </div>
           <div className='gridView' id='lokalaPolitiker'>
-            <img src={lokalaPolitiker}></img>
+            <img src={img.lokalaPolitiker}  alt='lokalaPolitiker'></img>
             <span>
               <h2>Träff med lokala politiker om #pressatläge</h2>
               <p>
@@ -128,8 +113,8 @@ export const PressatLage = () => {
               </p>
             </div>
             <div className='manifestationenContainer'>
-              <img src={manifestation1}></img>
-              <img src={manifestation2}></img>
+              <img src={img.manifestation1}  alt='manifestation1'></img>
+              <img src={img.manifestation2}  alt='manifestation2'></img>
             </div>
           </div>
           <div className='mediaContainer'>
@@ -146,10 +131,10 @@ export const PressatLage = () => {
               <h2>Dagens Nyheter</h2>
               <Link to='https://www.dn.se/asikt/forskoleupproret-maste-tas-pa-allvar/'>Förskoleupproret måste tas på allvar &#x203A;</Link>
             </div>
-            <img src={newspaper} alt='newspaper' id='newspaper'></img>
+            <img src={img.newspaper} alt='newspaper' id='newspaper'></img>
           </div>
           <div className='gridView'>
-            <img src={shirt} id='shirt'></img>
+            <img src={img.shirt} id='shirt' alt='shirt'></img>
             <p>
               I takt med att #pressatläge växte sig större och vidden av läget i Sveriges förskolor stå klar och få medial uppmärksamhet togs en tröja fram för att uppmärksamma den alarmerande situationen än mer. Tröjan blev vida diskuterad och en symbol för den olagliga tystnadskulturen. 
               I Göteborg med flera kommuner blev Tröjan förbjuden att bära då den ansågs som opinionsbildande på arbetstid. Lärarförbundet Göteborg tog strid och JO-anmälde kommunen. Tröjan kom segrande ur och Göteborg fick backa. 
@@ -175,12 +160,16 @@ export const PressatLage = () => {
             </p>
             <div className='fackforbundFooterImages'>
               <div>
-                <img src={lararforbundet} alt='lararforbundet'></img>
-                <p>Förskollärare och Rektor i förskola: Bli medlem <Link to='https://www.lararforbundet.se/artikelsidor/bli-medlem-i-lararforbundet'>här</Link></p>
+                <img src={img.lararforbundet} alt='lararforbundet'></img>
+                <p>Förskollärare och Rektor i förskola:
+                <br/>
+                Bli medlem <Link to='https://www.lararforbundet.se/artikelsidor/bli-medlem-i-lararforbundet'>här &#x203A;</Link></p>
               </div>
               <div>
-                <img src={kommunal} alt='kommunal'></img>
-                <p>Barnskötare: Bli medlem <Link to='https://www.kommunal.se/bli-medlem'>här &#x203A;</Link></p>
+                <img src={img.kommunal} alt='kommunal'></img>
+                <p>Barnskötare:
+                  <br/>
+                  Bli medlem <Link to='https://www.kommunal.se/bli-medlem'>här &#x203A;</Link></p>
               </div>
             </div>
           </div>
