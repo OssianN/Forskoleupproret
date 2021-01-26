@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from '../components/nav-bar/NavBar';
 import { Link } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Press = () => {
+  const [showArticleList, setShowArticleList] = useState(true);
   const data = useStaticQuery(
     graphql`
       query {
@@ -54,6 +55,10 @@ const Press = () => {
     `
   );
 
+  const handleArticleListPick = () => {
+    setShowArticleList(!showArticleList);
+  };
+
   const limitTitle = title => {
     let newTitle = '';
     if (title.length > 70) {
@@ -87,8 +92,25 @@ const Press = () => {
           </ul>
         </div>
         <div className='articleListContainer2'>
-          <h1 className='tabHeader'>Publicerade artiklar</h1>
-          <ul className='externalContentfulList'>
+          <div className='listCategory'>
+            <h3 
+              className='listHeader'
+              onClick={handleArticleListPick}
+              style={ showArticleList
+                ? {color: '#F58124', pointerEvents: 'none'}
+                : {color: 'black', cursor: 'pointer'}}>
+              Publicerade
+            </h3>
+            <h3
+              className='listHeader'
+              onClick={handleArticleListPick}
+              style={showArticleList
+              ? {color: 'black', cursor: 'pointer'}
+              : {color: '#F58124', pointerEvents: 'none'}}>
+              Omnämnda
+            </h3>
+          </div>
+          <ul className='externalContentfulList' style={showArticleList ? {display: 'block'} : {display: 'none'}}>
             {data.allContentfulPublicerade.edges?.map(link => {
               return (
                 <li>
@@ -100,7 +122,8 @@ const Press = () => {
               )
             })}
           </ul>
-          <h1 className='tabHeader'>Omnämnda</h1>
+          <ul className='externalContentfulList' style={showArticleList ? {display: 'block'} : {display: 'none'}}>
+          </ul>
         </div>
       </div>
     </div>
