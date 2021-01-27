@@ -18,20 +18,22 @@ const NavBar = () => {
   };
 
   return (
-    <div className='navBarContainer'>
-      <Link to='/' className='mobileNavIcon'>
-        <img src={pinIcon} alt='logo'></img>
-      </Link>
-      <button className='mobileNavButton' onClick={handleMobileNavToggle}>
-        <div id='nav-icon2' className={navToogleClass}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
+    <div>
+      <div className='navBarContainer'>
+        <Link to='/' className='mobileNavIcon'>
+          <img src={pinIcon} alt='logo'></img>
+        </Link>
+        <button className='mobileNavButton' onClick={handleMobileNavToggle}>
+          <div id='nav-icon2' className={navToogleClass}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
       <nav className='mainNav' style={{marginRight: showMobileNav}}>
         <ul>
           <li id='homeLinkMobile'>

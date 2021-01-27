@@ -38,8 +38,9 @@ $forange: #F58124;
     align-items: center;
     background-color: #fffffff5;
     height: 70px;
-    position: sticky;
-    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
   }
 
   .mainNav {
