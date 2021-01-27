@@ -34,7 +34,7 @@ export const OmOss = () => {
               <li>max 12 barn i småbarnsgrupp, 1-3 år</li>
               <li>max 15 barn i storbarnsgrupp, 3-5 år</li>
               <li>max 4-5 barn per pedagog i varje barngrupp</li>
-              <li>beslut om likvärdig, reglerad planeringstid för förskollärare i hela landet</li>
+              <li>beslut om likvärdig, reglerad planeringstid för förskollärare och barnskötare i hela landet</li>
               <li>att kringuppgifter tas bort för förskollärare och barnskötare</li>
             </ul>
             <ul className='demandlistTwo'>
