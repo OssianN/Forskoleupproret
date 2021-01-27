@@ -23,7 +23,7 @@ const NavBar = () => {
         <Link to='/' className='mobileNavIcon'>
           <img src={pinIcon} alt='logo'></img>
         </Link>
-        <button className='mobileNavButton' onClick={handleMobileNavToggle}>
+        <div className='mobileNavButton' onClick={handleMobileNavToggle}>
           <div id='nav-icon2' className={navToogleClass}>
             <span></span>
             <span></span>
@@ -32,7 +32,7 @@ const NavBar = () => {
             <span></span>
             <span></span>
           </div>
-        </button>
+        </div>
       </div>
       <nav className='mainNav' style={{marginRight: showMobileNav}}>
         <ul>
