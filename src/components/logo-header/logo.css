@@ -5,7 +5,7 @@
   flex-direction: column;
   max-height: 11em;
   height: 11em;
-  background-color: #F58124;
+  background-color: #fff;
 }
 
 .logoHeader p {
@@ -15,7 +15,8 @@
 }
 
 .logoHeader img {
-  width: 100%;
+  width: 80%;
   max-width: 745px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }

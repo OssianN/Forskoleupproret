@@ -129,8 +129,10 @@ const Press = () => {
               return (
                 <li key={link.node.id}>
                   <Link to={link.node.url}>
-                    <h2>{link.node.title}</h2>
-                    <p>{link.node.publishedDate}</p>
+                    <div className='articleLinkText'>
+                      <h2>{link.node.title}</h2>
+                      <p>{link.node.publishedDate}</p>
+                    </div>
                   </Link>
                 </li>
               )
@@ -142,8 +144,10 @@ const Press = () => {
                 return (
                   <li key={link.node.id}>
                     <Link to={link.node.url}>
-                      <h2>{link.node.title}</h2>
-                      <p>{link.node.publishedDate}</p>
+                      <div className='articleLinkText'>
+                        <h2>{link.node.title}</h2>
+                        <p>{link.node.publishedDate}</p>
+                      </div>
                     </Link>
                   </li>
                 )
