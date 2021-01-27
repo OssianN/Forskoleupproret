@@ -107,7 +107,7 @@ const Press = () => {
           </h3>
         </div>
         <div className='firstSection'>
-          <ul className='contentfulList' style={showArticleList === 'Nyheter' ? {display: 'block'} : {display: 'none'}}>
+          <ul className='contentfulList' style={showArticleList === 'Nyheter' ? {display: 'flex'} : {display: 'none'}}>
           <h1 className='tabHeader'>Nyheter</h1>
             {data.allContentfulBlogPost.edges?.map(post => {
               return (
@@ -115,7 +115,7 @@ const Press = () => {
                   <Link to={`/${post.node.slug}`}>
                     <img src={post.node.contentImage.file.url } alt={post.node.contentImage.title}></img>
                     <div className='articleLinkText'>
-                      <h3>{ limitTitle(post.node.title) }</h3>
+                      <h2>{ limitTitle(post.node.title) }</h2>
                       <p>{ post.node.description }</p>
                     </div>
                   </Link>
@@ -123,7 +123,7 @@ const Press = () => {
               );
             })}
           </ul>
-          <ul id='published' className='contentfulList' style={showArticleList === 'Publicerade' ? {display: 'block'} : {display: 'none'}}>
+          <ul className='contentfulList' style={showArticleList === 'Publicerade' ? {display: 'flex'} : {display: 'none'}}>
             <h1 className='tabHeader'>Publicerade</h1>
             {published?.map(link => {
               return (
@@ -138,20 +138,20 @@ const Press = () => {
               )
             })}
           </ul>
-          <ul i='omnämnda' className='contentfulList' style={showArticleList === 'Omnämnda' ? {display: 'block'} : {display: 'none'}}>
+          <ul className='contentfulList' style={showArticleList === 'Omnämnda' ? {display: 'flex'} : {display: 'none'}}>
             <h1 className='tabHeader'>Omnämnda</h1>
             {omnamnda?.map(link => {
-                return (
-                  <li key={link.node.id}>
-                    <Link to={link.node.url}>
-                      <div className='articleLinkText'>
-                        <h2>{link.node.title}</h2>
-                        <p>{link.node.publishedDate}</p>
-                      </div>
-                    </Link>
-                  </li>
-                )
-              })}
+              return (
+                <li key={link.node.id}>
+                  <Link to={link.node.url}>
+                    <div className='articleLinkText'>
+                      <h2>{link.node.title}</h2>
+                      <p>{link.node.publishedDate}</p>
+                    </div>
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </div>
       </div>

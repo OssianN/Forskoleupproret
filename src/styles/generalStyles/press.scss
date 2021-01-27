@@ -35,9 +35,13 @@
 }
 
 .contentfulList {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 10px;
   margin: 0;
+  width: 100%;
 }
 
 .articleLinkText {
@@ -51,6 +55,7 @@
 .contentfulList li {
   list-style: none;
   margin: 20px 0;
+  width: 100%;
   max-width: 600px;
   box-shadow: 0 0 3px #0000003b;
   border-radius: 5px;
@@ -58,22 +63,11 @@
 }
 
 .contentfulList li a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   color: black;
-  text-decoration: none;
-}
-
-.contentfulList li a h3 {
-  margin: 10px 10px 5px 10px;
-  font-size: 25px;
-
 }
 
 .contentfulList li a p {
-  margin: 5px 10px 10px 10px;
+  margin: 5px 0;
   word-break: break-word;
 }
 

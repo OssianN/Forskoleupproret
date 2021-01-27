@@ -1,11 +1,13 @@
 import React from 'react'
-import logo from '../../images/logo.png';
+import logo from '../../images/logo3.jpeg';
 import './logo.css';
 
 const Logo = () => {
   return (
     <header className='logoHeader'>
-      <img src={logo} alt="Forskoleupproret logga" />
+      <div>
+        <img src={logo} alt="Forskoleupproret logga" />
+      </div>
     </header>
   )
 }

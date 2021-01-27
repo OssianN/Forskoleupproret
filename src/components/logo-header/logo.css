@@ -8,15 +8,23 @@
   background-color: #fff;
 }
 
-.logoHeader p {
+/* .logoHeader p {
   text-align: center;
   max-width: 500px;
   color: #949494;
+} */
+
+.logoHeader div {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  width: 100%;
+  height: 70%;
 }
 
 .logoHeader img {
-  width: 80%;
   max-width: 745px;
-  height: 100%;
+  width: 100%;
   object-fit: contain;
+  padding: 0 5%;
 }
