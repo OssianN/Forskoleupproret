@@ -107,7 +107,7 @@ const Press = () => {
           </h3>
         </div>
         <div className='firstSection'>
-          <ul className='articleUl' style={showArticleList === 'Nyheter' ? {display: 'block'} : {display: 'none'}}>
+          <ul className='contentfulList' style={showArticleList === 'Nyheter' ? {display: 'block'} : {display: 'none'}}>
           <h1 className='tabHeader'>Nyheter</h1>
             {data.allContentfulBlogPost.edges?.map(post => {
               return (
@@ -123,7 +123,7 @@ const Press = () => {
               );
             })}
           </ul>
-          <ul id='published' className='externalContentfulList' style={showArticleList === 'Publicerade' ? {display: 'block'} : {display: 'none'}}>
+          <ul id='published' className='contentfulList' style={showArticleList === 'Publicerade' ? {display: 'block'} : {display: 'none'}}>
             <h1 className='tabHeader'>Publicerade</h1>
             {published?.map(link => {
               return (
@@ -136,7 +136,7 @@ const Press = () => {
               )
             })}
           </ul>
-          <ul i='omnämnda' className='externalContentfulList' style={showArticleList === 'Omnämnda' ? {display: 'block'} : {display: 'none'}}>
+          <ul i='omnämnda' className='contentfulList' style={showArticleList === 'Omnämnda' ? {display: 'block'} : {display: 'none'}}>
             <h1 className='tabHeader'>Omnämnda</h1>
             {omnamnda?.map(link => {
                 return (

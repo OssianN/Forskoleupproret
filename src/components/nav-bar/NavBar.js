@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   return (
-    <div>
+    <>
       <div className='navBarContainer'>
         <Link to='/' className='mobileNavIcon'>
           <img src={pinIcon} alt='logo'></img>
@@ -78,7 +78,7 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 };
 

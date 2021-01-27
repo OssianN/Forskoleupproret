@@ -15,16 +15,11 @@ $pSize: 1em;
 }
 
 @media (max-width: 1000px) {
-  .firstSection {
-    padding-top: 10% !important;
-  }
-
-  .forskoleupproretGoal,
-  .history .firstSection,
+  .firstSection,
   .om-oss .tabContentIntro,
   .press .articleListContainer,
   .omHashtagen {
-    padding-top: 70px;
+    padding-top: 90px !important;
   }
 
   .tabContent p {
