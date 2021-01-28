@@ -10,35 +10,8 @@ const NavBar = () => {
 
   const handleActiveTab = () => {
     const tabName = window?.location.href.match(/[-\w]+\/?$/ig)[0];
-    switch (tabName) {
-      case 'goalDemand':
-        setActiveTab('goalDemand')
-        break;
-
-      case 'om-oss':
-        setActiveTab('om-oss')
-        break;
-
-      case 'history':
-        setActiveTab('history')
-        break;
-
-      case 'press':
-        setActiveTab('press')
-        break;
-
-      case 'pressatLage':
-        setActiveTab('pressatLage')
-        break;
-
-      case 'viVagrarBrytaLagen':
-        setActiveTab('viVagrarBrytaLagen')
-        break;
-
-      default:
-        break;
-    }
-  }
+    setActiveTab(tabName);
+  };
 
  useEffect(() => {
   handleActiveTab();
