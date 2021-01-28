@@ -48,6 +48,7 @@ $forange: #F58124;
     right: 0;
     height: 100%;
     background-color: #f0f0f0;
+    box-shadow: 0 0 7px #5e5e5e6c;
     transition: .5s;
     z-index: 50;
   }
@@ -102,6 +103,7 @@ $forange: #F58124;
   .navBarContainer {
     display: flex;
     flex-direction: column;
+    z-index: 101;
   }
 
   .mobileNavButton {
