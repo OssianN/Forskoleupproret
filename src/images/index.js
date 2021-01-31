@@ -4,6 +4,8 @@ import blob2 from './blob2.svg';
 import blob3 from './blob3.svg';
 import blob4 from './blob4.svg';
 import blob5 from './blob5.svg';
+import blobPressat from './blob-pressat.svg';
+import blobViVagrar from './blob-vivagrar.svg';
 
 import insta from './insta.png';
 import facebook from './fb.png';
@@ -24,7 +26,6 @@ import forskoleupproretBanner from './img1.jpeg';
 import tystnad from './tystnad.png';
 import thousand from './1000.svg';
 
-
 import fridolin from '../images/fridolin.jpeg';
 import fackforbundet from '../images/fackforbundet.jpg';
 import fackforbundet2 from '../images/fackforbundet2.png';
@@ -41,7 +42,6 @@ import newspaper from '../images/newspaper.svg';
 import lararforbundet from '../images/lararforbundet.png';
 import kommunal from '../images/kommunal.jpeg';
 import bookCover from '../images/bookCover.jpeg';
-
 
 export {
   blob,
@@ -82,4 +82,6 @@ export {
   lararforbundet,
   kommunal,
   bookCover,
+  blobPressat,
+  blobViVagrar,
 }

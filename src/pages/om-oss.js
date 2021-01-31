@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../components/nav-bar/NavBar';
-import * as img from '../images/'
+import * as img from '../images/';
 
 
 const OmOss = () => {

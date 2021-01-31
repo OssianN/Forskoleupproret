@@ -5,7 +5,7 @@ import powerful from '../../images/powerful.svg';
 import aboutUs from '../../images/aboutUs.svg';
 import history from '../../images/history.svg';
 import press from '../../images/press.svg';
-
+import * as images from '../../images/';
 
 const HomeImages = () => {
   return (

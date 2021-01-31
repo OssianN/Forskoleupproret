@@ -77,7 +77,7 @@
   }
 }
 
-.imageDiv img {
+.imageDiv a > img {
   margin-top: 5%;
   height: 50%;
   width: 100%;
@@ -99,11 +99,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-image: linear-gradient(#F58124, #F58124);
+  background-size: 100% 30%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hashtagCard a {
-  color: #F58124;
+  color: white;
   font-size: 1.5rem;
 }
 
