@@ -1,16 +1,17 @@
 .homeImgContainer {
-  width: 90%;
+  max-width: 1200px;
   position: relative;
   align-self: center;
   display: flex;
   justify-content: center;
   flex-basis: 100%;
   flex-wrap: wrap;
-  margin-top: 2.5%;
+  background-color: #ffffff9f;
 }
 
 .imageDiv {
   height: 30vh;
+  max-height: 300px;
   min-height: 230px;
   margin: 1%;
   border-radius: 8px;
@@ -56,6 +57,10 @@
 }
 
 @media (max-width: 600px) {
+  .homeImgContainer {
+    padding: 5% 0;
+  }
+
   .imageDiv {
     width: 90%;
   }
@@ -71,9 +76,11 @@
   .imageDiv {
     width: 30%;
   }
+}
 
+@media (min-width: 601px) {
   .homeImgContainer {
-    width: 90%;
+    padding: 2.5% 0 5% 0;
   }
 }
 
@@ -97,10 +104,11 @@
 
 .hashtagCard {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(#F58124, #F58124);
-  background-size: 100% 30%;
+  background-size: 100% 60%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -108,6 +116,14 @@
 .hashtagCard a {
   color: white;
   font-size: 1.5rem;
+  margin: 5% 0;
+}
+
+.hashtagCard span {
+  min-height: 3px;
+  min-width: 70%;
+  border-radius: 3px;
+  background-color: black;
 }
 
 #hashtagText {

@@ -44,18 +44,21 @@ const HomeImages = () => {
             <h2>Press</h2>
             <p>Våra artiklar, publicerade artiklar och omnämnda...</p>
           </div>
-          <p></p>
         </Link>
       </div>
       <div className="imageDiv hashtagCard">
+        <span></span>
         <Link to='/pressatLage'>
           <h2 id='hashtagText'>#pressatläge</h2>
         </Link>
+        <span></span>
       </div>
       <div className="imageDiv hashtagCard">
+        <span></span>
         <Link to='/viVagrarBrytaLagen'>
           <h2 className='smallerFont' id='hashtagText'>#vivägrarbrytalagen</h2>
         </Link>
+        <span></span>
       </div>
     </div>
   );
