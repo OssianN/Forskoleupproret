@@ -120,7 +120,7 @@
 }
 
 .hashtagCard span {
-  min-height: 1px;
+  min-height: 2px;
   min-width: 70%;
   border-radius: 3px;
   background-color: black;

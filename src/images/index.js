@@ -6,6 +6,7 @@ import blob4 from './blob4.svg';
 import blob5 from './blob5.svg';
 import blobPressat from './blob-pressat.svg';
 import blobViVagrar from './blob-vivagrar.svg';
+import banner2 from './banner2.png';
 
 import insta from './insta.png';
 import facebook from './fb.png';
@@ -84,4 +85,5 @@ export {
   bookCover,
   blobPressat,
   blobViVagrar,
+  banner2
 }
