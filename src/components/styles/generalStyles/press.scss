@@ -28,7 +28,7 @@
 }
 
 .press__contentful-title {
-  color: black;
+  color: #3d3d3d;
   margin-bottom: 30px;
   font-size: 1.5rem;
 }
@@ -55,7 +55,7 @@
 
 .press__contentful-text-wrapper {
   display: flex;
-  padding: 5%;
+  padding: 10%;
   flex-direction: column;
   background-color: white;
   text-align: left;
@@ -93,7 +93,11 @@
     box-shadow: 0px 5px 7px #4e4e4e18;
   }
 
-.press__header__h1 {
-  margin-top: 290px;
-}
+  .press__header__h1 {
+    margin-top: 290px;
+  }
+
+  .press__contentful-title {
+    font-size: 2rem;
+  }
 }
