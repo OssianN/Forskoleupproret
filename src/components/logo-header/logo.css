@@ -1,15 +1,11 @@
 .logo-header__container {
   width: 100%;
-  max-height: fit-content;
   margin-top: 100px;
   margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
 }
 
 .logo-header__img{
-  max-width: 900px;
-  width: 100%;
+  max-width: 100%;
   object-fit: contain;
   opacity: .9;
 }
