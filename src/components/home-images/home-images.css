@@ -10,14 +10,11 @@
 }
 
 .home-box {
-  height: 30vh;
-  max-height: 300px;
   min-height: 230px;
-  margin: 1%;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px #dadada;
+  margin: 20px;
+  border-radius: .75rem;
+  box-shadow: 0 1px 10px #dadada;
   background-color: white;
-  overflow: hidden;
   animation-name: imageDiv;
   animation-duration: 2s;
   transition: ease-out;
@@ -25,8 +22,8 @@
 }
 
 .home-box__text-container {
-  min-height: 15%;
-  z-index: 10;
+  margin-top: 20px;
+  padding: 20px 0;
 }
 
 .home-box__link {
@@ -48,18 +45,7 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .home-box__container {
-    width: 100%;
-    margin-bottom: 5%;
-  }
-}
-
 @media (max-width: 600px) {
-  .home-box__container {
-    padding: 5% 0;
-  }
-
   .home-box {
     width: 90%;
   }
@@ -78,14 +64,14 @@
 }
 
 .home-box__img {
-  margin-top: 5%;
+  margin-top: 20px;
   height: 50%;
   width: 100%;
   object-fit: contain;
 }
 
 .home-box__paragraph {
-  font-size: 16px;
+  font-size: 1rem;
   color: #222222;
 }
 

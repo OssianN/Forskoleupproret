@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   const mainContainer = {
     maxWidth: '1200px',
     minHeight: '100vh',
-    padding: '0 50px',
+    padding: '0 30px',
     paddingBottom: '100px',
     margin: '0 auto',
   }
