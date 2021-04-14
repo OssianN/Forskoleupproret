@@ -21,7 +21,7 @@
 .home-box {
   min-height: 230px;
   width: 100%;
-  margin: 20px;
+  margin: 20px 0;
   padding: 25px;
   border-radius: .75rem;
   box-shadow: 0 1px 10px #dadada;
@@ -103,6 +103,7 @@
 @media (min-width: 768px) {
   .home-box {
     width: 33%;
+    margin: 20px;
   }
 }
 

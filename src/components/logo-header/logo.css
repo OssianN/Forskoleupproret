@@ -1,5 +1,6 @@
 .logo-header__container {
   width: 100%;
+  max-height: fit-content;
   margin-top: 100px;
   margin-bottom: 50px;
   display: flex;
