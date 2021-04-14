@@ -1,14 +1,15 @@
 import React from 'react';
-import '../styles/global.scss';
 import Logo from '../components/logo-header/Logo'
 import HomeImages from '../components/home-images/HomeImages';
+import Layout from '../components/Layout';
+import '../components/styles/index.scss'
 
 export default function Home() {
 
   return (
-    <div className="app">
+    <Layout>
       <Logo />
       <HomeImages />
-    </div>
+    </Layout>
   );
 };

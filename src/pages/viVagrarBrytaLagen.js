@@ -44,11 +44,11 @@ export const HashTags = () => {
               <h3>
                 1000 berättelser från rektorer, förskollärare och barnskötare som avslöjar lagbrott i svensk förskola för att klara budget och upprätthålla ett yttre.
               </h3>
-              <Link to='https://drive.google.com/file/d/1ueOYTIpeA1dU3s8e7GXlmzQfh5pFlL6B/view?usp=drivesdk'>
-                Gå till berättelserna &#x203A;
-              </Link>
             </div>
           <img src={img.thousand} alt='1000'></img>
+          <Link to='https://drive.google.com/file/d/1ueOYTIpeA1dU3s8e7GXlmzQfh5pFlL6B/view?usp=drivesdk'>
+            Gå till berättelserna &#x203A;
+          </Link>
           </div>
           <div className='gridView toTheLeft'>
             <div className='orangeBox'>

@@ -6,7 +6,12 @@ import blob4 from './blob4.svg';
 import blob5 from './blob5.svg';
 import blobPressat from './blob-pressat.svg';
 import blobViVagrar from './blob-vivagrar.svg';
-import banner2 from './banner2.png';
+import banner from './banner.png';
+
+import powerful from './powerful.svg';
+import aboutUs from './aboutUs.svg';
+import history from './history.svg';
+import press from './press.svg';
 
 import insta from './insta.png';
 import facebook from './fb.png';
@@ -20,7 +25,7 @@ import katrin from './katrin.jpg';
 import annette from './annette.jpg';
 import diana from './hdiana.jpg';
 import monica from './monica.jpg';
-import annika from './annika.jpg';
+import annica from './annica.jpg';
 import gruppbild from './gruppbild.jpg';
 
 import forskoleupproretBanner from './img1.jpeg';
@@ -51,6 +56,10 @@ export {
   blob3,
   blob4,
   blob5,
+  powerful,
+  aboutUs,
+  history,
+  press,
   insta,
   facebook,
   twitter,
@@ -62,7 +71,7 @@ export {
   annette,
   diana,
   monica,
-  annika,
+  annica,
   gruppbild,
   forskoleupproretBanner,
   tystnad,
@@ -85,5 +94,5 @@ export {
   bookCover,
   blobPressat,
   blobViVagrar,
-  banner2
+  banner
 }

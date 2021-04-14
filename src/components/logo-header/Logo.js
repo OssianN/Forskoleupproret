@@ -1,13 +1,12 @@
 import React from 'react'
-import logo from '../../images/logo3.jpeg';
 import './logo.css';
 import * as images from '../../images/';
 
 const Logo = () => {
   return (
-    <header className='logoHeader'>
-      <div>
-        <img src={logo} alt="Forskoleupproret logga" />
+    <header className='logo-header__container'>
+      <div className='logo-header__box'>
+        <img className='logo-header__img' src={images.banner} alt="Forskoleupproret logga" />
       </div>
     </header>
   )

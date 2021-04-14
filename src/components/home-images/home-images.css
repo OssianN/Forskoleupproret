@@ -1,4 +1,4 @@
-.homeImgContainer {
+.home-box__container {
   max-width: 1200px;
   position: relative;
   align-self: center;
@@ -9,7 +9,7 @@
   background-color: #ffffff9f;
 }
 
-.imageDiv {
+.home-box {
   height: 30vh;
   max-height: 300px;
   min-height: 230px;
@@ -24,18 +24,17 @@
   transition-duration: .3s;
 }
 
-.imageDiv .textbox {
+.home-box__text-container {
   min-height: 15%;
   z-index: 10;
 }
 
-.imageDiv a {
-  color: black;
+.home-box__link {
   text-decoration: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .imageDiv:hover {
+  .home-box:hover {
     transform: scale(1.05);
   }
 }
@@ -50,87 +49,90 @@
 }
 
 @media (max-width: 1000px) {
-  .homeImgContainer {
+  .home-box__container {
     width: 100%;
     margin-bottom: 5%;
   }
 }
 
 @media (max-width: 600px) {
-  .homeImgContainer {
+  .home-box__container {
     padding: 5% 0;
   }
 
-  .imageDiv {
+  .home-box {
     width: 90%;
   }
 }
 
 @media (max-width: 1001px) and (min-width: 601px) {
-  .imageDiv {
+  .home-box {
     width: 45%;
   }
 }
 
 @media (min-width: 1001px) {
-  .imageDiv {
+  .home-box {
     width: 30%;
   }
 }
 
-@media (min-width: 601px) {
-  .homeImgContainer {
-    padding: 2.5% 0 5% 0;
-  }
-}
-
-.imageDiv a > img {
+.home-box__img {
   margin-top: 5%;
   height: 50%;
   width: 100%;
   object-fit: contain;
 }
 
-.imageDiv p {
+.home-box__paragraph {
   font-size: 16px;
-  color: #363636;
+  color: #222222;
 }
 
-.imageDiv p, 
-.imageDiv h2 {
+.home-box__title-h2 {
+  font-size: 1.5rem;
+  color: #3d3d3d;
+}
+
+.home-box__paragraph, 
+.home-box__title-h2 {
   padding: 1%;
   margin: 0 5%;
 }
 
-.hashtagCard {
+.hashtag-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-box__hashtag-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#F58124, #F58124);
-  background-size: 100% 60%;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.hashtagCard a {
-  color: white;
+.home-box__hashtag-text {
   font-size: 1.5rem;
-  margin: 5% 0;
+  font-weight: 900;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #ff9f50;
+  text-align: center;
 }
 
-.hashtagCard span {
-  min-height: 2px;
+.home-box__hashtag-span {
+  min-height: 4px;
+  max-height: 0px;
   min-width: 70%;
-  border-radius: 3px;
-  background-color: black;
+  align-self: center;
+  border-radius: 5rem;
+  background: #3d3d3d;
 }
 
-#hashtagText {
-  margin: 0;
-  padding: 0;
-}
-
-.smallerFont {
-  font-size: 1.5rem;
+.home-box__smaller-font {
+  font-size: 1rem;
 }

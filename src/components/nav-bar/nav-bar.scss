@@ -1,146 +1,148 @@
-$forange: #F58124;
+$forange: #ff9f50;
+$tabContentBackground: white;
 
-.mainNav li {
+.nav__list-item {
   display: flex;
   align-items: center;
   list-style: none;
   max-height: 40px;
-  padding: 0 10px;
+  margin-top: 40px;
+  padding: 0 30px;
 }
 
-.mainNav a {
-  color: black;
+.nav__link {
+  color: #3d3d3d;
   text-decoration: none;
   font-size: 1.2em;
+  font-weight: 400;
   word-wrap: wrap;
 }
 
-.mainNav a:hover {
-  color: #F58124;
+.nav__link:hover {
+  color: #ff9f50;
 }
 
-#hemknapp {
+.nav__icon {
   height: 3em;
   width: 3em;
   border-radius: 50%;
   object-fit: contain;
   border: 1px solid #f5822400;
+  opacity: .9;
 }
 
-#hemknapp:hover {
-  border: 1px solid #F58124;
+.nav__home-link {
+  display: none;
 }
 
-@media (max-width: 1000px) {
-  .navBarContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fffffff5;
-    height: 70px;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-  }
+.nav__mobile-top-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+}
 
-  .mainNav {
-    position: fixed;
-    right: 0;
-    height: 100%;
-    background-color: #f0f0f0;
-    box-shadow: 0 0 7px #5e5e5e6c;
-    transition: .5s;
-    z-index: 50;
-  }
+.nav__container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: #ffffff;
+  backdrop-filter: blur(2rem);
+  box-shadow: 0 0 5px #1a1a1a1e;
+  transition: .5s;
+  z-index: 100;
+}
 
-  .mobileNavButton {
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    right: 0;
-    z-index: 100;
-    -webkit-tap-highlight-color: #00000000;
-  }
+.nav__mobile-toggle-button {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  right: 0;
+  top: 10px;
+  z-index: 150;
+  -webkit-tap-highlight-color: #00000000;
+}
 
-  .mobileNavButton:focus {
-    outline: none;
-    box-shadow: none;
-  }
+.nav__mobile-toggle-button:focus {
+  outline: none;
+  box-shadow: none;
+}
 
-  .mainNav ul {
-    z-index: 50;
-    flex-direction: column;
-    width: 250px;
-    height: 100%;
-    padding-top: 20%;
-    overflow: hidden;
-  }
+.nav__ul {
+  z-index: 50;
+  flex-direction: column;
+  width: 280px;
+  height: 100%;
+  padding-top: 20%;
+  padding-left: 50px;
+  overflow: hidden;
+}
 
-  .mainNav ul li {
-    margin: 40px 0;
-  }
-
-  #homeLinkMobile {
-    display: block;
-  }
-
-  .mobileNavIcon {
-    width: 40px;
-  }
-
-  .mobileNavIcon img {
-    height: 40px;
-    object-fit: contain;
-  }
-
-  #homeLink {
-    display: none;
-  }
+.active-tab {
+  color: #ff9f50;
 }
 
 @media (min-width: 1001px) {
-  .navBarContainer {
-    display: flex;
-    flex-direction: column;
-    z-index: 101;
-  }
-
-  .mobileNavButton {
+  .nav__mobile-toggle-button,
+  .nav__mobile-home-button,
+  .nav__mobile-home-link,
+  .nav__mobile-top-span {
     display: none;
   }
 
-  .mainNav {
+  .nav__container {
+    margin-right: 0 !important;
     position: fixed;
     z-index: 10;
     width: 100%;
-    max-width: 1200px;
-    background-color: #f0f0f0;
-    align-self: center;
+    height: 50px;
+    top: 0;
+    background-color: white;
+    backdrop-filter: blur(2rem);
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 40px 0;
-    margin: 0 auto !important;
   }
-  
-  .mainNav ul {
+
+  .nav__ul {
     margin: 0;
     padding: 0;
+    padding-left: 0;
     width: 100%;
+    max-width: 1200px;
     display: flex !important;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
 
-  #homeLinkMobile {
-    display: none;
+  .nav__list-item {
+    max-height: none;
+    margin-top: 0;
+    padding: 0 30px;
   }
 
-  .mobileNavIcon {
-    display: none;
+  .nav__home-link {
+    display: block;
   }
 
-  #homeLink {
-    display: flex;
+  .nav__home-link img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 1px solid #f5822400;
   }
 }
 
