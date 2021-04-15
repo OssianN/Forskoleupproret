@@ -20,7 +20,7 @@ export const History = () => {
         </div>
         <div className='history__ankis-paragraph grid-view'>
           <div>
-          <h2 className='history__ankis-title'>Ankis berättelse</h2>
+          <h2 className='main-h2 history__ankis-title'>Ankis berättelse</h2>
             <p className='main-p'>
               Den första tanken på att göra något för att uppmärksamma förskolans situation offentligt var när jag kom tillbaka en höst efter semestern. Jag var utvecklingsledare på min arbetsplats och vid det första ledningsmötet vi hade med vår rektor efter sommaren fick vi veta att vi stod inför besparingar. Då slank det bara ur mig: ”Jag tror att jag hoppar upp på scenen i Conventum på studiedagen. ” Varje höst så har nämligen Örebro kommun en studiedag för all personal inom förskolan. Veckorna gick och det jag sagt fanns hela tiden kvar som en pyrande tanke i huvudet.
               <br/>
@@ -28,7 +28,7 @@ export const History = () => {
               När vi en dag stod på jobbet med sjuk personal och inga vikarier så bestämde jag mig. Jag skulle göra det jag sagt, även om det betydde att jag skulle göra det själv. Jag frågade runt om någon kunde tänka sig att gå upp med mig på scenen. Alla tyckte det var en bra idé men ingen vågade. Strax innan det var dags fick jag äntligen napp. Min fd kollega Malin Hörlin kunde tänka sig att hoppa upp på scenen med mig. 
               <br/>
               <br/>
-              Dagen D hade vi sett till att det låg två mikrofoner och väntade på oss vid scenen när tillfälle gavs. När det blev en lucka tog vi chansen och klev upp. De flesta förstod inte vad som hände utan de trodde att vi tillhörde programmet. När jag talat klart fick vi stående ovationer, kramar och klappar på axeln. Några grät och flera sa: Äntligen är det någon som vågar säga som det är! Och sedan var bollen i rullning. Det blev intervjuer i radio, tv och tidningar samt möten med förvaltningschef och politiker.
+              Dagen D hade vi sett till att det låg två mikrofoner och väntade på oss vid scenen när tillfälle gavs. När det blev en lucka hrefg vi chansen och klev upp. De flesta förstod inte vad som hände utan de trodde att vi tillhörde programmet. När jag talat klart fick vi stående ovationer, kramar och klappar på axeln. Några grät och flera sa: Äntligen är det någon som vågar säga som det är! Och sedan var bollen i rullning. Det blev intervjuer i radio, tv och tidningar samt möten med förvaltningschef och politiker.
               Så en solig dag i oktober 2013 föddes Förskoleupproret på en scen i Conventum. Man kan säga att upproret föddes ur frustration och ilska. 
             </p>
           </div>
@@ -39,7 +39,7 @@ export const History = () => {
             Jag kände att det här går inte längre. Vi fick knappt ta in vikarier, kollegor blev sjuka av jobbet och i slutänden så drabbar ju det även barnen.
             <br/>
             <br/>
-            Den där dagen i oktober när vi oanmälda tog oss upp på scenen gjorde vi det inte för att sätta dit någon viss person. För vi hade faktiskt inte en tanke på att det skulle vara någon politiker på plats. Vi kände bara att det måste komma ut, att vi inte kunde vara tysta längre. Det var inte rätt. Inte mot oss och inte mot barnen.
+            Den där dagen i oktober när vi oanmälda hrefg oss upp på scenen gjorde vi det inte för att sätta dit någon viss person. För vi hade faktiskt inte en tanke på att det skulle vara någon politiker på plats. Vi kände bara att det måste komma ut, att vi inte kunde vara tysta längre. Det var inte rätt. Inte mot oss och inte mot barnen.
             För som de säger i Bröderna Lejonhjärta och som min kloka kollega Malin sade: ”Det finns saker man måste göra, annars är man bara en liten lort.”
             <br/>
             <br/>
@@ -49,10 +49,10 @@ export const History = () => {
       </div>
           {/* <div className='accomplishments'>
             <h1>Det här har vi gjort</h1>
-            <h2>Cafeträff med rikspolitker</h2>
-            <h2>2018</h2>
-            <h2>2019</h2>
-            <h2>Möte med samtliga politiker 6/11 2019</h2>
+            <h2 className='main-h2'>Cafeträff med rikspolitker</h2>
+            <h2 className='main-h2'>2018</h2>
+            <h2 className='main-h2'>2019</h2>
+            <h2 className='main-h2'>Möte med samtliga politiker 6/11 2019</h2>
           </div> */}
     </Layout>
   )

@@ -13,28 +13,28 @@ export const HashTags = () => {
           <div className='orangeBox toTheCenter'>
             <div className='blackBox'>
               <img src={img.forskoleupproretBanner} alt='banner'></img>
-              <h2>VI</h2>
+              <h2 className='main-h2'>VI</h2>
               <h4>vägrar bryta</h4>
-              <h2>LAGEN</h2>
-              <p>#vivägrarbrytalagen</p>
+              <h2 className='main-h2'>LAGEN</h2>
+              <p className='main-p'>#vivägrarbrytalagen</p>
             </div>
           </div>
           <div>
           <div className='gridView'>
-            <p>
+            <p className='main-p'>
               Vet du vilka lagar det är vanligt att du tvingas bryta mot på grund av bristande resurser?
               På denna sida informerar vi om dessa lagar.
               Efter #pressatläge har vi nu tagit nästa steg och driver framåt. Vi har genom lagarna både skyldigheter och rättigheter. Vet du när DU tvingas bryta mot lagen? Genom att läsa på och förkovra oss har vi tagit ett gemensamt nästa steg.
               Det är vår skyldighet att också hålla oss ajour med gällande lagar så vi kan arbeta lagenligt. 
               Om vi gör det och skriver de tillbud som krävs för att förändra ett dåligt läge kan vi göra skillnad. 
             </p>
-            <p>
+            <p className='main-p'>
               Det ligger på oss att tala om för arbetsgivaren vad som inte fungerar så vi och de får en chans att förbättra. Det som inte sägs, det finns inte. Så fram med dokumenten och skriv tillbud!
-              <p>
-                <h2>Besök vårt dokument</h2>
+              <p className='main-p'>
+                <h2 className='main-h2'>Besök vårt dokument</h2>
                 Förskoleupprorets ledningsgrupp har sammanställt ett dokument som ska hjälpa dig att skriva tillbud, när och varför.
               </p>
-              <Link to='https://drive.google.com/file/d/1ML2yMr_fDGloLYkRdr9IV8GHtJKSUpNV/view?usp=drivesdk'>Se dokumentet &#x203A;</Link>
+              <a href='https://drive.google.com/file/d/1ML2yMr_fDGloLYkRdr9IV8GHtJKSUpNV/view?usp=drivesdk'>Se dokumentet &#x203A;</a>
             </p>
           </div>
           </div>
@@ -46,31 +46,31 @@ export const HashTags = () => {
               </h3>
             </div>
           <img src={img.thousand} alt='1000'></img>
-          <Link to='https://drive.google.com/file/d/1ueOYTIpeA1dU3s8e7GXlmzQfh5pFlL6B/view?usp=drivesdk'>
+          <a href='https://drive.google.com/file/d/1ueOYTIpeA1dU3s8e7GXlmzQfh5pFlL6B/view?usp=drivesdk'>
             Gå till berättelserna &#x203A;
-          </Link>
+          </a>
           </div>
           <div className='gridView toTheLeft'>
             <div className='orangeBox'>
               <div className='blackBox'>
                 <img src={img.forskoleupproretBanner} alt='banner'></img>
-                <h2>ATL</h2>
+                <h2 className='main-h2'>ATL</h2>
                 <h4>arbetstidslagen</h4>
-                <p>#vivägrarbrytalagen</p>
+                <p className='main-p'>#vivägrarbrytalagen</p>
               </div>
             </div>
-            <p>
+            <p className='main-p'>
               När vi lyfter arbetstidslagen (ATL) så tänker vi närmast på våra raster, förskjuten arbetstid och övertid samt när vi sitter på långa möten på kvällar - får du då din dygnsvila?
               Arbetstidslagen är dispositiv, vilket innebär att de centrala parterna på arbetsmarknaden genom kollektivavtal kan komma överens om avvikelser från lagens bestämmelser. (Prevent)
               Ett avtal får aldrig försämra utan ska alltid förbättra i förhållande till lagen.
               Vilket avtal som gäller för dig finns på ditt anställningsavtal.
               <br/>
               <br/>
-              <Link to='https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/arbetstidslagen/'>ATL i sin helhet &#x203A;</Link>
+              <a href='https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/arbetstidslagen/'>ATL i sin helhet &#x203A;</a>
             </p>
           </div>
           <div className='gridView toTheRight'>
-            <p>
+            <p className='main-p'>
               Det här är det styrdokument vi förväntas arbeta utifrån. Det är vårt uppdrag - klarar vi det?
               ”Syftet med utbildningen inom skolväsendet
               4 §   Utbildningen inom skolväsendet syftar till att barn och elever ska inhämta och utveckla kunskaper och värden. Den ska främja alla barns och elevers utveckling och lärande samt en livslång lust att lära. Utbildningen ska också förmedla och förankra respekt för de mänskliga rättigheterna och de grundläggande demokratiska värderingar som det svenska samhället vilar på.
@@ -78,15 +78,15 @@ export const HashTags = () => {
               Utbildningen syftar också till att i samarbete med hemmen främja barns och elevers allsidiga personliga utveckling till aktiva, kreativa, kompetenta och ansvarskännande individer och medborgare.”
               <br/>
               <br/>
-              <Link to='https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/skollag-2010800_sfs-2010-800'>Skollagen i sin helhet &#x203A;</Link>
+              <a href='https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/skollag-2010800_sfs-2010-800'>Skollagen i sin helhet &#x203A;</a>
             </p>
             <div className='orangeBox'>
               <div className='blackBox'>
                 <img src={img.forskoleupproretBanner} alt='banner'></img>
-                <h2>Skollagen</h2>
+                <h2 className='main-h2'>Skollagen</h2>
                 <h5>(2010:800)</h5>
                 <h4>arbetstidslagen</h4>
-                <p>#vivägrarbrytalagen</p>
+                <p className='main-p'>#vivägrarbrytalagen</p>
               </div>
             </div>
           </div>
@@ -94,12 +94,12 @@ export const HashTags = () => {
             <div className='orangeBox'>
               <div className='blackBox'>
               <img src={img.forskoleupproretBanner} alt='banner'></img>
-              <h2>AML</h2>
+              <h2 className='main-h2'>AML</h2>
               <h4>arbetsmiljölagen</h4>
-              <p>#vivägrarbrytalagen</p>
+              <p className='main-p'>#vivägrarbrytalagen</p>
               </div>
             </div>
-            <p>
+            <p className='main-p'>
               Uppdaterad information 14/1 kl 23.25:
               Igår, tisdag påbörjade vi en diskussion om AML (se nedan). Onsdagen den 15 januari kommer vi att fortsätta med samma ämne och då i denna tråd. 
               AML - Arbetsmiljölagen 
@@ -109,37 +109,39 @@ export const HashTags = () => {
               ”I arbetsmiljölagen finns regler om skyldigheter för arbetsgivare och andra skyddsansvariga om att förebygga ohälsa och olycksfall i arbetet. Det finns också regler om samverkan mellan arbetsgivare och arbetstagare, till exempel regler om skyddsombudens verksamhet.”
               <br/>
               <br/>
-              <Link to='https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/arbetsmiljolagen/'>Arbetsmiljölagen i sin helhet &#x203A;</Link>
+              <a href='https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/arbetsmiljolagen/'>Arbetsmiljölagen i sin helhet &#x203A;</a>
             </p>
           </div>
           <div className='gridView toTheRight'>
-            <p>
-              Tystnadskulturen har brett ut sig som ett vått, klibbigt täcke över förskolan och oss verksamma. 
-              Det är inte bra! Sanningen om barnens verksamhet kommer inte fram till vårdnadshavare och förskollärare/barnskötare får repressalier av sina rektorer när de yttrar sig. 
-              Självklart ska man inte lämna ut namn, men oavsett så tycks det ha blivit förgiftat. 
-              Problem får vi helt enkelt inte prata om, det heter utmaningar, har vi fått lära oss...
-              Nej! Det håller inte! 
-              <br />
-              <br />
-              Vi går i däck och barnen får inte det de är berättigade. 
-              Så vad får vi säga egentligen? 
-              Vem får säga vad?
-              Har arbetsgivaren rätt att tysta oss?
-              Hur får vi uttala oss?
-              Får vi uttala oss i media? 
-              Får vi vara anonyma?
-              Många frågor...
-              <br/>
-              <br/>
-              <Link to='https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/offentlighets--och-sekretesslag-2009400_sfs-2009-400'>Offentlighets- och sekretesslagen i sin helhet &#x203A;</Link>
-              <h2>Tillsammans blir vi starkare!</h2>
-            </p>
+            <div>
+              <p className='main-p'>
+                Tystnadskulturen har brett ut sig som ett vått, klibbigt täcke över förskolan och oss verksamma. 
+                Det är inte bra! Sanningen om barnens verksamhet kommer inte fram till vårdnadshavare och förskollärare/barnskötare får repressalier av sina rektorer när de yttrar sig. 
+                Självklart ska man inte lämna ut namn, men oavsett så tycks det ha blivit förgiftat. 
+                Problem får vi helt enkelt inte prata om, det heter utmaningar, har vi fått lära oss...
+                Nej! Det håller inte! 
+                <br />
+                <br />
+                Vi går i däck och barnen får inte det de är berättigade. 
+                Så vad får vi säga egentligen? 
+                Vem får säga vad?
+                Har arbetsgivaren rätt att tysta oss?
+                Hur får vi uttala oss?
+                Får vi uttala oss i media? 
+                Får vi vara anonyma?
+                Många frågor...
+                <br/>
+                <br/>
+                <a href='https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/offentlighets--och-sekretesslag-2009400_sfs-2009-400'>Offentlighets- och sekretesslagen i sin helhet &#x203A;</a>
+              </p>
+              <h2 className='main-h2'>Tillsammans blir vi starkare!</h2>
+            </div>
             <div className='orangeBox'>
               <div className='blackBox'>
                 <img src={img.forskoleupproretBanner} alt='banner'></img>
                 <h5>Offentlighets- och sekretesslagen</h5>
                 <img src={img.tystnad} alt='tystnadsplikt'></img>
-                <p>#vivägrarbrytalagen</p>
+                <p className='main-p'>#vivägrarbrytalagen</p>
               </div>
             </div>
           </div>
@@ -147,30 +149,30 @@ export const HashTags = () => {
             <div className='orangeBox'>
               <div className='blackBox'>
                 <img src={img.forskoleupproretBanner} alt='banner'></img>
-                <h2>AVTAL</h2>
+                <h2 className='main-h2'>AVTAL</h2>
                 <h4>Hök18-ALMEGA-KFO</h4>
-                <p>#vivägrarbrytalagen</p>
+                <p className='main-p'>#vivägrarbrytalagen</p>
               </div>
             </div>
-            <p>
+            <p className='main-p'>
               Hur familjära är du med dem? 
               Vet vi vad som står?
               Vilka är våra rättigheter och skyldigheter?
               Vilka är våra arbetsgivares rättigheter och skyldigheter?<br/>
               <br/>
-              <Link to='https://www.lararforbundet.se/artikelsidor/allt-om-skolavtalet-hok-18'>Länk till Hök18 &#x203A;</Link>
+              <a href='https://www.lararforbundet.se/artikelsidor/allt-om-skolavtalet-hok-18'>Länk till Hök18 &#x203A;</a>
               <br/>
               <br/>
-              <Link to='https://www.lararforbundet.se/artiklar/almega-tjansteforetagen-friskoleavtalet-kollektivavtal-for-anstallda-inom-almega-tjansteforetagen'>Länk till Amega &#x203A;</Link>
+              <a href='https://www.lararforbundet.se/artiklar/almega-tjansteforetagen-friskoleavtalet-kollektivavtal-for-anstallda-inom-almega-tjansteforetagen'>Länk till Amega &#x203A;</a>
               <br/>
               <br/>
-              <Link to='https://www.lararforbundet.se/artiklar/arbetsgivarforeningen-kfo-sammanfattning-av-kollektivavtalet'>Länk till Kfo &#x203A;</Link>
+              <a href='https://www.lararforbundet.se/artiklar/arbetsgivarforeningen-kfo-sammanfattning-av-kollektivavtalet'>Länk till Kfo &#x203A;</a>
               <br/>
               <br/>
-              <Link to='https://skr.se/download/18.485e5900175b8e9831716a4f/1605166705948/HOK-20-Kommunal.pdf'>Länk till HÖK Kommunal &#x203A;</Link>
+              <a href='https://skr.se/download/18.485e5900175b8e9831716a4f/1605166705948/HOK-20-Kommunal.pdf'>Länk till HÖK Kommunal &#x203A;</a>
               <br/>
               <br/>
-              <Link to='https://skr.se/arbetsgivarekollektivavtal/kollektivavtal/allmannabestammelserab.145.html'>Länk till Allmänna bestämmelser &#x203A;</Link>
+              <a href='https://skr.se/arbetsgivarekollektivavtal/kollektivavtal/allmannabestammelserab.145.html'>Länk till Allmänna bestämmelser &#x203A;</a>
               <br/>
             </p>
           </div>

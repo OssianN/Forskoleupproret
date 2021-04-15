@@ -11,7 +11,7 @@ const Contact = () => {
           <a href='mailto:forskoleuppror@gmail.com'>
             <div className='social-media__img-container'>
               <img className='social-media__img' src={img.at} alt='Email link' />
-              <img src={img.blob2} alt='Email blob' className='blob' />
+              <img src={img.blob1} alt='Email blob' className='blob' />
             </div>
           </a>
         </div>
@@ -27,7 +27,7 @@ const Contact = () => {
           <a href='https://www.instagram.com/forskoleupproret/?hl=sv'>
             <div className='social-media__img-container'>
               <img className='social-media__img' src={img.insta} alt='instagram link' />
-              <img src={img.blob} alt='instagram blob' className='blob' />
+              <img src={img.blob5} alt='instagram blob' className='blob' />
             </div>
           </a>
         </div>
@@ -35,7 +35,7 @@ const Contact = () => {
           <a href='https://twitter.com/forskoleuppror'>
             <div className='social-media__img-container'>
               <img className='social-media__img' src={img.twitter} alt='twitter link' />
-              <img src={img.blob1} alt='twitter blob' className='blob' />
+              <img src={img.blob} alt='twitter blob' className='blob' />
             </div>
           </a>
         </div>
@@ -43,7 +43,7 @@ const Contact = () => {
           <a href='https://www.linkedin.com/in/förskoleupproret-nationell-2839a9168'>
             <div className='social-media__img-container'>
               <img className='social-media__img' src={img.linkedin} alt='linkedin link' />
-              <img src={img.blob5} alt='linkedin blob' className='blob' />
+              <img src={img.blob2} alt='linkedin blob' className='blob' />
             </div>
           </a>
         </div>

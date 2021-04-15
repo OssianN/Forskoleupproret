@@ -54,7 +54,7 @@ const Person = ( { personName, setShowPerson, showPerson } ) => {
       <div className='person-content__container'>
         <button className='person-content__exit-person-button' onClick={handleHidePerson}>&#10005;</button>
         <img className='person-content__img' src={personImg} alt={personName}></img>
-        <h2 className='person-content__name-h2'>{ personName }</h2>
+        <h2 className='main-h2 person-content__name-h2'>{ personName }</h2>
         <div className="person-content__bread-text">
           {personName === 'Anki Jansson'
             ? (

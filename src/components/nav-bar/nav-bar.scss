@@ -1,53 +1,6 @@
 $forange: #ff9f50;
 $tabContentBackground: white;
 
-.nav__list-item {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  max-height: 40px;
-  margin-top: 40px;
-  padding: 0 30px;
-}
-
-.nav__link {
-  color: #3d3d3d;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 400;
-  word-wrap: wrap;
-}
-
-.nav__link:hover {
-  color: #ff9f50;
-}
-
-.nav__icon {
-  height: 3em;
-  width: 3em;
-  border-radius: 50%;
-  object-fit: contain;
-  border: 1px solid #f5822400;
-  opacity: .9;
-}
-
-.nav__home-link {
-  display: none;
-}
-
-.nav__mobile-top-span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  top: 0;
-  left: 0;
-  height: 70px;
-  width: 100vw;
-  position: fixed;
-  z-index: 100;
-}
-
 .nav__container {
   position: fixed;
   right: 0;
@@ -82,16 +35,62 @@ $tabContentBackground: white;
   flex-direction: column;
   width: 280px;
   height: 100%;
-  padding-top: 20%;
   padding-left: 50px;
+  padding-top: 20%;
   overflow: hidden;
+}
+
+.nav__list-item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  max-height: 40px;
+  margin-top: 40px;
+}
+
+.nav__link {
+  color: #3d3d3d;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 400;
+  word-wrap: wrap;
+}
+
+.nav__link:hover {
+  color: #ff9f50;
+}
+
+.nav__icon {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 1px solid #f5822400;
+  opacity: .9;
+}
+
+.nav__home-link {
+  display: none;
+}
+
+.nav__mobile-top-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
 }
 
 .active-tab {
   color: #ff9f50;
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1024px) {
   .nav__mobile-toggle-button,
   .nav__mobile-home-button,
   .nav__mobile-home-link,
@@ -117,7 +116,7 @@ $tabContentBackground: white;
 
   .nav__ul {
     margin: 0;
-    padding: 0;
+    padding: 30px 0;
     padding-left: 0;
     width: 100%;
     max-width: 1200px;
@@ -131,6 +130,10 @@ $tabContentBackground: white;
     max-height: none;
     margin-top: 0;
     padding: 0 30px;
+  }
+
+  .nav__link {
+    font-size: 1.2em;
   }
 
   .nav__home-link {

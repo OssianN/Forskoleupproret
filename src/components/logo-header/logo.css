@@ -1,7 +1,20 @@
+@keyframes logo {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .logo-header__container {
   width: 100%;
   margin-top: 100px;
   margin-bottom: 50px;
+  animation: logo 1s;
 }
 
 .logo-header__img{

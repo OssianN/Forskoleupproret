@@ -58,7 +58,7 @@ const NavBar = () => {
           </li>
           <li className='nav__list-item'>
             <Link className='nav__link' to='/history' activeClassName='active-tab'>
-              Historik
+              Bakgrund
             </Link>
           </li>
           <li className='nav__list-item'>

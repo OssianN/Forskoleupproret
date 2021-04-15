@@ -15,13 +15,13 @@ export const PressatLage = () => {
           <img src={img.bookCover} className='bookCover' alt='bookCover'></img>
           <Link to='https://drive.google.com/file/d/0B-Xu_V0Fz9lsTGEwZDU1bDdEZ3JZenpRN3V2NTlpaXRmZ0JZ/view?usp=drivesdk'>Se boken med 1583 vittnesmål &#x203A;</Link>
           <div className='gridView'>
-            <p>
+            <p className='main-p'>
               Den 27 december 2017 lanserade ledningsgruppen i Förskoleupproret en enkät där förskollärare och barnskötare uppmanades att skriva sin berättelse. Vi hade länge velat samla allt vi får läsa i Facebookgruppen till en offentlig handling som vi sedan kunde nå ut med. Det var emellanåt hemska berättelser men vi kunde föga ana att berättelserna skulle vara ännu värre. 
               På bara några veckor hade vi samlat 800 berättelser och TV4 hörde av sig. Det var den första mediala uppmärksamheten kring #pressatläge. Den 25 februari låste vi enkäten. Då hade ca 1600 enskilda berättelser samlats in som beskrev en situation i svensk förskola vi aldrig kunnat drömma om.
               Vid genomläsning och sammanställning satt vi dag och natt. Vi läste, förtvivlades, grät och blev arga om vart annat. Här ur hämtar vi fortfarande kraft att fortsätta vår kamp. 
               Hur kan man behandla en hel yrkeskår på detta sätt?
             </p>
-            <p>
+            <p className='main-p'>
               Hur kan man tillåta att barn inte får dess behov tillgodosedda i form av arbetsro, lugn, vila och vissa fall omsorg där förskollärare och barnskötare inte hinner byta ett litet barns blöja? 
               Och dessutom inte alls få förutsättningar att ge barnen det de har rätt till enligt Skollagen 2010:800 och Lpfö10 rev 2016, numer Lpfö18.
               Den 19 mars 2018 överlämnades #pressatläge uppdelat i respektive yrkesgrupp till våra fackförbund, Kommunal och Lärarföbundet, genom en ceremoni i Stockholm.  
@@ -34,7 +34,7 @@ export const PressatLage = () => {
               <img src={img.fackforbundet2}  alt='lararforbundet'></img>
               <img src={img.fackforbundet}  alt='lararforbundet2'></img>
             </div>
-            <p>
+            <p className='main-p'>
               Den 19 mars 2018 överräcktes dokumentet #pressatläge till fackförbunden. 
               Ordförande Tobias Baudin, Kommunal, och Ordförande Johanna Jaara Åstrand Lärarförbundet, tog emot vittnesmålen under en ceremoni i Stockholm.
               #pressatläge har sedan dess blivit omnämnt i flera medier.
@@ -44,7 +44,7 @@ export const PressatLage = () => {
             </p>
           </div>
           <div className='gridView' id='utbildningsminister'>
-            <p>
+            <p className='main-p'>
               Den 20 april 2018 överräcktes dokumentet #pressatläge med samtliga 1583 vittnesmål från dåvarande förskolechefer, förskollärare, barnskötare och vårdnadshavare till Utbildningsminister Gustav Fridolin. 
               Under mötet, som varade i 45 minuter, fördes flitiga anteckningar och frågorna bottnade i kunskap och respekt för både vår situation och vårt yrke. Vi kunde sedan se speglingar av vårt samtal i Miljöpartiets valprogram och vilja på satsning av förskolan.
               #pressatläge har vid flertalet tillfällen nämnts i debatter i riksdagens kammare.
@@ -56,7 +56,7 @@ export const PressatLage = () => {
           </div>
           <div className='mediaContainer'>
             <span>
-              <h2>
+              <h2 className='main-h2'>
                 Media runt ”Släppet” av #pressatläge
               </h2>
             </span>
@@ -74,8 +74,8 @@ export const PressatLage = () => {
           </div>
           <div className='cafeContainer'>
             <div>
-              <h2>Caféträff i Riksdagskaféet 2018 om #pressatläge</h2>
-              <p>
+              <h2 className='main-h2'>Caféträff i Riksdagskaféet 2018 om #pressatläge</h2>
+              <p className='main-p'>
                 Efter manifestationen ville vi träffa så många riksdagspartier som möjligt. Så vi bjöd in till ett snack över en kopp kaffe i Riksdagskaféet i maj 2018.
                 Socialdemokraterna, Miljöpartiet och Moderaterna visade sitt intresse och tog sig tid att sitta ner en stund. Vänsterpartiet kunde just denna dag inte närvara men tog igen det genom att Jonas Sjöstedt träffade medlemmar ur Förskoleupproret senare. 
               </p>
@@ -92,17 +92,17 @@ export const PressatLage = () => {
           <div className='gridView' id='lokalaPolitiker'>
             <img src={img.lokalaPolitiker}  alt='lokalaPolitiker'></img>
             <span>
-              <h2>Träff med lokala politiker om #pressatläge</h2>
-              <p>
+              <h2 className='main-h2'>Träff med lokala politiker om #pressatläge</h2>
+              <p className='main-p'>
                 Möten med lokala partier och politiker är ett återkommande tema bland medlemmarna och Förskoleupproret.
               </p>
             </span>
           </div>
           <div className='gridView'>
             <div>
-              <h2>Manifestationen: #pressatläge</h2>
-              <p>Den 26 maj 2018</p>
-              <p>
+              <h2 className='main-h2'>Manifestationen: #pressatläge</h2>
+              <p className='main-p'>Den 26 maj 2018</p>
+              <p className='main-p'>
                 Ca 10 000 personer samlades i en rikstäckande oranget hav för att manifestera och demonstrera mot den ohållbara situationen som förskolans personal och barn befinner sig i. 
                 Manifestationen fick medial uppmärksamhet och blev vida känd med talare från
                 Lärarförbundet
@@ -119,23 +119,23 @@ export const PressatLage = () => {
           </div>
           <div className='mediaContainer'>
             <span>
-              <h2>Exempel på Medieuppmärksamheten <br/> i samband med manifestationen</h2>
+              <h2 className='main-h2'>Exempel på Medieuppmärksamheten <br/> i samband med manifestationen</h2>
             </span>
             <div className='mediaLinksContainer'>
-              <h2>Sveriges regering</h2>
+              <h2 className='main-h2'>Sveriges regering</h2>
               <Link to='https://www.regeringen.se/pressmeddelanden/2018/05/gustav-fridolin-talar-pa-forskoleupproret-i-eskilstuna/'>Gustav Fridolin talar på Förskoleupproret i Eskilstuna &#x203A;</Link>
-              <h2>HammaröNytt</h2>
+              <h2 className='main-h2'>HammaröNytt</h2>
               <Link to='http://www.hammaronytt.se/pressatlage/'>Det landsomfattande upproret har nått Hammarö Kommuns förskolor &#x203A;</Link>
-              <h2>Kommunalarbetaren</h2>
+              <h2 className='main-h2'>Kommunalarbetaren</h2>
               <Link to='https://ka.se/2018/05/29/pressat-lage-i-sveriges-forskolor/'>Pressat läge i Sveriges förskolor &#x203A;</Link>
-              <h2>Dagens Nyheter</h2>
+              <h2 className='main-h2'>Dagens Nyheter</h2>
               <Link to='https://www.dn.se/asikt/forskoleupproret-maste-tas-pa-allvar/'>Förskoleupproret måste tas på allvar &#x203A;</Link>
             </div>
             <img src={img.newspaper} alt='newspaper' id='newspaper'></img>
           </div>
           <div className='gridView'>
             <img src={img.shirt} id='shirt' alt='shirt'></img>
-            <p>
+            <p className='main-p'>
               I takt med att #pressatläge växte sig större och vidden av läget i Sveriges förskolor stå klar och få medial uppmärksamhet togs en tröja fram för att uppmärksamma den alarmerande situationen än mer. Tröjan blev vida diskuterad och en symbol för den olagliga tystnadskulturen. 
               I Göteborg med flera kommuner blev Tröjan förbjuden att bära då den ansågs som opinionsbildande på arbetstid. Lärarförbundet Göteborg tog strid och JO-anmälde kommunen. Tröjan kom segrande ur och Göteborg fick backa. 
               Tröjan är numer ett självklart klädesplagg varje fredag på flera av Sveriges förskolor och under #orangefredag läggs bilder upp på sociala medier, ofta med en liten text om arbetsförhållanden i förskolan.
@@ -154,20 +154,20 @@ export const PressatLage = () => {
             </p>
           </div>
           <div className='fackforbundFooter'>
-            <p>Situationen med tröjan och pandemin har visat hur viktigt det är att ha ett fackförbund i ryggen som kan de juridiska greppen. 
+            <p className='main-p'>Situationen med tröjan och pandemin har visat hur viktigt det är att ha ett fackförbund i ryggen som kan de juridiska greppen. 
               Förskoleupproret kan ge stöd och råd, men inte längre än så. Vi rekommenderar alla våra medlemmar och följare att bli medlemmar i facket. 
               Tillsammans med dem blir vi starka(re).
             </p>
             <div className='fackforbundFooterImages'>
               <div>
                 <img src={img.lararforbundet} alt='lararforbundet'></img>
-                <p>Förskollärare och Rektor i förskola:
+                <p className='main-p'>Förskollärare och Rektor i förskola:
                 <br/>
                 Bli medlem <Link to='https://www.lararforbundet.se/artikelsidor/bli-medlem-i-lararforbundet'>här &#x203A;</Link></p>
               </div>
               <div>
                 <img src={img.kommunal} alt='kommunal'></img>
-                <p>Barnskötare:
+                <p className='main-p'>Barnskötare:
                   <br/>
                   Bli medlem <Link to='https://www.kommunal.se/bli-medlem'>här &#x203A;</Link></p>
               </div>

@@ -114,7 +114,7 @@ const Press = () => {
                 <Link to={`/${post.node.slug}`} className='press__contentful-link' className='press__contentful-link'>
                   <img className='press__contentful-img' src={post.node.contentImage.file.url } alt={post.node.contentImage.title}></img>
                   <div className='press__contentful-text-wrapper'>
-                    <h2 className='press__contentful-title'>{ limitTitle(post.node.title) }</h2>
+                    <h2 className='main-h2 press__contentful-title'>{ limitTitle(post.node.title) }</h2>
                     <p className='main-p'>{ post.node.description }</p>
                   </div>
                 </Link>
@@ -129,8 +129,8 @@ const Press = () => {
               <li key={link.node.id} className='press__contentful-li'>
                 <Link to={link.node.url} className='press__contentful-link'>
                   <div className='press__contentful-text-wrapper'>
-                    <h2 className='press__contentful-title'>{link.node.title}</h2>
-                    <p>{link.node.publishedDate}</p>
+                    <h2 className='main-h2 press__contentful-title'>{link.node.title}</h2>
+                    <p className='main-p'>{link.node.publishedDate}</p>
                   </div>
                 </Link>
               </li>
@@ -144,8 +144,8 @@ const Press = () => {
               <li key={link.node.id} className='press__contentful-li'>
                 <Link to={link.node.url} className='press__contentful-link'>
                   <div className='press__contentful-text-wrapper'>
-                    <h2 className='press__contentful-title'>{link.node.title}</h2>
-                    <p>{link.node.publishedDate}</p>
+                    <h2 className='main-h2 press__contentful-title'>{link.node.title}</h2>
+                    <p className='main-p'>{link.node.publishedDate}</p>
                   </div>
                 </Link>
               </li>

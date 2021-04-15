@@ -10,7 +10,7 @@ const HomeImages = () => {
         <Link to='/goalDemand' className='home-box__link'>
           <img className='home-box__img' src={images.powerful} alt='one' />
           <div className='home-box__text-container'>
-            <h2 className='home-box__title-h2'>Mål & Krav</h2>
+            <h2 className='main-h2 home-box__title-h2'>Mål & Krav</h2>
             <p className='home-box__paragraph main-p'>Läs om vårt mål och vilka krav vi har...</p>
           </div>
         </Link>
@@ -19,7 +19,7 @@ const HomeImages = () => {
         <Link to='/om-oss' className='home-box__link'>
           <img className='home-box__img' src={images.aboutUs} alt='one' />
           <div className='home-box__text-container'>
-            <h2 className='home-box__title-h2'>Om oss</h2>
+            <h2 className='main-h2 home-box__title-h2'>Om oss</h2>
             <p className='home-box__paragraph main-p'>Läs om vilka vi är och vad vi gör...</p>
           </div>
         </Link>
@@ -28,7 +28,7 @@ const HomeImages = () => {
         <Link to='/history' className='home-box__link'>
           <img className='home-box__img' src={images.history} alt='one' />
           <div className='home-box__text-container'>
-            <h2 className='home-box__title-h2'>Historik</h2>
+            <h2 className='main-h2 home-box__title-h2'>Historik</h2>
             <p className='home-box__paragraph main-p'>Hur Förskoleupproret började...</p>
           </div>
         </Link>
@@ -37,7 +37,7 @@ const HomeImages = () => {
         <Link to='/press' className='home-box__link'>
           <img className='home-box__img' src={images.press} alt='one' />
           <div className='home-box__text-container'>
-            <h2 className='home-box__title-h2'>Press</h2>
+            <h2 className='main-h2 home-box__title-h2'>Press</h2>
             <p className='home-box__paragraph main-p'>Våra artiklar, publicerade artiklar och omnämnda...</p>
           </div>
         </Link>

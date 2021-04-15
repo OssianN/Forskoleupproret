@@ -15,11 +15,16 @@ $tabContentBackground: #f7f7f7;
 
 .main-header__h1 {
   font-weight: 900;
-  font-size: 1.7rem;
-  line-height: 1.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   margin-bottom: 50px;
   max-width: 600px;
   color: #2b2b2b;
+}
+
+.main-h2 {
+  color: #3d3d3d;
+  font-size: 1.5rem;
 }
 
 .main-p {
