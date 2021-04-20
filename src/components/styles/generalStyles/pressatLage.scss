@@ -1,7 +1,50 @@
-.pressatLage .gridView img {
+.main-header__hero-img.pressat__intro-img {
+  width: 50%;
+  min-width: 280px;
+  object-fit: contain;
+}
+
+.pressat__h2 {
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.main-p.grid__p {
+  max-width: 400px;
+}
+
+.pressat__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 50px;
+  margin: 100px 0;
+}
+
+.pressat__img {
   width: 100%;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: .75rem;
+}
+
+.pressat__shirt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.pressat__img.shirt {
+  max-width: 600px;
+  align-self: center;
+}
+
+.cafe__carousel-container {
+  margin-top: 50px;
+}
+
+.pressat__link {
+  color: $forange;
 }
 
 .bookCover {
@@ -9,33 +52,30 @@
   object-fit: contain;
 }
 
-.pressatLage h2 {
-  text-align: left;
+.info-box {
+  display: grid;
+  grid-template-areas: "a a"
+                      "b c";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  box-shadow: 0 0 5px #0000001a;
+  border-radius: .75rem;
+  padding: 50px;
 }
 
-.mediaContainer {
-  background-color: black;
-  border-radius: 8px;
-  margin: 5% 0;
-}
-
-.mediaLinksContainer {
+.info-box__links-container {
   color: white;
   text-align: left;
   order: 1;
+  grid-area: b;
 }
 
-.mediaContainer span {
-  text-align: center;
-  color: white;
-  display: block;
-  margin: 0 0 3% 0;
+.info-box__h2 {
   grid-area: a;
 }
 
-.mediaContainer img {
-  width: 70%;
-  align-self: center;
+.info-box__img {
+  grid-area: c;
 }
 
 #sharingArticle {
@@ -44,10 +84,6 @@
 
 .cafeContainer {
   margin: 5% 0;
-}
-
-#shirt {
-  align-self: center;
 }
 
 .fackforbundFooterImages {
@@ -68,12 +104,18 @@
   width: 50%;
 }
 
+.carousel-root {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .carousel-slider {
-  width: 100%;
+  width: 50%;
   border-radius: 5px;
 }
 
 .carousel-slider img {
+  max-height: 90vh;
   object-fit: cover;
 }
 
