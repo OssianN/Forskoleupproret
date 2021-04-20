@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Layout from '../components/Layout';
-import NavBar from '../components/nav-bar/NavBar';
 import Person from '../components/peoplePresentations/Person';
 import PersonCard from '../components/peoplePresentations/PersonCard';
 import * as img from '../images/';
@@ -30,27 +29,27 @@ const OmOss = () => {
         </header>
         <div className='person-thumbnails__container'>
           <button className='person-thumbnails__button' name='Anki Jansson' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.anki}></img>
+            <img className='person-thumbnails__img' src={img.anki} alt='Anki Jansson'></img>
             <h4 className='person-thumbnails__name-h4'>Anki Jansson</h4>
           </button>
           <button className='person-thumbnails__button' name='Katrin Nörthen' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.katrin}></img>
+            <img className='person-thumbnails__img' src={img.katrin} alt='Katrin Nörthen'></img>
             <h4 className='person-thumbnails__name-h4'>Katrin Nörthen</h4>
           </button>
           <button className='person-thumbnails__button' name='Diana Hall' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.diana}></img>
+            <img className='person-thumbnails__img' src={img.diana} alt='Diana Hall'></img>
             <h4 className='person-thumbnails__name-h4'>Diana Hall</h4>
           </button>
           <button className='person-thumbnails__button' name='Annette Nord' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.annette}></img>
+            <img className='person-thumbnails__img' src={img.annette} alt='Annette Nord'></img>
             <h4 className='person-thumbnails__name-h4'>Annette Nord</h4>
           </button>
           <button className='person-thumbnails__button' name='Monica Lindström' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.monica}></img>
+            <img className='person-thumbnails__img' src={img.monica} alt='Monica Lindström'></img>
             <h4 className='person-thumbnails__name-h4'>Monica Lindström</h4>
           </button>
           <button className='person-thumbnails__button' name='Annica Järking' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.annica}></img>
+            <img className='person-thumbnails__img' src={img.annica} alt='Annica Järking'></img>
             <h4 className='person-thumbnails__name-h4'>Annica Järking</h4>
           </button>
         </div>

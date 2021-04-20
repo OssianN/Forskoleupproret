@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import NavBar from '../components/nav-bar/NavBar';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Layout from "../components/Layout";
 
 export const query = graphql`
   query($slug: String!) {
@@ -30,20 +30,19 @@ export const query = graphql`
 const PostTemplate = ({ data }) => {
   const post = data.post;
   return (
-    <div className="articleTemplate">
-      <NavBar />
-      <div className='tabContent'>
-        <div className='firstSection'>
-          <h1>{ post.title }</h1>
-          <img className='contentImage' src={ post.contentImage.file.url } alt='content'></img>
-          <div>{ documentToReactComponents(JSON.parse(post.mainText.raw)) }</div>
-          <div className='authorImage' >
-            <img src={ post.authorImage.file.url } alt={post.authorImage.title}></img>
-            <h4>{ post.authorImage.title }</h4>
-          </div>
+    <Layout>
+      <div className='article__container'>
+        <header className='main-header'>
+          <h1 className='main-header__h1'>{ post.title }</h1>
+          <img className='main-header__hero-img' src={ post.contentImage.file.url } alt='article'></img>
+        </header>
+        <div className='article__text-content'>{ documentToReactComponents(JSON.parse(post.mainText.raw)) }</div>
+        <div className='author__container'>
+          <img className='author__img' src={ post.authorImage.file.url } alt={post.authorImage.title}></img>
+          <h4 className='author__title'>{ post.authorImage.title }</h4>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout';
-import NavBar from '../components/nav-bar/NavBar';
 
 export const History = () => {
   return (

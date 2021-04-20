@@ -1,11 +1,16 @@
 import blob from './blob.svg';
 import blob1 from './blob1.svg';
 import blob2 from './blob2.svg';
+import blob2Mobile from './blob2Mobile.svg';
 import blob3 from './blob3.svg';
 import blob4 from './blob4.svg';
 import blob5 from './blob5.svg';
 import blobPressat from './blob-pressat.svg';
 import blobViVagrar from './blob-vivagrar.svg';
+import hashtagBlob from './hashtag-blob.svg';
+import hashtagBlob2 from './hashtag-blob2.svg';
+import hashtagBlob3 from './hashtag-blob3.svg';
+import hashtagBlob4 from './hashtag-blob4.svg';
 import banner from './banner.png';
 
 import powerful from './powerful.svg';
@@ -53,9 +58,14 @@ export {
   blob,
   blob1,
   blob2,
+  blob2Mobile,
   blob3,
   blob4,
   blob5,
+  hashtagBlob,
+  hashtagBlob2,
+  hashtagBlob3,
+  hashtagBlob4,
   powerful,
   aboutUs,
   history,

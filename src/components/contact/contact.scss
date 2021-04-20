@@ -5,10 +5,18 @@
 }
 
 .contact__container {
+  position: relative;
   min-height: 500px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.contact__blob {
+  position: absolute;
+  width: 200%;
+  overflow-x: hidden;
 }
 
 .contact__social-media-wrapper {

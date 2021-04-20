@@ -53,7 +53,7 @@ const PersonCard = ({ personName, setShowPerson }) => {
     <div className='person-card__container'>
       <div className='person-card__header'>
         <h2 className='main-h2 person-card__person-name'>{personName}</h2>
-        <img className='person-card__person-img' src={personImg}></img>
+        <img className='person-card__person-img' src={personImg} alt={personName}></img>
       </div>
       <div className='person-card__text-container'>
         <div className='person-card__bread-text main-p'>{ limitText() }</div>
