@@ -27,7 +27,7 @@ export const PressatLage = () => {
         <div className='pressat__grid'>
           <div className='fackforbundet'>
             <img className='pressat__img' src={img.fackforbundet2}  alt='lararforbundet'></img>
-            <img className='pressat__img' src={img.fackforbundet}  alt='lararforbundet2'></img>
+            <img className='pressat__img pressat__img--margin-bottom' src={img.fackforbundet}  alt='lararforbundet2'></img>
           </div>
           <p className='main-p grid__p'>
             Den 19 mars 2018 överräcktes dokumentet #pressatläge till fackförbunden. 
@@ -47,18 +47,18 @@ export const PressatLage = () => {
             <br />
             <a className='pressat__link' href='https://drive.google.com/file/d/1jxYDpMWslbPt947X8B6AlDrrvvPMl-Zw/view?usp=drivesdk'>Protokoll från mötet med utbildningsministern &#x203A;</a>
           </p>
-          <img className='pressat__img' src={img.fridolin}  alt='fridolin'></img>
+          <img className='pressat__img pressat__img--margin-top' src={img.fridolin}  alt='fridolin'></img>
         </div>
         <div className='info-box'>
           <h2 className='main-h2 pressat__h2 info-box__h2'> Media runt ”Släppet” av #pressatläge</h2>
           <div className='info-box__links-container'>
-            <h3>Expressen</h3>
+            <h4 className='info-box__h4'>Expressen</h4>
             <a className='pressat__link' href='https://www.expressen.se/tv/politik/gustav-fridolin-det-de-beskriver-ar-helt-uselt/'>Gustav Fridolin: Det de beskriver är helt uselt &#x203A;</a>
-            <h3>SVT nyheter</h3>
+            <h4 className='info-box__h4'>SVT nyheter</h4>
             <a className='pressat__link' href='https://www.svt.se/nyheter/inrikes/forskoleuppropet-kraver-maxtak-for-barngrupper'>Förskollärare kräver maxtak för barngrupper &#x203A;</a>
-            <h3>Tv4 nyhetsmorgon</h3>
+            <h4 className='info-box__h4'>Tv4 nyhetsmorgon</h4>
             <a className='pressat__link' href='https://youtu.be/CwLIcVMYOEg'>Vi är för få, barngrupperna förstora &#x203A;</a>
-            <h3>Dagens Nyheter</h3>
+            <h4 className='info-box__h4'>Dagens Nyheter</h4>
             <a className='pressat__link' href='https://www.dn.se/sthlm/forskolepersonal-i-stort-upprop-forskolan-ar-i-kris/'>1500 anställda slår larm: Vi har en förskola i kris &#x203A;</a>
           </div>
           <img className='pressat__img info-box__img' src={img.sharingArticle} alt='sharing article'></img>
@@ -109,15 +109,15 @@ export const PressatLage = () => {
           </div>
         </div>
         <div className='info-box'>
-          <h2 className='main-h2 pressat__h2 info-box__h2'>Exempel på Medieuppmärksamheten i samband med manifestationen</h2>
+          <h2 className='main-h2 pressat__h2 info-box__h2'>Manifestationen i media</h2>
           <div className='info-box__links-container'>
-            <h2 className='main-h2 pressat__h2'>Sveriges regering</h2>
+            <h4 className='info-box__h4'>Sveriges regering</h4>
             <a className='pressat__link' href='https://www.regeringen.se/pressmeddelanden/2018/05/gustav-fridolin-talar-pa-forskoleupproret-i-eskilstuna/'>Gustav Fridolin talar på Förskoleupproret i Eskilstuna &#x203A;</a>
-            <h2 className='main-h2 pressat__h2'>HammaröNytt</h2>
+            <h4 className='info-box__h4'>HammaröNytt</h4>
             <a className='pressat__link' href='http://www.hammaronytt.se/pressatlage/'>Det landsomfattande upproret har nått Hammarö Kommuns förskolor &#x203A;</a>
-            <h2 className='main-h2 pressat__h2'>Kommunalarbetaren</h2>
+            <h4 className='info-box__h4'>Kommunalarbetaren</h4>
             <a className='pressat__link' href='https://ka.se/2018/05/29/pressat-lage-i-sveriges-forskolor/'>Pressat läge i Sveriges förskolor &#x203A;</a>
-            <h2 className='main-h2 pressat__h2'>Dagens Nyheter</h2>
+            <h4 className='info-box__h4'>Dagens Nyheter</h4>
             <a className='pressat__link' href='https://www.dn.se/asikt/forskoleupproret-maste-tas-pa-allvar/'>Förskoleupproret måste tas på allvar &#x203A;</a>
           </div>
           <img className='pressat__img info-box__img' src={img.newspaper} alt='newspaper' id='newspaper'></img>

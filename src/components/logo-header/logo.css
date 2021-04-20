@@ -24,6 +24,7 @@
 .logo-header__img{
   width: 100%;
   max-width: 1000px;
+  max-height: 40vh;
   object-fit: contain;
   opacity: .9;
 }
