@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import './nav-bar.scss';
 import pinIcon from '../../images/pinIcon.png';
@@ -6,7 +6,13 @@ import pinIcon from '../../images/pinIcon.png';
 const NavBar = () => {
   const [showMobileNav, setShowMobileNav] = useState('-400px');
   const [navToggleClass, setNavToggleClass] = useState('');
-  const history = window ? window.location.pathname : null;
+  const [ history, setHistory ] = useState(null)
+  
+  useEffect(() => {
+    if ( window ) {
+      setHistory(window.location.pathname);
+    }
+  }, [])
 
   const handleMobileNavToggle = () => {
     if (showMobileNav === '0') {
