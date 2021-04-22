@@ -12,15 +12,6 @@
   }
 }
 
-.logo-header__container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  animation: logo 1s;
-}
-
 .logo-header__img{
   width: 100%;
   max-width: 1000px;
