@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useHistory } from 'react'
 import './logo.css';
 import * as images from '../../images/';
 

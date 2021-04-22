@@ -6,6 +6,7 @@ import pinIcon from '../../images/pinIcon.png';
 const NavBar = () => {
   const [showMobileNav, setShowMobileNav] = useState('-400px');
   const [navToggleClass, setNavToggleClass] = useState('');
+  const history = window ? window.location.pathname : null;
 
   const handleMobileNavToggle = () => {
     if (showMobileNav === '0') {
@@ -17,7 +18,8 @@ const NavBar = () => {
     };
   };
 
-  return (
+  return history !== '/'
+    ? (
     <>
       <button className='nav__mobile-toggle-button' onClick={handleMobileNavToggle}>
         <div id='nav-icon2' className={navToggleClass}>
@@ -79,7 +81,8 @@ const NavBar = () => {
         </ul>
       </nav>
     </>
-  );
+  )
+  : <></>
 };
 
 export default NavBar;

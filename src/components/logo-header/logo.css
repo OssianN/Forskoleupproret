@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
   animation: logo 1s;
 }
@@ -24,7 +24,21 @@
 .logo-header__img{
   width: 100%;
   max-width: 1000px;
-  max-height: 40vh;
+  max-height: 15vh;
   object-fit: contain;
   opacity: .9;
+}
+
+@media (min-width: 767px) {
+  .logo-header__img{
+    width: 100%;
+    max-width: 1000px;
+    max-height: 22vh;
+  }
+}
+
+@media (min-width: 1023px) {
+  .logo-header__img{
+    max-height: 40vh;
+  }
 }
