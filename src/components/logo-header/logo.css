@@ -12,11 +12,19 @@
   }
 }
 
+.logo-header__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50px 0;
+}
+
 .logo-header__img{
   width: 100%;
   max-width: 1000px;
   max-height: 15vh;
   object-fit: contain;
+  animation: logo 1s;
   opacity: .9;
 }
 

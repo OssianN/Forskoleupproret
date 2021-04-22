@@ -4,9 +4,9 @@ import * as images from '../../images/';
 
 const Logo = () => {
   return (
-    <header className='logo-header__container'>
+    <div className='logo-header__container'>
       <img className='logo-header__img' src={images.banner} alt="Forskoleupproret logga" />
-    </header>
+    </div>
   )
 }
 
