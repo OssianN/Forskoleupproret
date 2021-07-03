@@ -9,7 +9,6 @@ const Layout = ({ children }) => {
     padding: '0 30px',
     paddingBottom: '100px',
     margin: '0 auto',
-    overflow: 'hidden',
   }
 
   return (

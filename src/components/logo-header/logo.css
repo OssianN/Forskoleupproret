@@ -1,41 +1,29 @@
-@keyframes logo {
-  0% {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 .logo-header__container {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 50px 0;
-  max-height: 15vh;
+  height: 8em;
+  margin-bottom: 20px;
 }
 
 .logo-header__img {
   width: 100%;
   max-width: 1000px;
   object-fit: contain;
-  animation: logo 1s;
   opacity: .9;
 }
 
-@media (min-width: 767px) {
+@media (min-height: 1023px) {
   .logo-header__container {
-    max-height: 22vh;
+    margin: 30px;
+    height: 12em;
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-height: 1200px) {
   .logo-header__container {
-    max-height: 40vh;
+    margin: 50px;
+    height: 14em;
   }
 }

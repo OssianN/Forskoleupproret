@@ -1,65 +1,90 @@
-import React, { useState } from 'react'
-import Layout from '../components/Layout';
-import Person from '../components/peoplePresentations/Person';
-import PersonCard from '../components/peoplePresentations/PersonCard';
-import * as img from '../images/';
-import '../components/styles/index.scss'
-import Contact from '../components/contact/Contact';
+import React, { useState } from "react"
+import Layout from "../components/Layout"
+import Person from "../components/peoplePresentations/Person"
+import PersonCard from "../components/peoplePresentations/PersonCard"
+import PersonThumbnail from "../components/personThumbnail/PersonThumbnail"
+import * as img from "../images/"
+import "../components/styles/index.scss"
+import Contact from "../components/contact/Contact"
 
 const OmOss = () => {
-  const [ selectedPerson, setSelectedPerson ] = useState('Anki Jansson');
-  const [ showPerson, setShowPerson ] = useState('hide-person');
+  const [selectedPerson, setSelectedPerson] = useState("Anki Jansson")
+  const [showPerson, setShowPerson] = useState("hide-person")
 
   const handlePersonChange = e => {
-    const person = e.target.name;
-    setSelectedPerson(person);
+    const { name } = e.target
+    setSelectedPerson(name)
   }
 
   return (
     <Layout>
-      <div className='om-oss__container'>
-        <header className='main-header'>
-          <h1 className='main-header__h1'>
+      <div className="om-oss__container">
+        <header className="main-header">
+          <h1 className="main-header__h1">
             Vilka är vi bakom Förskoleupproret?
           </h1>
-          <img className='main-header__hero-img' src={img.gruppbild} alt='gruppbild'></img>
-          <p className='main-header__intro-paragraph main-p'>
-            Förskoleupproret drivs ideellt av sex engagerade pedagoger i förskolan. Allt arbete med Förskoleupproret sker under kvällar, helger och efter arbetstid. Ledningsgruppen har nästan daglig kontakt och diskuterar kontinuerligt Förskoleupprorets utvecklingsområden, nästa steg och eventuella kampanj.
+          <img
+            className="main-header__hero-img"
+            src={img.gruppbild}
+            alt="gruppbild"
+          ></img>
+          <p className="main-header__intro-paragraph main-p">
+            Förskoleupproret drivs ideellt av sex engagerade pedagoger i
+            förskolan. Allt arbete med Förskoleupproret sker under kvällar,
+            helger och efter arbetstid. Ledningsgruppen har nästan daglig
+            kontakt och diskuterar kontinuerligt Förskoleupprorets
+            utvecklingsområden, nästa steg och eventuella kampanj.
           </p>
         </header>
-        <div className='person-thumbnails__container'>
-          <button className='person-thumbnails__button' name='Anki Jansson' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.anki} alt='Anki Jansson'></img>
-            <h4 className='person-thumbnails__name-h4'>Anki Jansson</h4>
-          </button>
-          <button className='person-thumbnails__button' name='Katrin Nörthen' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.katrin} alt='Katrin Nörthen'></img>
-            <h4 className='person-thumbnails__name-h4'>Katrin Nörthen</h4>
-          </button>
-          <button className='person-thumbnails__button' name='Diana Hall' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.diana} alt='Diana Hall'></img>
-            <h4 className='person-thumbnails__name-h4'>Diana Hall</h4>
-          </button>
-          <button className='person-thumbnails__button' name='Annette Nord' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.annette} alt='Annette Nord'></img>
-            <h4 className='person-thumbnails__name-h4'>Annette Nord</h4>
-          </button>
-          <button className='person-thumbnails__button' name='Monica Lindström' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.monica} alt='Monica Lindström'></img>
-            <h4 className='person-thumbnails__name-h4'>Monica Lindström</h4>
-          </button>
-          <button className='person-thumbnails__button' name='Annica Järking' onClick={handlePersonChange}>
-            <img className='person-thumbnails__img' src={img.annica} alt='Annica Järking'></img>
-            <h4 className='person-thumbnails__name-h4'>Annica Järking</h4>
-          </button>
-        </div>
+        <section className="person-thumbnails__container">
+          <PersonThumbnail
+            name="Anki Jansson"
+            active={selectedPerson === "Anki Jansson"}
+            img={img.anki}
+            handlePersonChange={handlePersonChange}
+          />
+          <PersonThumbnail
+            name="Katrin Nörthen"
+            active={selectedPerson === "Katrin Nörthen"}
+            img={img.katrin}
+            handlePersonChange={handlePersonChange}
+          />
+          <PersonThumbnail
+            name="Diana Hall"
+            active={selectedPerson === "Diana Hall"}
+            img={img.diana}
+            handlePersonChange={handlePersonChange}
+          />
+          <PersonThumbnail
+            name="Annette Nord"
+            active={selectedPerson === "Annette Nord"}
+            img={img.annette}
+            handlePersonChange={handlePersonChange}
+          />
+          <PersonThumbnail
+            name="Monica Lindström"
+            active={selectedPerson === "Monica Lindström"}
+            img={img.monica}
+            handlePersonChange={handlePersonChange}
+          />
+          <PersonThumbnail
+            name="Annica Järking"
+            active={selectedPerson === "Annica Järking"}
+            img={img.annica}
+            handlePersonChange={handlePersonChange}
+          />
+        </section>
 
         <PersonCard personName={selectedPerson} setShowPerson={setShowPerson} />
-        <Person personName={selectedPerson} setShowPerson={setShowPerson} showPerson={showPerson} />
+        <Person
+          personName={selectedPerson}
+          setShowPerson={setShowPerson}
+          showPerson={showPerson}
+        />
         <Contact />
-      </div> 
+      </div>
     </Layout>
   )
 }
 
-export default OmOss;
+export default OmOss

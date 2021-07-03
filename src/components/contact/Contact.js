@@ -6,10 +6,11 @@ const Contact = () => {
 
   return (
     <>
-      <h1 className='main-header__h1 contact__header-h1'>Kontakt</h1>
-      <div className='contact__container'>
-        <img src={img.blob2} className='contact__blob' alt='blob'></img>
-        <div className='contact__orange-background'></div>
+      <section className='contact__container'>
+        <h1 className='main-header__h1 contact__header-h1'>Kontakt</h1>
+        <div className='contact__blob-container'>
+          <img src={img.blob2} className='contact__blob' alt='blob'></img>
+        </div>
         <div className='contact__social-media-wrapper'>
           <a className='social-media__link' href='mailto:forskoleuppror@gmail.com'>
             <img className='social-media__img' src={img.at} alt='Email link' />
@@ -30,7 +31,7 @@ const Contact = () => {
             <img className='social-media__img' src={img.youtube} alt='youtube link' />
           </a>
         </div>
-      </div>
+      </section>
     </>
   )
 }
