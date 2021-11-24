@@ -4,8 +4,8 @@ const ArticleImg = ({ img }) => {
   return (
     <img
       className="press__contentful-img"
-      src={post.node.contentImage.file.url}
-      alt={post.node.contentImage.title}
+      src={img.file.url}
+      alt={img.title}
     ></img>
   )
 }

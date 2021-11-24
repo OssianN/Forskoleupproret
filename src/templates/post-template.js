@@ -1,7 +1,7 @@
-import React from "react";
-import { graphql } from "gatsby";
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import Layout from "../components/Layout";
+import React from "react"
+import { Link, graphql } from "gatsby"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import Layout from "../components/Layout"
 
 export const query = graphql`
   query($slug: String!) {
@@ -28,22 +28,39 @@ export const query = graphql`
 `
 
 const PostTemplate = ({ data }) => {
-  const post = data.post;
+  const post = data.post
+  const img = post.contentImage
+
   return (
     <Layout>
-      <div className='article__container'>
-        <header className='main-header'>
-          <h1 className='main-header__h1'>{ post.title }</h1>
-          <img className='main-header__hero-img' src={ post.contentImage?.file.url } alt='article'></img>
+      <div className="article__container">
+        <header className="main-header">
+          <Link to="/press" className='article__back-button'>&#x2039; Back to Press</Link>
+          <h1 className="main-header__h1 article__heading">{post.title}</h1>
+
+          {img && (
+            <img
+              className="main-header__hero-img"
+              src={img.file.url}
+              alt="article"
+            ></img>
+          )}
         </header>
-        <div className='article__text-content'>{ documentToReactComponents(JSON.parse(post.mainText.raw)) }</div>
-        <div className='author__container'>
-          <img className='author__img' src={ post.authorImage.file.url } alt={post.authorImage.title}></img>
-          <h4 className='author__title'>{ post.authorImage.title }</h4>
+
+        <div className="article__text-content">
+          {documentToReactComponents(JSON.parse(post.mainText.raw))}
+        </div>
+        <div className="author__container">
+          <img
+            className="author__img"
+            src={post.authorImage.file.url}
+            alt={post.authorImage.title}
+          ></img>
+          <h4 className="author__title">{post.authorImage.title}</h4>
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default PostTemplate;
+export default PostTemplate
