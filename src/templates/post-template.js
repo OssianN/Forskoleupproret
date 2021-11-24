@@ -34,7 +34,7 @@ const PostTemplate = ({ data }) => {
       <div className='article__container'>
         <header className='main-header'>
           <h1 className='main-header__h1'>{ post.title }</h1>
-          <img className='main-header__hero-img' src={ post.contentImage.file.url } alt='article'></img>
+          <img className='main-header__hero-img' src={ post.contentImage?.file.url } alt='article'></img>
         </header>
         <div className='article__text-content'>{ documentToReactComponents(JSON.parse(post.mainText.raw)) }</div>
         <div className='author__container'>
