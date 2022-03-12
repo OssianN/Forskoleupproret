@@ -57,7 +57,7 @@ const Press = () => {
 
   const articles = filteredData.filter(post => !post.vittnesmal)
   const vittnesmal = filteredData.filter(post => post.vittnesmal)
-  const published = filteredData.allContentfulPublicerade?.nodes
+  const published = data.allContentfulPublicerade?.nodes
 
   return (
     <Layout>
