@@ -22,16 +22,16 @@ const ContentfulList = ({ showArticleList, header, data }) => {
     >
       <h1 className="main-header__h1 press__header__h1">{header}</h1>
       {data?.map(post => {
-        const img = post.node.contentImage
+        const img = post.contentImage
         return (
-          <li key={post.node.id} className="press__contentful-li">
-            <Link to={`/${post.node.slug}`} className="press__contentful-link">
+          <li key={post.id} className="press__contentful-li">
+            <Link to={`/${post.slug}`} className="press__contentful-link">
               {img && <ArticleImg img={img} />}
               <div className="press__contentful-text-wrapper">
                 <h2 className="main-h2 press__contentful-title">
-                  {limitTitle(post.node.title)}
+                  {limitTitle(post.title)}
                 </h2>
-                <p className="main-p">{post.node.description}</p>
+                <p className="main-p">{post.description}</p>
               </div>
             </Link>
           </li>

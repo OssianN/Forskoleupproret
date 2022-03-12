@@ -8,6 +8,7 @@ export const query = graphql`
     post: contentfulBlogPost(slug: { eq: $slug }) {
       slug
       title
+      
       authorImage {
         file {
           url
@@ -35,7 +36,9 @@ const PostTemplate = ({ data }) => {
     <Layout>
       <div className="article__container">
         <header className="main-header">
-          <Link to="/press" className='article__back-button'>&#x2039; Back to Press</Link>
+          <Link to="/press" className="article__back-button">
+            &#x2039; Back to Press
+          </Link>
           <h1 className="main-header__h1 article__heading">{post.title}</h1>
 
           {img && (

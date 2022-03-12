@@ -19,6 +19,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogPost = result.data.allContentfulBlogPost.edges;
 
   blogPost.forEach(post => {
+    if (post.node.slug.includes('dummy9211')) {
+      //ignores dummy data
+      return
+    }
+
     actions.createPage({
       path: `/${post.node.slug}`,
       component: require.resolve("./src/templates/post-template.js"),

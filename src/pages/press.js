@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import ContentfulList from "../components/press/ContentfulList"
+import CategoryNavigation from "../components/press/CategoryNavigation"
 
 const Press = () => {
   const [showArticleList, setShowArticleList] = useState("Nyheter")
@@ -10,49 +11,36 @@ const Press = () => {
     graphql`
       query {
         allContentfulBlogPost {
-          edges {
-            node {
-              id
-              slug
+          nodes {
+            id
+            vittnesmal
+            slug
+            title
+            publishDate
+            authorImage {
+              file {
+                url
+              }
               title
-              publishDate
-              authorImage {
-                file {
-                  url
-                }
-                title
-              }
-              mainText {
-                raw
-              }
-              description
-              contentImage {
-                file {
-                  url
-                }
-                title
-              }
             }
-          }
-        }
-        allContentfulOmnamnda {
-          edges {
-            node {
-              id
-              publishedDate
+            mainText {
+              raw
+            }
+            description
+            contentImage {
+              file {
+                url
+              }
               title
-              url
             }
           }
         }
         allContentfulPublicerade {
-          edges {
-            node {
-              id
-              publishedDate
-              url
-              title
-            }
+          nodes {
+            id
+            publishedDate
+            url
+            title
           }
         }
       }
@@ -63,48 +51,22 @@ const Press = () => {
     setShowArticleList(e.target.innerHTML)
   }
 
-  const articles = data.allContentfulBlogPost?.edges
-  const published = data.allContentfulPublicerade?.edges
-  const omnamnda = data.allContentfulOmnamnda?.edges
+  const filteredData = data.allContentfulBlogPost?.nodes.filter(
+    post => !post.slug.includes("dummy9211")
+  )
+
+  const articles = filteredData.filter(post => !post.vittnesmal)
+  const vittnesmal = filteredData.filter(post => post.vittnesmal)
+  const published = filteredData.allContentfulPublicerade?.nodes
 
   return (
     <Layout>
       <main className="press__container">
-        <div className="press__categories-list">
-          <button
-            className="press__category-button"
-            onClick={handleArticleListPick}
-            style={
-              showArticleList === "Nyheter"
-                ? { color: "#ff9f50", pointerEvents: "none" }
-                : { color: "black", cursor: "pointer" }
-            }
-          >
-            Nyheter
-          </button>
-          <button
-            className="press__category-button"
-            onClick={handleArticleListPick}
-            style={
-              showArticleList === "Publicerade"
-                ? { color: "#ff9f50", pointerEvents: "none" }
-                : { color: "black", cursor: "pointer" }
-            }
-          >
-            Publicerade
-          </button>
-          <button
-            className="press__category-button"
-            onClick={handleArticleListPick}
-            style={
-              showArticleList === "Omnämnda"
-                ? { color: "#ff9f50", pointerEvents: "none" }
-                : { color: "black", cursor: "pointer" }
-            }
-          >
-            Omnämnda
-          </button>
-        </div>
+        <CategoryNavigation
+          handleArticleListPick={handleArticleListPick}
+          showArticleList={showArticleList}
+        />
+
         <ContentfulList
           showArticleList={showArticleList}
           header="Nyheter"
@@ -112,13 +74,13 @@ const Press = () => {
         />
         <ContentfulList
           showArticleList={showArticleList}
-          header="Publicerade"
-          data={published}
+          header="Vittnesmål"
+          data={vittnesmal}
         />
         <ContentfulList
           showArticleList={showArticleList}
-          header="Omnämnda"
-          data={omnamnda}
+          header="Publicerat"
+          data={published}
         />
       </main>
     </Layout>
