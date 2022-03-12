@@ -1,4 +1,4 @@
-@import 'generalStyles/general.scss', 'reset.css';
+@import "generalStyles/general.scss", "reset.css";
 
 $forange: #ff9f50;
 $tabContentBackground: #f7f7f7;
@@ -49,10 +49,11 @@ $tabContentBackground: #f7f7f7;
 }
 
 .main-header__hero-img {
+  position: relative;
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 
 @media (min-width: 374px) {

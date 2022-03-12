@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import VideoIframe from "../components/VideoIframe/VideoIframe"
 import Layout from "../components/Layout"
 
 export const query = graphql`
@@ -8,7 +9,7 @@ export const query = graphql`
     post: contentfulBlogPost(slug: { eq: $slug }) {
       slug
       title
-      
+      videoLink
       authorImage {
         file {
           url
@@ -41,13 +42,9 @@ const PostTemplate = ({ data }) => {
           </Link>
           <h1 className="main-header__h1 article__heading">{post.title}</h1>
 
-          {img && (
-            <img
-              className="main-header__hero-img"
-              src={img.file.url}
-              alt="article"
-            ></img>
-          )}
+          <div className="main-header__hero-img">
+            <VideoIframe thumb={img.file.url} video={post.videoLink} />
+          </div>
         </header>
 
         <div className="article__text-content">
