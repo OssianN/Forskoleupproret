@@ -1,11 +1,11 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import ContentfulList from "../components/press/ContentfulList"
 import CategoryNavigation from "../components/press/CategoryNavigation"
 
 const Press = () => {
-  const [showArticleList, setShowArticleList] = useState("Nyheter")
+  const [showArticleList, setShowArticleList] = useState()
 
   const data = useStaticQuery(
     graphql`
@@ -47,8 +47,19 @@ const Press = () => {
     `
   )
 
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return
+    }
+
+    const pickedList = window.localStorage.getItem("articleList") || "Nyheter"
+    setShowArticleList(pickedList)
+  }, [])
+
   const handleArticleListPick = e => {
-    setShowArticleList(e.target.innerHTML)
+    const { innerHTML } = e.target
+    window.localStorage.setItem("articleList", innerHTML)
+    setShowArticleList(innerHTML)
   }
 
   const filteredData = data.allContentfulBlogPost?.nodes.filter(

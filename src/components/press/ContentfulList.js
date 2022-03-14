@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import ArticleImg from "./ArticleImg"
+import ArticleLink from "./ArticleLink"
 
 const ContentfulList = ({ showArticleList, header, data }) => {
   const limitTitle = title => {
@@ -25,7 +25,7 @@ const ContentfulList = ({ showArticleList, header, data }) => {
         const img = post.contentImage
         return (
           <li key={post.id} className="press__contentful-li">
-            <Link to={`/${post.slug}`} className="press__contentful-link">
+            <ArticleLink post={post} header={header}>
               {img && <ArticleImg img={img} />}
               <div className="press__contentful-text-wrapper">
                 <h2 className="main-h2 press__contentful-title">
@@ -33,7 +33,7 @@ const ContentfulList = ({ showArticleList, header, data }) => {
                 </h2>
                 <p className="main-p">{post.description}</p>
               </div>
-            </Link>
+            </ArticleLink>
           </li>
         )
       })}
