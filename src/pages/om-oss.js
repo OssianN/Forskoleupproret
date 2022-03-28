@@ -4,8 +4,8 @@ import Person from "../components/peoplePresentations/Person"
 import PersonCard from "../components/peoplePresentations/PersonCard"
 import PersonThumbnail from "../components/personThumbnail/PersonThumbnail"
 import * as img from "../images/"
-import "../components/styles/index.scss"
 import Contact from "../components/contact/Contact"
+import "../styles/index.scss"
 
 const OmOss = () => {
   const [selectedPerson, setSelectedPerson] = useState("Anki Jansson")

@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './nav-bar/NavBar';
-import './styles/index.scss';
+import '../styles/index.scss';
 
 const Layout = ({ children }) => {
   const mainContainer = {
